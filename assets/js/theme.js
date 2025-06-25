@@ -3,12 +3,10 @@
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    setThemeSetting("light");
-  } else if (themeSetting == "light") {
+  if (themeSetting == "light") {
     setThemeSetting("dark");
   } else {
-    setThemeSetting("system");
+    setThemeSetting("light");
   }
 };
 
@@ -255,26 +253,30 @@ let transTheme = () => {
 // "system". Default is "system".
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "system";
+  if (themeSetting === "light" || themeSetting === "dark") {
+    return themeSetting;
   }
-  return themeSetting;
+
+  // localStorage에 저장된 설정 없으면 system preference 감지
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return prefersDark ? "dark" : "light";
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
 // "system", the computed theme is determined based on the user's system preference.
 let determineComputedTheme = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
-  } else {
-    return themeSetting;
-  }
+  // let themeSetting = determineThemeSetting();
+  // if (themeSetting == "system") {
+  //   const userPref = window.matchMedia;
+  //   if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+  //     return "dark";
+  //   } else {
+  //     return "light";
+  //   }
+  // } else {
+  //   return themeSetting;
+  // }
+  return determineThemeSetting(); // 이미 dark/light 결정된 값만 리턴됨
 };
 
 let initTheme = () => {
