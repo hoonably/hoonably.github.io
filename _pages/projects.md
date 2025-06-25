@@ -5,7 +5,8 @@ permalink: /projects/
 description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+#! Teaching, Industry
+display_categories: [Academic, Research, Personal, Team, Competition]  # 여기서 category 분류해서 보여줄거 지정하기
 horizontal: false
 ---
 
