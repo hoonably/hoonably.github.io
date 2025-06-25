@@ -305,6 +305,12 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  /* ✨ 간격 추가 */
+  .navbar-nav > .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
@@ -554,7 +560,10 @@ footer.sticky-bottom {
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 3rem;  //! blog 제목 사이즈
+  }
+  h2 {
+    font-size: 1.5rem;  //! blog 부제목 사이즈
   }
 }
 
