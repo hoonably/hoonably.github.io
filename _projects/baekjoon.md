@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Baekjoon 1 year streak
+title: Baekjoon
 description: 
-img: assets/img/12.jpg
+img: assets/img/project/baekjoon.png
 importance: 1
 category: Personal
 giscus_comments: true
