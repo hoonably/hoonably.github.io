@@ -1,73 +1,235 @@
 {
+  "__":{
+    "": "이 파일은 주석을 따로 못써서 주석처리하려면 앞에 _ 붙여서 못하게 하면 됨"
+  },
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Jeonghoon Park",
+    "label": "Undergraduate Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "hoonably@unist.ac.kr",
+    "phone": "",
+    "summary": "Undergraduate student at UNIST, researching On-device AI in constrained environments at UAI Lab.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Ulsan",
+      "region": "Korea"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "hoonably",
+        "url": "https://github.com/hoonably"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "hoonably",
+        "url": "https://www.linkedin.com/in/hoonably"
+      },
+      {
+        "network": "Instagram",
+        "username": "hoonably",
+        "url": "https://www.instagram.com/hoonably"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Ubiquitous AI Lab (UAI Lab)",
+      "position": "Undergraduate Research Intern",
+      "url": "https://sites.google.com/view/uailab/home/",
+      "startDate": "2025-01-01",
+      "summary": "Research on On-Device AI, Human-Centered AI, and Adaptive & Personalized AI.",
+      "highlights": [
+        "Supervisor: Prof. Taesik Gong",
+        "Presented academic papers in English",
+        "Experimented with on-device generation models"
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Topmath",
+      "position": "Math Instructor",
+      "startDate": "2021-07-01",
+      "endDate": "2024-07-01",
+      "summary": "Taught math to students aged 14-19 with personalized instruction.",
+      "highlights": [
+        "Primary (non-part-time) instructor",
+        "Taught 30+ students with personalized instruction",
+        "Tracked and improved student outcomes"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "UNIST",
+      "location": "Ulsan, Korea",
+      "url": "https://www.unist.ac.kr/",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2020-03-01",
+      "_courses": [""],
+      "summary": "Member of EarthCops (Soccer Club)"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Academic Excellence Award",
+      "date": "2025-02-18",
+      "awarder": "UNIST",
+      "summary": "Awarded for outstanding academic performance during the Fall semester of 2024."
     }
   ],
-  "certificates": [
+  "_publications": [
+    {
+      "name": "Zur Elektrody/namik bewegter Körper",
+      "publisher": "Annalen der Physik",
+      "releaseDate": "1905-06-30",
+      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
+      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+    },
+    {
+      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
+      "publisher": "Annalen der Physik",
+      "releaseDate": "1905-03-18",
+      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
+      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+    },
+    {
+      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
+      "publisher": "Annalen der Physik",
+      "releaseDate": "1916-03-20",
+      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
+      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Artificial Intelligence",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        
+      ]
+    },
+    {
+      "name": "Computer Science",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Korean",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate",
+      "icon": ""
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Community Children's Center",
+      "location": "Incheon, Korea",
+      "position": "Public Service Agent & Volunteer Tutor",
+      "startDate": "2022-11-10",
+      "endDate": "2024-08-09",
+      "summary": "Served as a public service agent and volunteer at a community children's center, supporting administrative tasks and providing educational support to students.",
+      "highlights": [
+        "Assisted with center management and child engagement activities",
+        "Tutored elementary to high school students across various subjects"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Computer Science",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Computer Architecture"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "On-device AI",
+        "Personalized AI"
+      ]
+    },
+    {
+      "name": "Hobby",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Piano",
+        "Soccer",
+        "Cycle"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Professor Taesik Gong",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Jeonghoon is ..."
+    },
+    {
+      "name": "Student Jaemin Kim",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Jeonghoon is funny."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Pintos Project",
+      "summary": "Implemented core OS components based on Stanford’s Pintos project: thread scheduling, system calls, user programs, virtual memory (demand paging, swapping, mmap), and extensible file system with indexed allocation. Gained deep insight into OS internals through hands-on implementation.",
+      "highlights": [
+        "Thread scheduling and priority donation",
+        "Demand paging and mmap",
+        "File system with indexed allocation"
+      ],
+      "startDate": "2025-03-04",
+      "endDate": "2025-06-19",
+      "url": "../projects/pintos"
+    },
+    {
+      "name": "Traveling Salesman Problem (TSP) Solver",
+      "summary": "Implemented and analyzed classical TSP algorithms (Held-Karp, MST, Greedy, 2-opt) alongside a novel MCMF-based heuristic combining global flow and local refinement. Evaluated solution quality and runtime across diverse datasets.",
+      "highlights": [
+        "Held-Karp, MST, 2-opt, and MCMF heuristic",
+        "Performance comparison and analysis"
+      ],
+      "startDate": "2025-04-20",
+      "endDate": "2025-06-10",
+      "url": "../projects/traveling-salesman"
+    },
+    {
+      "name": "Sorting Algorithm Analysis",
+      "summary": "Implemented and benchmarked 12 sorting algorithms under various input types and data conditions, analyzing performance, stability, and memory usage.",
+      "highlights": [
+        "Benchmarking of 12 sorting algorithms",
+        "Analysis on stability and memory usage"
+      ],
+      "startDate": "2025-03-27",
+      "endDate": "2025-04-15",
+      "url": "../projects/sorting-argorithm"
+    },
+    {
+      "name": "TinyLLM - UAI Lab",
+      "summary": "Investigated lightweight LLMs for on-device use. Evaluated accuracy and inference time of each model through various evaluation sets, exploring the tradeoffs in size, latency, and performance.",
+      "highlights": [
+        "Evaluation of small LLMs in constrained environments",
+        "Trade-off analysis for on-device use cases"
+      ],
+      "startDate": "2025-01-02",
+      "endDate": "2025-02-28",
+      "url": "../projects/TinyLLM"
+    }
+  ],
+  "_certificates": [
     {
       "name": "Machine Learning",
       "date": "2018-01-01",
@@ -109,92 +271,6 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
