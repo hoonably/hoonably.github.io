@@ -4,7 +4,7 @@
 - [Project](https://hoonably.github.io/project/)
 - [Repositories](https://hoonably.github.io/repositories/)
 - [Teaching](https://hoonably.github.io/teaching/)
-- [cv](https://hoonably.github.io/cv/)
+- [CV](https://hoonably.github.io/cv/)
 
 <br/>
 
