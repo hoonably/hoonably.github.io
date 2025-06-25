@@ -1,3 +1,25 @@
+## This Repository is my Website
+- [About](https://hoonably.github.io/)
+- [Blog](https://hoonably.github.io/blog/)
+- [Project](https://hoonably.github.io/project/)
+- [Repositories](https://hoonably.github.io/repositories/)
+- [Teaching](https://hoonably.github.io/teaching/)
+- [cv](https://hoonably.github.io/cv/)
+
+<br/>
+
+## Blog Categories
+- Algorithm
+- Problem Solving (Baekjoon)
+- Language Study (C++, Python, Java, SQL...)
+- Reviews
+- Talking
+
+<br><br><br>
+
+<details>
+    <summary> al-folio Theme Detail </summary>
+
 # al-folio
 
 <div align="center">
@@ -246,7 +268,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
     - [Collections](#collections)
     - [Layouts](#layouts)
       - [The iconic style of Distill](#the-iconic-style-of-distill)
-      - [Full support for math &amp; code](#full-support-for-math--code)
+      - [Full support for math \& code](#full-support-for-math--code)
       - [Photos, Audio, Video and more](#photos-audio-video-and-more)
     - [Other features](#other-features)
       - [GitHub's repositories and user stats](#githubs-repositories-and-user-stats)
@@ -261,7 +283,6 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
     - [All Contributors](#all-contributors)
   - [Star History](#star-history)
   - [License](#license)
-  <!--te-->
 
 ## Getting started
 
@@ -488,3 +509,7 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/main/LICENSE).
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.
+
+
+
+</details>
