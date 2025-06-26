@@ -2,9 +2,10 @@
 layout: page
 title: Baekjoon
 description: 
-img: assets/img/project/baekjoon.png
+img: assets/img/projects/baekjoon.png
 importance: 1
 category: Personal
+related_publications: false
 giscus_comments: true
 ---
 
