@@ -401,12 +401,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-baekjoon",
+          section: "News",},{id: "projects-baekjoon",
           title: 'Baekjoon',
           description: "",
           section: "Projects",handler: () => {
@@ -418,7 +413,7 @@ ninja.data = [{
               window.location.href = "/projects/pintos/";
             },},{id: "projects-sorting-algorithm",
           title: 'Sorting Algorithm',
-          description: "",
+          description: "Implementation and benchmarking of classic and modern sorting algorithms with a focus on performance, memory, and stability across diverse input patterns.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/sorting-algorithm/";
             },},{id: "projects-tiny-llm",
