@@ -24,7 +24,9 @@ layout: default
       {% bibliography --cited_in_order %}
     </div>
   {% endif %}
-
+  
+  <br><br>
+  
   {% if site.giscus and page.giscus_comments %}
     {% include giscus.liquid %}
   {% endif %}
