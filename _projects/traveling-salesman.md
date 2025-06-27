@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagein
 title: TSP Algorithm
 description: Implements and evaluates classical and novel algorithms for the Traveling Salesman Problem, with a focus on flow-based cycle covers and local refinements.
 img: assets/img/projects/tsp.png

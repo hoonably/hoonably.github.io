@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagein
 title: Sorting Algorithm
 description: Implementation and benchmarking of classic and modern sorting algorithms with a focus on performance, memory, and stability across diverse input patterns.
 img: assets/img/projects/sort.png

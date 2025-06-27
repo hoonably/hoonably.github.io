@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagein
 title: Tiny LLM
 description: Investigating LLMs that can run in resource-constrained environments (such as on-device) and analyzed the accuracy and inference time of each model through various evaluation sets
 img: assets/img/projects/tinyllm.png

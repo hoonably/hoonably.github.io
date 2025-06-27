@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagein
 title: Baekjoon
 description: 
 img: assets/img/projects/baekjoon.png

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagein
 title: Pintos
 description: 
 img: assets/img/projects/pintos.png
