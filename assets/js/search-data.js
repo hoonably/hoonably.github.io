@@ -423,7 +423,7 @@ ninja.data = [{
               window.location.href = "/projects/tinyllm/";
             },},{id: "projects-tsp-algorithm",
           title: 'TSP Algorithm',
-          description: "Traveling Salesman Problem (TSP) Solver",
+          description: "Implements and evaluates classical and novel algorithms for the Traveling Salesman Problem, with a focus on flow-based cycle covers and local refinements.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/traveling-salesman/";
             },},{
