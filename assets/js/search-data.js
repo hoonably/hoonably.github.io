@@ -408,7 +408,7 @@ ninja.data = [{
               window.location.href = "/projects/baekjoon/";
             },},{id: "projects-pintos",
           title: 'Pintos',
-          description: "",
+          description: "Implements the PintOS OS with priority scheduling, system calls, virtual memory, and a growable file system using indexed and sparse allocation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pintos/";
             },},{id: "projects-sorting-algorithm",
