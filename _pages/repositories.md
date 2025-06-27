@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: My GitHub profile and repositories.
+description: My GitHub profile and repositories. Feel free to follow — I’m open to mutual follows and collaboration!
 nav: true
 nav_order: 4
 ---
