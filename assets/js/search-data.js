@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A growing collection of my projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "My GitHub profile and repositories.",
+          description: "My GitHub profile and repositories. Feel free to follow — I’m open to mutual follows and collaboration!",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -418,7 +418,7 @@ ninja.data = [{
               window.location.href = "/projects/sorting-algorithm/";
             },},{id: "projects-tiny-llm",
           title: 'Tiny LLM',
-          description: "Tiny LLM Evaluation",
+          description: "Investigating LLMs that can run in resource-constrained environments (such as on-device) and analyzed the accuracy and inference time of each model through various evaluation sets",
           section: "Projects",handler: () => {
               window.location.href = "/projects/tinyllm/";
             },},{id: "projects-tsp-algorithm",
