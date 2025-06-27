@@ -9,12 +9,12 @@ related_publications: false
 giscus_comments: true
 ---
 
-**Project Page:** [https://github.com/hoonably/Sorting-Project](https://github.com/hoonably/Sorting-Project)  
-**PDF:** [Project PDF](/assets/pdf/Sorting_Algorithm_Analysis_and_Implementation.pdf)  
+##### **💻 Project Page:** [https://github.com/hoonably/Sorting-Project](https://github.com/hoonably/Sorting-Project)  
+##### **📄 PDF:** [Project PDF](/assets/pdf/Sorting_Algorithm_Analysis_and_Implementation.pdf)  
 
 ---
 
-## Problem Statement
+### Problem Statement
 
 In many applications, sorting is a fundamental operation. While classical algorithms such as *Merge Sort* and *Quick Sort* are widely known, newer or specialized algorithms offer different trade-offs in performance, stability, and space usage.
 
@@ -34,7 +34,7 @@ All implementations are CPU-based, focusing on algorithmic behavior without rely
 
 ---
 
-## Basic Sorting Algorithms
+### Basic Sorting Algorithms
 
 This section reviews six classical sorting algorithms:
 - Merge Sort

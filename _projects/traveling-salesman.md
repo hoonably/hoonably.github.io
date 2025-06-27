@@ -9,12 +9,12 @@ related_publications: false
 giscus_comments: true
 ---
 
-**Project Page:** [https://github.com/hoonably/traveling-salesman](https://github.com/hoonably/traveling-salesman)  
-**PDF:** [Project PDF](/assets/pdf/Solving_the_Traveling_Salesman_Problem.pdf)  
+##### **💻 Project Page:** [https://github.com/hoonably/traveling-salesman](https://github.com/hoonably/traveling-salesman)  
+##### **📄 PDF:** [Project PDF](/assets/pdf/Solving_the_Traveling_Salesman_Problem.pdf)  
 
 ---
 
-# INTRODUCTION
+### INTRODUCTION
 
 The Traveling Salesman Problem (TSP) is a well-known NP-hard problem in combinatorial optimization. It seeks the shortest tour that visits each city exactly once and returns to the origin, with applications ranging from logistics to circuit design.
 
@@ -26,7 +26,7 @@ Although our method is generally slower than classical heuristics, its combinati
 
 ---
 
-# PROBLEM STATEMENT
+### PROBLEM STATEMENT
 
 The Traveling Salesman Problem (TSP) asks: given a set of *n* cities and pairwise costs *c₍ᵢⱼ₎*, find the shortest possible tour that visits each city exactly once and returns to the starting point. Formally, for
 **V = {v₁, v₂, ..., vₙ}**, the objective is:
@@ -39,21 +39,21 @@ where *Sₙ* is the set of all permutations of *n* elements.
 
 ---
 
-## Computational Complexity
+#### Computational Complexity
 
 TSP is a classic **NP-hard** problem. The decision version is **NP-complete**, and the optimization version is **NP-hard** but not known to be in NP. Since the number of feasible tours grows factorially, exact algorithms quickly become infeasible as *n* increases.
 
 ---
 
-## Approximation Motivation
+#### Approximation Motivation
 
 Due to the problem’s intractability, various approximation algorithms have been proposed for the metric TSP. MST-based methods offer theoretical guarantees, while Greedy and 2-opt heuristics perform well in practice. Our method builds on these ideas by combining global flow structure with local refinement.
 
 ---
 
-# EXISTING ALGORITHMS
+## EXISTING ALGORITHMS
 
-## Held-Karp (Dynamic Programming)
+### Held-Karp (Dynamic Programming)
 
 The Held-Karp algorithm \[Held & Karp, 1962] computes the exact TSP solution via dynamic programming by storing the minimal cost *C(S, j)* of reaching city *j* through subset *S*. It avoids enumerating all *n!* permutations by using the recurrence:
 
@@ -73,7 +73,7 @@ Assuming city 1 is the start, the optimal tour cost is:
 min over j ≠ 1 of [ C({1,...,n}, j) + c_j1 ]
 ```
 
-### Pseudocode: Held-Karp-TSP
+#### Pseudocode: Held-Karp-TSP
 
 ```plaintext
 for j = 2 to n:
@@ -105,7 +105,7 @@ Return Hamiltonian tour T
 
 ---
 
-## MST-based 2-Approximation Algorithm
+### MST-based 2-Approximation Algorithm
 
 This classical algorithm \[CLRS 3rd ed.] constructs a tour with cost at most twice the optimal, assuming the triangle inequality. It builds a **Minimum Spanning Tree (MST)**, performs a **preorder traversal** to list the nodes, and **shortcuts** repeated visits to yield a Hamiltonian tour.
 
@@ -274,6 +274,7 @@ So, total time ranges from **𝒪(n²)** to **𝒪(n³)** depending on input str
 
 Existing heuristics like Greedy and MST tend to focus on local optimization and may miss global structure. We adopt **Minimum-Cost Maximum-Flow (MCMF)** to better capture global cost patterns by generating a one-to-one matching across the entire set of cities. To compensate for the potential loss of local structure, we enhance the solution with **Greedy-like subtour merging** and **2-opt refinement**.
 
+---
 
 ### Flow-based Cycle Cover via MCMF
 
@@ -304,6 +305,7 @@ Using SPFA for shortest paths:
 * **Time:** 𝒪(n³)
 * **Space:** 𝒪(n²)
 
+---
 
 ### kNN Sparsification for Scalability
 
@@ -319,6 +321,7 @@ To improve efficiency, we retain only the **k-nearest neighbors per node** when 
 * **Space:** 𝒪(kn)
 * In practice: **k = 20**
 
+---
 
 ### Refinement with 2-opt
 
@@ -334,6 +337,7 @@ To refine this, we apply **2-opt**, which:
 * Replaces long edges
 * Improves tour quality locally
 
+---
 
 ### Summary
 
@@ -387,15 +391,13 @@ Runtime is primarily dictated by two components:
 
 ### Solution Quality
 
-| Phase            | Observations |
-| ---------------- | ------------ |
-| **Before 2-opt** |              |
+**Before 2-opt**
 
 * **Greedy** outperforms other heuristics in raw tour quality
 * **MST** has a formal 2-approximation guarantee but often yields longer tours due to tree detours
 * **Flow / Flow\_kNN** perform poorly initially due to short, fragmented subtours
 
-\| **After 2-opt** |
+**After 2-opt** 
 
 * **Greedy** improves modestly — already starts near local optimum
 * **MST** gains slight improvement, but some suboptimal edges remain
