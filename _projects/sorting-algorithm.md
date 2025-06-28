@@ -9,8 +9,9 @@ related_publications: false
 giscus_comments: true
 ---
 
-##### **💻 Project Page:** [https://github.com/hoonably/Sorting-Project](https://github.com/hoonably/Sorting-Project)  
-##### **📄 PDF:** [Project PDF](/assets/pdf/Sorting_Algorithm_Analysis_and_Implementation.pdf)  
+> **💻 Project Page:** [https://github.com/hoonably/Sorting-Project](https://github.com/hoonably/Sorting-Project)  
+> **📄 PDF:** [Project PDF](/assets/pdf/Sorting_Algorithm_Analysis_and_Implementation.pdf)  
+{: .block-tip }
 
 ---
 

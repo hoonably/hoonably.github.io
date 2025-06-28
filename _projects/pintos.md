@@ -9,7 +9,8 @@ related_publications: false
 giscus_comments: true
 ---
 
-##### **💻 Project Page:** [https://github.com/hoonably/pintos](https://github.com/hoonably/pintos)  
+> **💻 Project Page:** [https://github.com/hoonably/pintos](https://github.com/hoonably/pintos)  
+{: .block-tip }
 
 ---
 

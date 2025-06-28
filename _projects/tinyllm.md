@@ -9,8 +9,10 @@ related_publications: false
 giscus_comments: true
 ---
 
-##### **💻 Project Page:** [https://github.com/unist-uai/TinyLLM](https://github.com/unist-uai/TinyLLM)  
-##### **📄 Notion (Korean):** [Notion - TinyLLM](https://foil-plant-837.notion.site/TinyLLM-181451cf7b798058b1d0dc189ab6d30d?source=copy_link)  
+> **💻 Project Page:** [https://github.com/unist-uai/TinyLLM](https://github.com/unist-uai/TinyLLM)  
+> **📄 Notion (Korean):** [Notion - TinyLLM](https://foil-plant-837.notion.site/TinyLLM-181451cf7b798058b1d0dc189ab6d30d?
+source=copy_link)  
+{: .block-tip }
 
 ---
 

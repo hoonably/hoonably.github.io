@@ -9,8 +9,9 @@ related_publications: false
 giscus_comments: true
 ---
 
-##### **💻 Project Page:** [https://github.com/hoonably/traveling-salesman](https://github.com/hoonably/traveling-salesman)  
-##### **📄 PDF:** [Project PDF](/assets/pdf/Solving_the_Traveling_Salesman_Problem.pdf)  
+> **💻 Project Page:** [https://github.com/hoonably/traveling-salesman](https://github.com/hoonably/traveling-salesman)  
+> **📄 PDF:** [Project PDF](/assets/pdf/Solving_the_Traveling_Salesman_Problem.pdf)  
+{: .block-tip }
 
 ---
 
