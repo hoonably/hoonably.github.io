@@ -52,7 +52,18 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/al-folio-tech/";
+            window.location.href = "/blog/al-folio-tech/";
+          
+        },
+      },{id: "post-first-blog-test",
+        
+          title: "First blog test",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/first-blog-test/";
           
         },
       },{id: "books-the-godfather",
