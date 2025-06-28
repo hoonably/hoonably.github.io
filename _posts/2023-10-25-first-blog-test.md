@@ -8,7 +8,7 @@ categories: Talk
 giscus_comments: true
 related_posts: false
 
-featured: true  # 메인화면에서 나타나도 되는가?
+featured: false  # 상단에 고정할건지
 pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 

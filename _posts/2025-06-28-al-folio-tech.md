@@ -8,10 +8,10 @@ categories: Else
 giscus_comments: true
 related_posts: false  # 이거 키면 마지막에 "Enjoy Reading This Article?"
 
-featured: true  # 메인화면에서 나타나도 되는가?
+featured: false  # 상단에 고정할건지
 pretty_table: true  # 활성화해줘야 table 선이 보임
 
-tabs: true  # 탭으로 여러가지 보이게
+tabs: false  # 탭으로 여러가지 보이게
 
 pseudocode: true
 
@@ -132,6 +132,9 @@ pseudocode: true
 ---
 
 ## Image, Video, Audio
+
+### single image
+{% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 ### multiple image
 2~3개의 이미지를 같은 줄에 넣기 
