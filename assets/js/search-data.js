@@ -140,7 +140,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/teaching-1062/";
+            window.location.href = "/blog/PS-1062/";
           
         },
       },{id: "post-vscode-code-runner을-위한-setting-json-설정",
@@ -184,7 +184,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/thief-1202/";
+            window.location.href = "/blog/PS-1202/";
           
         },
       },{id: "post-백준-c-경찰차-2618번",
@@ -195,7 +195,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/Police-car-2618/";
+            window.location.href = "/blog/PS-2618/";
           
         },
       },{id: "post-백준-c-n-queen-hard-30243번",
