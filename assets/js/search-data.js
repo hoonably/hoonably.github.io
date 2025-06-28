@@ -55,6 +55,237 @@ ninja.data = [{
             window.location.href = "/blog/al-folio-tech/";
           
         },
+      },{id: "post-ablation-study-란",
+        
+          title: "Ablation Study 란?",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/Ablation-Study/";
+          
+        },
+      },{id: "post-컴퓨터구조-정리-및-문제모음",
+        
+          title: "[컴퓨터구조] 정리 및 문제모음",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/computer_architecture/";
+          
+        },
+      },{id: "post-컴퓨터구조-메모리-총정리",
+        
+          title: "[컴퓨터구조] 메모리 총정리",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/memory/";
+          
+        },
+      },{id: "post-백준-2024년-매일-백준-풀기-성공",
+        
+          title: "[백준] 2024년 매일 백준 풀기 성공",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/baekjoon365/";
+          
+        },
+      },{id: "post-네트워크-플로우-network-flow",
+        
+          title: "네트워크 플로우 (Network-Flow)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/NetworkFlow/";
+          
+        },
+      },{id: "post-백준-c-구슬-탈출-2-13460번",
+        
+          title: "[백준] [C++] 🔮 구슬 탈출 2 13460번",
+        
+        description: "Gold - 구현",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/PS-13460/";
+          
+        },
+      },{id: "post-백준-다이아몬드-달성-및-tip",
+        
+          title: "[백준] 💎 다이아몬드 달성 및 Tip",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/solvedac-Diamond/";
+          
+        },
+      },{id: "post-백준-c-가르침-1062번",
+        
+          title: "[백준] [C++] 👨‍🏫 가르침 1062번",
+        
+        description: "Gold - bitmasking",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/teaching-1062/";
+          
+        },
+      },{id: "post-vscode-code-runner을-위한-setting-json-설정",
+        
+          title: "[VSCode] Code Runner을 위한 setting.json 설정",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/Code-Runnder-Setting/";
+          
+        },
+      },{id: "post-c-c-버전-체크-방법",
+        
+          title: "[C++] C++ 버전 체크 방법",
+        
+        description: "Gold - bitmasking",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/C++-version-check/";
+          
+        },
+      },{id: "post-c-c-2진수-8진수-16진수-표기법",
+        
+          title: "[C++, C] 2진수, 8진수, 16진수 표기법",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/use-bit/";
+          
+        },
+      },{id: "post-백준-c-보석-도둑-1202번",
+        
+          title: "[백준] [C++] 💎 보석 도둑 1202번",
+        
+        description: "Gold - Greedy",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/thief-1202/";
+          
+        },
+      },{id: "post-백준-c-경찰차-2618번",
+        
+          title: "[백준] [C++] 🚓 경찰차 2618번",
+        
+        description: "Platinum - DP",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/Police-car-2618/";
+          
+        },
+      },{id: "post-백준-c-n-queen-hard-30243번",
+        
+          title: "[백준] [C++] 🧩 N-Queen (Hard) 30243번",
+        
+        description: "Diamond 5 - Bitmasking, Backtracking",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/N-Queen-Hard/";
+          
+        },
+      },{id: "post-백준-python-n-queen-easy-30242번",
+        
+          title: "[백준] [Python] 🧩 N-Queen (Easy) 30242번",
+        
+        description: "Gold 3 - Backtracking",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/N-Queen-Easy/";
+          
+        },
+      },{id: "post-백준-python-️-n-queen-9663번",
+        
+          title: "[백준] [Python] ♟️ N-Queen 9663번",
+        
+        description: "Gold 4 - Backtracking",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/N-Queen-9663/";
+          
+        },
+      },{id: "post-sql로-간소한-카카오뱅크-데이터베이스-만들어보기",
+        
+          title: "SQL로 간소한 카카오뱅크 데이터베이스 만들어보기",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/SQL-kakaobank/";
+          
+        },
+      },{id: "post-시간-복잡도-time-complexity",
+        
+          title: "시간 복잡도 (Time Complexity)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/Time-Complexity/";
+          
+        },
+      },{id: "post-java-string-stringbuffer-stringbuilder-bufferedwriter-비교",
+        
+          title: "[Java] String, StringBuffer, StringBuilder, BufferedWriter 비교",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/Java-Buffer/";
+          
+        },
+      },{id: "post-유클리드-호제법을-이용한-최대공약수-최소공배수",
+        
+          title: "유클리드 호제법을 이용한 최대공약수, 최소공배수",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/GCDLCM/";
+          
+        },
+      },{id: "post-버블-정렬-bubble-sort",
+        
+          title: "버블 정렬 (Bubble Sort)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/Bubble-sort/";
+          
+        },
       },{id: "post-first-blog-test",
         
           title: "First blog test",
