@@ -86,8 +86,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Hoon's Blog # blog_name will be displayed in your blog page
-blog_description: Occasional reflections on AI, systems, and problem solving.
-permalink: /blog/:year/:title/
+blog_description: Reflections on computer science, AI, and the occasional off-topic ramble.
+permalink: /blog/:title/  # /blog/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -254,7 +254,7 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["Baekjoon", "Setting", "AI"] # these tags will be displayed on the front page of your blog
+display_tags: ["CS", "AI", "Baekjoon", "Setting"] # these tags will be displayed on the front page of your blog
 display_categories: ["Talk", "Tips", "Study", "Paper", "Else"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------

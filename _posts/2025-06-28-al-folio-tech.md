@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Various techniques in al-folio
-date: 2025-06-28 15:32:13+0900
+date: 2025-06-28 15:32:13 +09:00
 description: 
 tags: 
 categories: Else
 giscus_comments: true
+related_posts: false  # 이거 키면 마지막에 "Enjoy Reading This Article?"
 
 featured: true  # 메인화면에서 나타나도 되는가?
 pretty_table: true  # 활성화해줘야 table 선이 보임
@@ -27,8 +28,6 @@ chart:
   chartjs: true
   plotly: true
   vega_lite: true
-
-map: true
 
 mermaid:
   enabled: true
@@ -410,53 +409,6 @@ chart:
 ```
 
 ---
-
-## map
-```yml
-map: true
-```
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    }
-  ]
-}
-```
-
----
-
-
 
 ## mermaid (diagrams)
 ```yml
