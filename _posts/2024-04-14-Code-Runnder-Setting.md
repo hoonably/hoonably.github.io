@@ -13,22 +13,19 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 
 
-## 💡 setting.json ?
-
-
+### 💡 setting.json ?
 
 vscode에서 setting.json 이란 파일이 있다.
 
-검색창에 >setting을 치면, 작업 영역 설정 열기를 하면 열 수 있다.
+`crtl(cmd)+shift+P` 후 user setting을 검색해서 JSON을 클릭하면 된다.
 
 이 작업 영역에서 setting을 어떻게 할 지에 대해서 설정한다.
 
-{% include figure.liquid loading="eager" path="" class="img-fluid rounded z-depth-1" zoomable=true %} <img width="965" alt="image" src="https://github.com/hoonably/hoonably.github.io/assets/77783081/f9833bf8-5397-45b9-b5fc-c57d021a61a4">
+{% include figure.liquid loading="eager" path="files/2024-04-14-Code-Runnder-Setting/coderunner1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
+---
 
-## 💡 Code Runner 띄어쓰기
-
-
+### 💡 Code Runner 띄어쓰기
 
 기본적으로 Code Runner에서, 파일명에 띄어쓰기 등과 같은 것이 있으면 
 
@@ -46,10 +43,13 @@ vscode에서 setting.json 이란 파일이 있다.
 "cpp": "cd $dir && g++ -std=c++17 \"$fileName\" -o \"$fileNameWithoutExt\" && ./\"$fileNameWithoutExt\""
 ```
 
+---
 
-## 💡 setting.json
+### 💡 setting.json
 
+아래 내용을 복붙해 이런식으로 넣으면 된다.
 
+{% include figure.liquid loading="eager" path="files/2024-04-14-Code-Runnder-Setting/coderunner2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ```json
 {

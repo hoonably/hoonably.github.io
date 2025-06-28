@@ -475,7 +475,7 @@ Each sorting algorithm was evaluated on the same randomly generated dataset of s
 
 ---
 
-{% include figure.liquid path="assets/img/projects/sorting-algorithm/random.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/random.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 #### Algorithms with Log-Linear Complexity (O(n log n))
 
@@ -571,7 +571,7 @@ These tests show how the initial structure of the data affects algorithm perform
 
 ### Execution Time for 50% Partially Sorted Inputs
 
-{% include figure.liquid path="assets/img/projects/sorting-algorithm/partial_50.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/partial_50.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **Unexpected Behavior at Small Scales**
 On partially sorted inputs of size *n = 10³*, **Insertion Sort** ranked as the second fastest algorithm, outperforming several *O(n log n)* methods.
@@ -590,7 +590,7 @@ For small inputs, the number of required shifts is small, while more complex alg
 
 **Ascending Sorted Inputs**
 
-{% include figure.liquid path="assets/img/projects/sorting-algorithm/sorted_asc.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/sorted_asc.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 When the input is already sorted in ascending order, several algorithms achieve best-case behavior:
 
@@ -603,7 +603,7 @@ When the input is already sorted in ascending order, several algorithms achieve 
 
 **Descending Sorted Inputs**
 
-{% include figure.liquid path="assets/img/projects/sorting-algorithm/sorted_desc.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/sorted_desc.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 When input is sorted in descending order, many algorithms hit their worst-case behavior:
 
@@ -726,7 +726,7 @@ We define:
 * **vector\_only** = memory after loading vector − memory before loading
 * **sort\_overhead** = peak memory during sort − memory after vector load
 
-{% include figure.liquid path="assets/img/projects/sorting-algorithm/quick_sort.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/quick_sort.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 In visualizations, **blue** indicates memory used for `std::vector`, and **red** shows memory fluctuation during sorting.
 
@@ -781,7 +781,7 @@ The following algorithms reported **0 KB overhead**, confirming they are truly *
 
 ### Memory Growth Pattern in Library Sort
 
-{% include figure.liquid path="assets/img/projects/sorting-algorithm/library_sort.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/library_sort.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 🟦 **Blue region**: `std::vector` memory  
 🟥 **Red region**: temporary buffers, recursion stacks, trees, etc.  

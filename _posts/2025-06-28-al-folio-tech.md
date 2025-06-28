@@ -169,26 +169,26 @@ images:
   slider: true  # 이미지 여러장 옆으로 넘기면서 보기
 ```
 <img-comparison-slider>
-  {% include figure.liquid path="assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
-  {% include figure.liquid path="assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" slot="second" %}
+  {% include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid loading="eager" path="assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
 
 ---
 
 ### video
-{% include video.liquid path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+{% include video.liquid loading="eager" path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
 
 유튜브 링크를 그대로 가져올 경우 다음과 같은 embed 링크로 변환해줘야함
 ```
 https://youtu.be/kCc8FmEb1nY → https://www.youtube.com/embed/kCc8FmEb1nY
 ```
-{% include video.liquid path="https://www.youtube.com/embed/kCc8FmEb1nY" class="img-fluid rounded z-depth-1" %}
+{% include video.liquid loading="eager" path="https://www.youtube.com/embed/kCc8FmEb1nY" class="img-fluid rounded z-depth-1" %}
 
 ---
 
 ### audio
-{% include audio.liquid path="assets/audio/epicaly-short-113909.mp3" controls=true %}
-{% include audio.liquid path="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls=true %}
+{% include audio.liquid loading="eager" path="assets/audio/epicaly-short-113909.mp3" controls=true %}
+{% include audio.liquid loading="eager" path="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls=true %}
 
 ---
 

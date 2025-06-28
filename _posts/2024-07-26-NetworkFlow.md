@@ -12,7 +12,7 @@ featured: false  # 상단에 고정할건지
 pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 
-## 💡 네트워크 플로우?
+### 💡 네트워크 플로우?
 
 
 네트워크 플로우 문제는 주어진 유량 네트워크에서 소스(source)에서 싱크(sink)로 보낼 수 있는 **최대 유량**을 찾는 문제다.
@@ -20,8 +20,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 네트워크는 노드(node)와 간선(edge)으로 구성된 그래프로 표현되며, 각 간선은 용량(capacity)을 가진다.
 
 
+---
 
-## 💡 용어
+### 💡 용어
 
 
 ​	•	**노드(Node)**: 그래프에서 유량이 흐르는 지점.
@@ -34,13 +35,16 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 ​	•	**잔여 용량(Residual Capacity)**: 현재 유량을 고려했을 때 간선이 추가로 유량을 보낼 수 있는 여유.
 
-## 💡 네트워크 플로우 기본 문제
+---
+
+### 💡 네트워크 플로우 기본 문제
 
 {% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/197b77bc-b255-4694-a4de-37edb5d57fa3" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
+---
 
-## 💡 포드-풀커슨 알고리즘 (Ford-Fulkerson Algorithm)
+### 💡 포드-풀커슨 알고리즘 (Ford-Fulkerson Algorithm)
 
 
 ​	•	**방식**: 가능한 경로를 반복적으로 찾아 유량을 보내며, 더 이상 유량을 보낼 수 없을 때까지 반복
@@ -118,8 +122,9 @@ struct FordFulkerson {
 ```
 
 
+---
 
-## 💡 디닉 알고리즘 (Dinic’s Algorithm)
+### 💡 디닉 알고리즘 (Dinic’s Algorithm)
 
 
 디닉 알고리즘은 포드-풀커슨 알고리즘의 개선된 버전으로,
@@ -240,10 +245,9 @@ struct NetworkFlow{  // use Dinic
 ```
 
 
+---
 
-
-
-## 💡 디닉 알고리즘 (Dinic’s Algorithm) 구조체 사용
+### 💡 디닉 알고리즘 (Dinic’s Algorithm) 구조체 사용
 
 
 위의 디닉 알고리즘보다 더 빠른 방식이 바로 Edge 구조체를 사용하는 방식이다.
@@ -335,8 +339,9 @@ struct NetworkFlow{  // use Dinic
 
 
 
+---
 
-## 💡 풀어볼 문제들
+### 💡 풀어볼 문제들
 
 
 - [도시 왕복하기 1](https://www.acmicpc.net/problem/17412)  : 기본 Network Flow 문제
@@ -348,8 +353,9 @@ struct NetworkFlow{  // use Dinic
 - [격자 0 만들기](https://www.acmicpc.net/problem/11495) : 간선 양이 매우 많아 Dinic 알고리즘이 100배 빠름
 
 
+---
 
-## 💡 네트워크 플로우의 활용 예시
+### 💡 네트워크 플로우의 활용 예시
 
 
 ​	•	**물류**: 특정 지점에서 다른 지점으로 물건을 최대한 많이 보내는 문제

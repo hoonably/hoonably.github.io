@@ -14,16 +14,17 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
-## 💡 버블정렬 함수
+### 💡 버블정렬 함수
 
 먼저 알고리즘을 알고있지만 복붙이나 복습을 위해 찾아온 사람들을 위해 코드를 먼저 보여주겠다.
 
 처음 보는거라면 꼭 아래로 내려가 이해해보도록 하자.
 
+---
 
-### 파이썬 (Python)
+#### 파이썬 (Python)
 
-- #### 오름차순 (Bubble Sort - Ascending)
+- ##### 오름차순 (Bubble Sort - Ascending)
 
 ```java
 def bubbleSort_ASC(arr):
@@ -35,7 +36,7 @@ def bubbleSort_ASC(arr):
     return arr
 ```
 
-- #### 내림차순 (Bubble Sort - Descending)
+- ##### 내림차순 (Bubble Sort - Descending)
 
 ```python
 def bubbleSort_DESC(arr):
@@ -47,11 +48,11 @@ def bubbleSort_DESC(arr):
     return arr
 ```
 
+---
 
+#### 자바 (Java)
 
-### 자바 (Java)
-
-- #### 오름차순 (Bubble Sort - Ascending)
+- ##### 오름차순 (Bubble Sort - Ascending)
 
 ```java
 public static void bubblesort_ASC(int[] arr) {
@@ -68,7 +69,7 @@ public static void bubblesort_ASC(int[] arr) {
 }
 ```
 
-- #### 내림차순 (Bubble Sort - Descending)
+- ##### 내림차순 (Bubble Sort - Descending)
 
   ```java
   public static void bubblesort_DESC(int[] arr) {
@@ -85,22 +86,23 @@ public static void bubblesort_ASC(int[] arr) {
   }
   ```
 
-  
 
 
+---
 
-
-## 💡 버블정렬 (Bubble Sort) ?
+### 💡 버블정렬 (Bubble Sort) ?
 
 버블 정렬은 원소를 정렬할 때 사용하며, 원소가 거품처럼 올라오는 것처럼 보여 버블 정렬이라는 이름이 붙여졌다.
 
 
-## 💡 알고리즘 이해
+---
+
+### 💡 알고리즘 이해
 
 가장 큰 수부터 차례대로 맨 뒤로 이동시켜 고정한다고 생각하면 쉽다.
 
 
-### 각 단계에서 일어나는 일
+#### 각 단계에서 일어나는 일
 
 다음 원소와 비교했을때,  지금의 원소가 더 크다면 순서를 바꾼다.
 
@@ -113,8 +115,7 @@ public static void bubblesort_ASC(int[] arr) {
 
 한 단계마다 가장 큰 수가 제일 뒤로 가게 된다. 
 
-
-### 모든 단계에서 일어나는 일
+#### 모든 단계에서 일어나는 일
 
 각 단계에서 정해진 가장 큰 수를 고정하고 그 앞부분에서 단계를 또 시작한다.
 
@@ -126,7 +127,9 @@ public static void bubblesort_ASC(int[] arr) {
 |  4단계  |  1   | `2`  | `3`  | `4`  | `5`  |
 
 
-## 💡 코드 이해
+---
+
+### 💡 코드 이해
 
 먼저, 배열의 두 원소를 바꾸는 함수부터 만들어보자.
 
@@ -175,7 +178,9 @@ public static void bubblesort(int[] arr) {
 ```
 
 
-## 💡 코드 테스트 - 백준 2750번: 수 정렬하기
+---
+
+### 💡 코드 테스트 - 백준 2750번: 수 정렬하기
 
 {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/cdf42206-856a-4da0-af6e-cd916ec7aba2" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -215,7 +220,9 @@ public class Main {
 }
 ```
 
-### Output
+---
+
+#### Output
 
 ```java
 1
@@ -226,7 +233,9 @@ public class Main {
 ```
 
 
-## 💡 시간복잡도
+---
+
+### 💡 시간복잡도
 
 시간 복잡도가 무엇인지 모른다면 이 글을 참고하자.
 
@@ -239,21 +248,29 @@ public class Main {
 버블 정렬의 시간 복잡도는 best, worst, average case 모두 `O(n^2)` 이다.
 
 
-## 💡 정리
+---
 
-### 장점
+### 💡 정리
+
+---
+
+#### 장점
 
 - 구현이 아주 간단하다.
 - 알고리즘을 이해하기 쉽다.
 
-### 단점
+---
+
+#### 단점
 
 - 하나의 원소를 옮기는데 여러번 교환해야 하는 일이 발생한다.
 - 이미 옳은 위치에 정렬되어있는 상태의 요소도 교환되는 일이 많다.
 - 정렬 알고리즘 중에서 가장 느리고 효율성이 떨어진다.
 
 
-## 💡 결론
+---
+
+### 💡 결론
 
 버블정렬 알고리즘은 처음 알고리즘을 공부하기엔 좋지만 너무 비효율적이기 때문에 쓸 일이 없다.
 

@@ -16,8 +16,7 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 #주의 - 따라서 만들어보는게 목적이라 섬세하게 만들지 않았습니다.
 
 
-
-## 💡 시작은 ERD ?
+### 💡 시작은 ERD ?
 
 
 
@@ -38,8 +37,9 @@ SQL로 DB를 만들어보기 위해 사용한 것이므로 자세하게 보고�
 
 
 
+---
 
-## 💡 ERD Cloud를 통해 ERD 만들기
+### 💡 ERD Cloud를 통해 ERD 만들기
 
 
 
@@ -63,8 +63,9 @@ SQL 공부인데 ERD의 기호들까지 하나하나 따지기엔...
 
 
 
+---
 
-## 💡 SQL 하기 전 알아두면 좋은 것
+### 💡 SQL 하기 전 알아두면 좋은 것
 
 
 
@@ -90,8 +91,9 @@ SQL은 파이썬과 같은 언어와 다르게 하나의 명령을 실행할 수
 
 
 
+---
 
-## 💡 SQL 데이터베이스 생성 및 사용
+### 💡 SQL 데이터베이스 생성 및 사용
 
 
 
@@ -117,17 +119,17 @@ show databases;
 use erd_kakaobank;
 ```
 
+---
 
 
-
-## 💡 테이블들 생성
+### 💡 테이블들 생성
 
 
 
 ERD 만든 것을 토대로 모든 테이블을 넣기엔 너무 오랜 시간이 걸릴 것 같아 **3개의 테이블만** 진행했다!!
 
 
-### ❗ 유저 테이블 생성
+#### ❗ 유저 테이블 생성
 
 ```sql
 create table k_user (
@@ -148,7 +150,7 @@ create table k_user (
 ```
 
 
-### ❗ 유저 신용점수 테이블 생성
+#### ❗ 유저 신용점수 테이블 생성
 
 한사람당 하나의 신용점수이므로 `unique`를 걸어둔다.
 
@@ -161,7 +163,7 @@ create table user_cs (
 ```
 
 
-### ❗ 유저 입출금 통장 테이블 생성
+#### ❗ 유저 입출금 통장 테이블 생성
 
 계좌는 같은 사람이 여러개 쓸 수 있기 때문에 `user_idx`에 `unique`를 걸지 않는다.
 
@@ -182,8 +184,9 @@ create table k_bank (
 );
 ```
 
+---
 
-## 💡 DCL, DDL, DML 이란?
+### 💡 DCL, DDL, DML 이란?
 
 
 
@@ -204,23 +207,17 @@ create table k_bank (
 
   이제 가장 중요한 `DML`의 `CRUD`를 할 차례다!
 
+---
 
+### 💡 insert / 데이터 넣기
 
-
-
-
-## 💡 insert / 데이터 넣기
-
-
-
-#### ❗ 컬럼 정보 열기
+##### ❗ 컬럼 정보 열기
 
 ​	 이걸 해놓고 insert문을 만들면 편하다.
 
 ```sql
 show columns from k_user;
 ```
-
 
 #### ❗ k_user (유저 정보) insert
 
@@ -257,7 +254,6 @@ insert into k_user (
 	('ridebike12', 'a12345', '김수용', '아저씨아님', 40, '01044634545','test11@naver.com', 1, '127.0.0.1', 3);
 ```
 
-
 이렇게 정상적으로 들어갔는지 확인할 수 있다. (옆에 user_update_dt도 있는데 너무 길어서 잘랐다.)
 
 {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/a724cc58-43bc-42da-8a2c-aa5135fc5cf6" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -291,7 +287,6 @@ insert into user_cs  (
 ```
 
 {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/eddc583f-b30b-4830-9ded-97d1d1fad6b7" class="img-fluid rounded z-depth-1" zoomable=true %}
-
 
 #### ❗ k_bank (카카오뱅크 계좌) insert
 
@@ -336,9 +331,9 @@ insert into k_bank (
 {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/248d91fe-806d-488d-bc3b-81b01d4f7a9c" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
+---
 
-
-## 💡 Select 문으로 정보 검색
+### 💡 Select 문으로 정보 검색
 
 
 
@@ -409,9 +404,9 @@ order by
 {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/d3f7deca-d1fd-4bf2-9e65-66477cc8a6e1" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
+---
 
-
-## 💡 Update 문으로 정보 업데이트
+### 💡 Update 문으로 정보 업데이트
 
 
 
@@ -461,9 +456,9 @@ order by
 
 
 
+---
 
-
-## 💡 Delete 문
+### 💡 Delete 문
 
 
 
@@ -476,9 +471,9 @@ ex) 0: 정상 1: 탈퇴
 Update를 이용해 이용상태 컬럼을 바꿔주자.
 
 
+---
 
-
-## 💡 마무리
+### 💡 마무리
 
 
 

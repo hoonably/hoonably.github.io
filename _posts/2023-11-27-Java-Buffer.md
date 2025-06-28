@@ -12,30 +12,32 @@ featured: false  # 상단에 고정할건지
 pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 
-
-## 💡 String 이란?
+### 💡 String 이란?
 
 - java.lang에 있다.
 - 한번 정해지면 변경불가능한 `불변(immutable) 클래스`다.
 - String 객체가 생성되면 그 값은 변경되는게 아니라 새로운 객체로 추가 및 변경이 된다.
 
+---
 
-## 💡 StringBuffer 란?
+### 💡 StringBuffer 란?
 
 - java.lang에 있다.
 - StringBuffer는 변경이 가능한 `가변(mutable) 클래스`다.
 - 멀티 쓰레드 환경에서 동시에 같은 문자열 인스턴스에 접근할 때 **중복 점유를 막을 수 있는 장치**가 되어 있다.
 - 위의 장치 때문에 **동기화 과정에서 성능 저하**가 발생할 수 있다.
 
+---
 
-## 💡 StringBuilder 란?
+### 💡 StringBuilder 란?
 
 - java.lang에 있다.
 - StringBuilder는 변경이 가능한 `가변(mutable) 클래스`이다.
 - 멀티쓰레드 환경에서 불안정적이지만 일반적 환경에서는 StringBuffer처럼 동기화로 인한 성능저하가 일어나지 않기 때문에 `가장 빠르다.`
 
+---
 
-## 💡 BufferedWriter 란?
+### 💡 BufferedWriter 란?
 
 - java.io에 있다.
 - 선언이 필요하다.
@@ -44,8 +46,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
+---
 
-## 💡 문자열 더하기
+### 💡 문자열 더하기
 
 ```java
 String a = "나는 ";
@@ -81,8 +84,9 @@ String str1 = sb1.toString();
 String str2 = sb2.toString();
 ```
 
+---
 
-## 💡 반복문 적용
+### 💡 반복문 적용
 
 [백준 2751번 수 정렬하기 2](https://www.acmicpc.net/problem/2751){:target="_blank"}
 
@@ -132,8 +136,9 @@ public class Main {
 - 맨 위의 결과가 위의 코드의 결과이다. BufferedReader + StringBuilder을 사용해 빠른 결과를 도출했다.
 - Scanner와 BufferedReader 의 비교는 추후에 글로 작성할 예정이다.
 
+---
 
-## 💡 특징 비교
+### 💡 특징 비교
 
 |                |              String               |    StringBuffer    |   StringBuilder    |   BuffereWriter   |
 | :------------: | :-------------------------------: | :----------------: | :----------------: | :---------------: |
@@ -142,8 +147,9 @@ public class Main {
 |      속도      |       `매우 매우 매우 느림`       |        빠름        |    `가장 빠름`     |       보통        |
 | 추천 사용 방법 | 문자열의 변경이나 추가가 없는경우 |  멀티쓰레드 환경   |  단일쓰레드 환경   |                   |
 
+---
 
-## 💡 상세 속도 비교
+### 💡 상세 속도 비교
 
 {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/be1b9069-c651-4654-8c29-fd726b112ff5" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -222,8 +228,9 @@ StringBuilder 연산시간 : 16~28 (10회 돌려본 결과)
 BufferedWriter 연산시간 : 24~38 (10회 돌려본 결과)
 ```
 
+---
 
-## 💡 결론
+### 💡 결론
 
 - String은 문자열을 변경하거나 추가할 때 사용하면 반복이 많아지고 데이터가 커질수록 속도 차이가 많이 나서 쓰지 않는게 좋다.
 - 귀찮더라도 문자열을 더하는 경우가 많으면 `StringBuilder`을 사용하는 습관을 들이자.

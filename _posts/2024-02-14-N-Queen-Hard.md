@@ -13,13 +13,11 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 
 
-
-## 💡 문제 설명
-
+### 💡 문제 설명
 
 [🧩 N-Queen (Hard)](https://www.acmicpc.net/problem/30243)
 
-{% include figure.liquid loading="eager" path="" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/baekjoon/30243.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 기존의 N-Queen 문제와 같지만, N<=30으로 30단계까지 가야 해서 비트마스킹 없이는 절대로 시간제한 안에 문제를 풀 수 없다.
 
@@ -27,14 +25,16 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
+---
 
-## 💡 백트래킹 방식
+### 💡 백트래킹 방식
 
 
 백트래킹과 전반적인 풀이 방식은 [🧩 N-Queen (Easy) 풀이](/ps/N-Queen-Easy/) 와 동일하다. 안봤다면 꼭 보고 오자.
 
+---
 
-## 💡 음수 비트연산?
+### 💡 음수 비트연산?
 
 
 
@@ -63,8 +63,9 @@ cout << "a   : " << bitset<10>(a) << endl;  // 2진수로 a 출력
 
 
 
+---
 
-## 💡 C++ 풀이
+### 💡 C++ 풀이
 
 
 
@@ -164,19 +165,9 @@ int main() {
 }
 ```
 
+---
 
-
-
-## 💡 제출 결과 
-
-
-
-{% include figure.liquid loading="eager" path="https://github.com/hoonably/hoonably.github.io/assets/77783081/62bf4edb-b1b6-4cc4-a4f7-5ad3e5794d49" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-
-
-
-## 💡 마무리 
+### 💡 마무리 
 
 
 

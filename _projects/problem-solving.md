@@ -15,20 +15,20 @@ pretty_table: true
 > **💻 Solved.ac:** [https://solved.ac/profile/hoonably](https://solved.ac/profile/hoonably)
 {: .block-tip }
 
-{% include figure.liquid path="assets/img/projects/ps/1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/ps/1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 단계별 문제를 열심히 풀고 꾸준히 공부하다보니 solved.ac 기준 다이아 3 등급까지 오게 되었다.  
 총 1100문제를 풀었으며, 기초부터 단계별 풀어보기를 통해 유명한 어려운 알고리즘들까지 접하게 되었다.  
 
 
-{% include figure.liquid path="assets/img/projects/ps/2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/ps/2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 루비 문제는 한문제는 직접 풀었고, 두문제는 논문을 보거나 풀이를 참고해서 풀게 되었다. 도전하는 느낌은 좋았는데, 워낙 어려워서 이제는 안할 것 같다.  
 근데 사실 다이아 이상 문제는 워낙 어려워서 대부분 힌트를 얻거나 엄청 오랜 시간동안 풀었는데, 대회에서 나오면 못풀 것 같다.  
 
-{% include figure.liquid path="assets/img/projects/ps/3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/ps/3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 2024년 하루도 빠짐없이 366일간 문제를 풀었다. 이게 가능할까? 했는데, 정말 가능했다.  
 학기중에 중간고사 기말고사 기간에는 쉬운 문제로 떼우긴 했지만, 결과적으로 뿌듯하다.
 
-{% include figure.liquid path="assets/img/projects/ps/4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/ps/4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -39,7 +39,7 @@ pretty_table: true
 첫 대회였고, 팀전이었다. 세명이서 한컴퓨터로 해야해서 조금 불편했다. 맞왜틀 계속 하다가 결과가 별로였어서 아쉽다.  
 영어문제를 평소에 안풀어봐서 영어이슈때문에 시간을 많이 잡아먹은 것 같다.  
 우리학교에서 외국인팀 4팀, 한국인팀 2팀 나갔는데, 그 중 외국인팀 3팀이 본선에 진출하게 되었다.  
-{% include figure.liquid path="assets/img/projects/ps/ICPC.png" class="img-fluid rounded z-depth-1" zoomable=true %}  
+{% include figure.liquid loading="eager" path="assets/img/projects/ps/ICPC.png" class="img-fluid rounded z-depth-1" zoomable=true %}  
 한국인 두팀은 WhereIsWoongJae 와 WoongJaeIsHere 팀으로 나갔다.
 그래도 이 대회를 통해 UNIST에서 PS를 좋아하는 사람들과 친해지고, 이후에도 연락하고 같이 수업도 듣게 되었다.
 

@@ -3,7 +3,7 @@ layout: post
 title: "[C++] C++ 버전 체크 방법"
 description: "Gold - bitmasking"
 date: 2024-04-14 20:50:00 +09:00
-tags: Setting
+tags: 
 categories: Tips
 giscus_comments: true
 related_posts: false
@@ -12,9 +12,7 @@ featured: false  # 상단에 고정할건지
 pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 
-## 💡 버전이 궁금했던 이유
-
-
+### 💡 버전이 궁금했던 이유
 
 분명히 VSCode에서 C++17로 설정을 바꿔줬는데, 
 
@@ -28,10 +26,9 @@ auto [x, y] = q.front();
 
 그래도 이런 것 덕분에 버전체크하는 법도 알아냈다.
 
+---
 
-## 💡 버전 체크 (C++)
-
-
+### 💡 버전 체크 (C++)
 
 ```c++
 #include <iostream>

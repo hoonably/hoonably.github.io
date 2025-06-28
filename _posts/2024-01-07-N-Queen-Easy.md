@@ -13,13 +13,11 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 
 
-
-
-## 💡 문제 설명
+### 💡 문제 설명
 
 [🧩 N-Queen (Easy)](https://www.acmicpc.net/problem/30242)
 
-{% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/bfc65817-4020-42d8-8b0a-edd98dba27b5" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/baekjoon/30242.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 전에 했던 문제와 다르게, 이미 퀸이 놓여져 있을 수 있다.
 
@@ -29,8 +27,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
+---
 
-## 💡 느린 풀이 (통과는 받음)
+### 💡 느린 풀이 (통과는 받음)
 
 
 
@@ -110,8 +109,9 @@ print(-1)
 
 
 
+---
 
-## 💡 더 빠른 풀이법
+### 💡 더 빠른 풀이법
 
 
 
@@ -170,14 +170,16 @@ print(-1)
 
 ```
 
+---
 
-### ❗row[] : 가로 줄
+#### ❗row[] : 가로 줄
 
 row는 간단하게 가로에 겹치는게 있으면 안되므로, 해당 row를 사용했으면 False로 바꿔주기만 하면 된다.
 
 
+---
 
-### ❗x2[] : 우하향 대각선
+#### ❗x2[] : 우하향 대각선
 
 `x2`는 **오른쪽 아래**로 가는 대각선을 뜻하고, 총 **2*N** 개가 나올 수 있다.
 
@@ -205,8 +207,9 @@ x2[i+((N-1)-n)] 가 True면 겹치지 않고, False면 겹쳐서 불가능 한�
 
 
 
+---
 
-### ❗x1[] : 우상향 대각선
+#### ❗x1[] : 우상향 대각선
 
 x2를 이해했다면 x1은 자동으로 이해된다. 
 
@@ -230,18 +233,18 @@ x1[i+n] 가 True면 겹치지 않고, False면 겹쳐서 불가능 한것이다.
 
 
 
+---
 
-## 💡 제출 결과 
+### 💡 제출 결과 
 
 
 
 아래의 풀이가 느렸던 첫번째 방식이고, 위의 풀이가 더 빠른 풀이이다.
 
-{% include figure.liquid loading="eager" path="https://github.com/hoonably/hoonably.github.io/assets/77783081/216ec727-eb71-4e59-9c9c-67b13a333bcd" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/baekjoon/30242-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+---
 
-
-
-## 💡 마무리 
+### 💡 마무리 
 
 
 

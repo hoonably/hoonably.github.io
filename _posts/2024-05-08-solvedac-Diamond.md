@@ -13,47 +13,27 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 ---
 
 
-## 💡 다이아 달성
+---
+
+### 💡 다이아 달성
 
 
 
 올해 목표 중 하나였던 백준 solved.ac 다이아 티어를 달성했다...
 
 [내 Solved.ac](https://solved.ac/profile/hoonably)
-{% include figure.liquid loading="eager" path="https://github.com/hoonably/hoonably.github.io/assets/77783081/7954786c-0fb0-4847-aaf4-e79c7b7b54f8" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.liquid loading="eager" path="https://github.com/hoonably/hoonably.github.io/assets/77783081/95deaa90-3c53-463d-b742-0a24d9b13e88" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+{% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/fdb7142a-d0d3-4a8d-87d6-b292a543039e" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 상위 100문제를 골드 없이 채우고 나니 마음이 편안해졌다...
 
 근데 왜이리 대부분의 프로필 배경은 그림체가 덕후 같은지... 맘에드는 배경이 없다.
 
-{% include figure.liquid loading="eager" path="https://github.com/hoonably/hoonably.github.io/assets/77783081/7c5e0b58-475e-4eff-8488-c3e397c6d721" class="img-fluid rounded z-depth-1" zoomable=true %}
+---
 
-중간에 수직으로 오른 그래프는 너무 빨리 레이팅이 올라서 부정행위 의심으로 정지먹었을 때다... ㅋㅋㅋㅋ
+### 💡 태그 분포
 
-
-
-
-## 💡 현재 스트릭
-
-
-
-{% include figure.liquid loading="eager" path="https://github.com/hoonably/hoonably.github.io/assets/77783081/0481da9b-eea4-44ba-8e24-982b5858916d" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-이 스트릭이 언제 깨질지는 모르겠다.
-
-아마 복학하고 바쁘면 깨질거같긴 한데... 
-
-아까워서 아무리 시험기간이라도 브론즈 문제 한문제라도 풀거같긴 하다.
-
-과연 365를 갈 수 있을까?
-
-
-## 💡 태그 분포
-
-
-
-{% include figure.liquid loading="eager" path="https://github.com/hoonably/hoonably.github.io/assets/77783081/89c77c68-c12c-4501-929d-98a3ab6381bf" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/7b390fbb-b569-466b-8b46-6055a92e4cc0" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 사실 다이아 티어를 가는 방법 중 가장 '빠른' 방법은 수학을 활용해서 **어려운 수학문제**를 푸는게 아닐까 한다.
 
@@ -77,7 +57,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
-## 💡 C++? Python?
+---
+
+### 💡 C++? Python?
 
 
 
@@ -105,13 +87,15 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
-## 💡 공부 방법 추천
+---
+
+### 💡 공부 방법 추천
 
 
 
 백준에 문제를 눌러보면 **"단계별로 풀어보기"** 파트가 있다.
 
-{% include figure.liquid loading="eager" path="" class="img-fluid rounded z-depth-1" zoomable=true %} <img width="1004" alt="image" src="https://github.com/hoonably/hoonably.github.io/assets/77783081/f645b955-c84f-44ca-aaf4-613012108d0b">
+{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 공부하기 좋게 순서가 짜여져 있다.
 
@@ -131,7 +115,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 유니온파인드 단계부터는 어느정도 난이도가 있기 때문에 다른 문제를 더 풀어보고싶어서 모두 더 풀어봤다.
 
 
-### ❗❗ 절대로 코드를 그대로 붙여와서 제출하지 말자.
+---
+
+#### ❗❗ 절대로 코드를 그대로 붙여와서 제출하지 말자.
 
 당연히 초보일 때는 복붙을 아예 하지 않는게 좋다.
 
@@ -149,7 +135,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 꾸준히 의심하고 생각했다.
 
 
-### ❗❗ 주석을 많이 달자
+---
+
+#### ❗❗ 주석을 많이 달자
 
 이건 뭐 모든 사람이 말할 것이다. 지금 알고리즘 대회 나가서 1분 1초가 중요한게 아니면, 주석을 계속 달자.
 
@@ -158,7 +146,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 모두 다 적어주자. 다시 그 코드를 볼 일이 없더라도, 주석을 치면서 한번 더 느끼는 것에 의미가 있다.
 
 
-### ❗❗ 맞았다고 끝이 아니다.
+---
+
+#### ❗❗ 맞았다고 끝이 아니다.
 
 내가 정말 추천하는 방법이다. 
 
@@ -168,7 +158,7 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 자신이 택한 언어로 선택하고 맞았습니다 옵션을 선택하고 검색해주자.
 
-{% include figure.liquid loading="eager" path="" class="img-fluid rounded z-depth-1" zoomable=true %} <img width="963" alt="image" src="https://github.com/hoonably/hoonably.github.io/assets/77783081/1bcd9f78-0e32-4c62-a63e-ab1c8d52a4f8">
+{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/2.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 이렇듯 같은 문제이고,  같은 정답이라도, 코드의 속도는 문제에 따라 크게 다를 수 있다.
 
@@ -182,7 +172,7 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 나중에는 메모리도 비교해보고, `메모리를 낭비하고 있는지`, 메모리를 줄일 수 있는 방법이 있는지 생각도 해보자.
 
-{% include figure.liquid loading="eager" path="" class="img-fluid rounded z-depth-1" zoomable=true %} <img width="965" alt="image" src="https://github.com/hoonably/hoonably.github.io/assets/77783081/08bdf7ff-2c9c-4563-9562-1dae285475db">
+{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/3.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 위 사진처럼 다른 사람의 코드에 시간이 더 적은게 있어서 그 코드를 보고, 그 사람의 코드를 참고해서 내 코드를 수정해서 제출했다.
 
@@ -202,7 +192,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
-## 💡 앞으로도 티어를 올릴건가?
+---
+
+### 💡 앞으로도 티어를 올릴건가?
 
 
 

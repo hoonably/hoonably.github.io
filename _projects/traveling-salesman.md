@@ -249,7 +249,7 @@ So, total time ranges from **𝒪(n²)** to **𝒪(n³)** depending on input str
 
 ### Table: Comparison between base and +2opt variants across datasets
 
-{% include figure.liquid path="assets/img/projects/tsp/table.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tsp/table.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 | Dataset    | Opt     | Algorithm   | Base Length | Base Approx | Base Time (s) | +2opt Length | +2opt Approx | +2opt Time (s) | 2opt Iters |
@@ -429,7 +429,7 @@ In particular, **Flow\_kNN** demonstrates superior scalability compared to the f
 
 #### Visual Comparison Before and After 2-opt Refinement
 
-{% include figure.liquid path="assets/img/projects/tsp/flow.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tsp/flow.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **Figure:** Effect of 2-opt on the Flow-based tour for `a280`.
 
@@ -497,7 +497,7 @@ Results are shown in Table\~\ref{tab\:extreme\_cases}.
 
 ### Visual Comparison: Flow\_kNN vs MST Tours
 
-{% include figure.liquid path="assets/img/projects/tsp/mona_lisa.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tsp/mona_lisa.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 **Figure:** Comparison of Flow\_kNN and MST tours on `mona_lisa100K`.

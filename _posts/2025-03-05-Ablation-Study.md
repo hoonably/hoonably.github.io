@@ -23,9 +23,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 > 모델에서 특정 요소를 제거하거나 변경하면서 해당 요소가 성능에 미치는 영향을 분석하는 실험
 
+---
 
-
-##  💡 Ablation Study의 목적
+###  💡 Ablation Study의 목적
 
 1. 각 구성 요소의 중요도 평가
    - 모델에서 특정 요소(예: 특정 레이어, 손실 함수, 데이터 처리 기법 등)를 제거하거나 수정했을 때 성능이 얼마나 떨어지는지 본다.
@@ -37,9 +37,9 @@ pretty_table: true  # 활성화해줘야 table 선이 보임
 
 
 
+---
 
-
-## 💡 예제: SVDQuant 논문에서 Ablation Study
+### 💡 예제: SVDQuant 논문에서 Ablation Study
 
 {% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/f36e5dd1-951f-44e7-a2a0-37ab7ec0aa11" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
@@ -55,9 +55,9 @@ SVDQuant 논문에서는 **Figure 10**에서 다양한 실험을 함:
 
 
 
+---
 
-
-## 💡 쉽게 비유하면?
+### 💡 쉽게 비유하면?
 
 Ablation Study는 마치 **요리에서 특정 재료를 빼보면서 맛이 어떻게 변하는지 실험하는 과정**과 비슷함
 
