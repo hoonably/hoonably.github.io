@@ -32,8 +32,7 @@ giscus_comments: true
 ---
 
 ### Contests
-##### ICPC 2024 Seoul Preliminary Contest
-<a href="https://icpckorea.org/2024-seoul/preliminary">Detail</a>  
+##### <a href="https://icpckorea.org/2024-seoul/preliminary">ICPC 2024 Seoul Preliminary Contest</a>  
 2024.10.25
 201st
 첫 대회였고, 팀전이었다. 세명이서 한컴퓨터로 해야해서 조금 불편했다. 맞왜틀 계속 하다가 결과가 별로였어서 아쉽다.  
@@ -45,18 +44,17 @@ giscus_comments: true
 
 ---
 
-##### UDPC 2025 Senior Division
-<a href="https://github.com/user-attachments/assets/97edb7e4-69f2-4c7d-bcd8-40ac526ae9a1">Detail</a>  
+##### <a href="https://github.com/user-attachments/assets/97edb7e4-69f2-4c7d-bcd8-40ac526ae9a1">UDPC 2025 Senior Division</a>  
 2025.03.29  
 11th  
 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 너무 알고리즘 문제를 오랜만에 풀어서 아쉽다. 10등까지 수상인데 한문제 차이라서 아쉬웠지만, 그래도 흥미로웠다.  
