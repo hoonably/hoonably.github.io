@@ -7,6 +7,7 @@ importance: 1
 category: Research
 related_publications: false
 giscus_comments: true
+pretty_table: true
 ---
 
 > **💻 Project Page:** [https://github.com/unist-uai/TinyLLM](https://github.com/unist-uai/TinyLLM)  

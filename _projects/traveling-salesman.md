@@ -7,6 +7,7 @@ importance: 1
 category: Academic
 related_publications: false
 giscus_comments: true
+pretty_table: true
 ---
 
 > **💻 Project Page:** [https://github.com/hoonably/traveling-salesman](https://github.com/hoonably/traveling-salesman)  

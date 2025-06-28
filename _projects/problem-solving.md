@@ -7,6 +7,7 @@ importance: 1
 category: Personal
 related_publications: false
 giscus_comments: true
+pretty_table: true
 ---
 
 > **💻 Code Repo:** [https://github.com/hoonably/PS](https://github.com/hoonably/PS)  
