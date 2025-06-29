@@ -407,12 +407,7 @@ ninja.data = [{
             window.location.href = "/blog/first-blog-test/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-started-my-lifelong-boot-sequence",
+      },{id: "news-started-my-lifelong-boot-sequence",
           title: 'Started my lifelong boot sequence.',
           description: "",
           section: "News",},{id: "news-joined-ubiquitous-ai-lab-prof-taesik-gong-as-a-research-intern-sparkles-smile",
