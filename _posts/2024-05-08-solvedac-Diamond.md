@@ -3,7 +3,7 @@ layout: post
 title: "[백준] 💎 다이아몬드 달성 및 Tip"
 description:
 date: 2024-05-09 01:50:00 +09:00
-tags: Baekjoon
+tags: PS
 categories: Talk
 giscus_comments: true
 related_posts: false

@@ -3,8 +3,8 @@ layout: post
 title: "[VSCode] Code Runner을 위한 setting.json 설정"
 description:
 date: 2024-04-14 21:30:00 +09:00
-tags: Setting
-categories: Tips
+tags: VSCode
+categories: Tip
 giscus_comments: true
 related_posts: false
 

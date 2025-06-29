@@ -3,8 +3,8 @@ layout: post
 title: "[백준] [Python] 🧩 N-Queen (Easy) 30242번"
 description: "Gold 3 - Backtracking"
 date: 2024-01-07 01:50:00 +09:00
-tags: Baekjoon
-categories: 
+tags: PS
+categories: Algorithm
 giscus_comments: true
 related_posts: false
 

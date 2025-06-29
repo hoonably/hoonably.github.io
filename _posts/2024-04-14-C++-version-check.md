@@ -4,7 +4,7 @@ title: "[C++] C++ 버전 체크 방법"
 description: "Gold - bitmasking"
 date: 2024-04-14 20:50:00 +09:00
 tags: 
-categories: Tips
+categories: Tip
 giscus_comments: true
 related_posts: false
 

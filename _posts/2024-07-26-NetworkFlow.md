@@ -3,8 +3,8 @@ layout: post
 title: 네트워크 플로우 (Network-Flow)
 description:
 date: 2024-07-26 01:40:00 +09:00
-tags: Baekjoon
-categories: Talk
+tags: PS
+categories: Algorithm
 giscus_comments: true
 related_posts: false
 

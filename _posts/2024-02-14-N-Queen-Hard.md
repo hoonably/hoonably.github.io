@@ -3,8 +3,8 @@ layout: post
 title: "[백준] [C++] 🧩 N-Queen (Hard) 30243번"
 description: "Diamond 5 - Bitmasking, Backtracking"
 date: 2024-02-14 19:00:00 +09:00
-tags: Baekjoon
-categories: 
+tags: PS
+categories: Algorithm
 giscus_comments: true
 related_posts: false
 
