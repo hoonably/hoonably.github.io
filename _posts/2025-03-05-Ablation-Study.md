@@ -8,8 +8,12 @@ categories: Study
 giscus_comments: true
 related_posts: false
 
-featured: false  # 상단에 고정할건지
-pretty_table: true  # 활성화해줘야 table 선이 보임
+featured: false
+pretty_table: true
+
+toc:
+  beginning: false  # 맨 앞에 목차
+  sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
 
