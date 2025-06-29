@@ -55,6 +55,61 @@ ninja.data = [{
             window.location.href = "/blog/al-folio-tech/";
           
         },
+      },{id: "post-sana-efficient-high-resolution-image-synthesis-with-linear-diffusion-transformers",
+        
+          title: "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/sana/";
+          
+        },
+      },{id: "post-mac-초기설정-유용한-프로그램",
+        
+          title: "Mac 초기설정 + 유용한 프로그램",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/mac-setting/";
+          
+        },
+      },{id: "post-연구실-안전교육-스킵",
+        
+          title: "연구실 안전교육 스킵",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/lab-safety/";
+          
+        },
+      },{id: "post-pintos-setting",
+        
+          title: "Pintos Setting",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/pintos-setting/";
+          
+        },
+      },{id: "post-svdquant-absorbing-outliers-by-low-rank-components-for-4-bit-diffusion-models",
+        
+          title: "SVDQuant: Absorbing Outliers by Low-Rank Components for 4-Bit Diffusion Models",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/svdquant/";
+          
+        },
       },{id: "post-ablation-study-란",
         
           title: "Ablation Study 란?",
@@ -64,6 +119,61 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/Ablation-Study/";
+          
+        },
+      },{id: "post-python-env-conda-homebrew",
+        
+          title: "Python env (Conda, Homebrew)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/python-env/";
+          
+        },
+      },{id: "post-pixart-σ-weak-to-strong-training-of-diffusion-transformer-for-4k-text-to-image-generation",
+        
+          title: "PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/pixart-sigma/";
+          
+        },
+      },{id: "post-ds-store",
+        
+          title: ".DS_Store",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/DS-Store/";
+          
+        },
+      },{id: "post-mlops",
+        
+          title: "MLOps",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/MLOps/";
+          
+        },
+      },{id: "post-zsh와-환경변수",
+        
+          title: "zsh와 환경변수",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/zsh/";
           
         },
       },{id: "post-컴퓨터구조-정리-및-문제모음",
