@@ -25,8 +25,6 @@ Venue & Year: 24, ArXiv
 | Project Page | https://pixart-alpha.github.io/PixArt-sigma-project/ |
 | Github Code | https://github.com/PixArt-alpha/PixArt-sigma |
 
-[250213_JeonghoonPark_PixArt-Σ_ Weak-to-Strong_Training.pdf](/files/2025-02-09-pixart-sigma/250213_JeonghoonPark_PixArt-__Weak-to-Strong_Training.pdf)
-
 [**PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis**](https://www.notion.so/PixArt-Fast-Training-of-Diffusion-Transformer-for-Photorealistic-Text-to-Image-Synthesis-198451cf7b798018891cfb85e1cd3523?pvs=21) 
 
 > 💡

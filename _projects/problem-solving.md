@@ -67,14 +67,14 @@ toc:
 11th  
 
 
-<div class="row mt-3">
+<!-- <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-</div>
+</div> -->
 너무 알고리즘 문제를 오랜만에 풀어서 아쉽다. 10등까지 수상인데 한문제 차이라서 아쉬웠지만, 그래도 흥미로웠다.  
 스코어보드 까는 재미도 있었고, 특별상도 받을 수 있었다.
 

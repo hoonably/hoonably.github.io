@@ -172,8 +172,8 @@ images:
   compare: true  # 좌우로 슬라이드하면서 흑백 변경같은거
 ```
 <img-comparison-slider>
-  {% include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
-  {% include figure.liquid loading="eager" path="assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" slot="second" %}
+  {% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.png" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid loading="eager" path="assets/img/logo/UAI_logo2.png" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
 
 ---
