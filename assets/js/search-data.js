@@ -176,17 +176,6 @@ ninja.data = [{
             window.location.href = "/blog/zsh/";
           
         },
-      },{id: "post-컴퓨터구조-정리-및-문제모음",
-        
-          title: "[컴퓨터구조] 정리 및 문제모음",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/computer_architecture/";
-          
-        },
       },{id: "post-컴퓨터구조-메모리-총정리",
         
           title: "[컴퓨터구조] 메모리 총정리",
