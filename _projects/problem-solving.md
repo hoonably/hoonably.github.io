@@ -56,7 +56,7 @@ toc:
 첫 대회였고, 팀전이었다. 세명이서 한컴퓨터로 해야해서 조금 불편했다. 맞왜틀 계속 하다가 결과가 별로였어서 아쉽다.  
 영어문제를 평소에 안풀어봐서 영어이슈때문에 시간을 많이 잡아먹은 것 같다.  
 우리학교에서 외국인팀 4팀, 한국인팀 2팀 나갔는데, 그 중 외국인팀 3팀이 본선에 진출하게 되었다.  
-{% include figure.liquid loading="eager" path="assets/img/projects/ps/ICPC.png" class="img-fluid rounded z-depth-1" zoomable=true %}  
+{% include figure.liquid loading="eager" path="assets/img/projects/ps/ICPC.webp" class="img-fluid rounded z-depth-1" zoomable=true %}  
 한국인 두팀은 WhereIsWoongJae 와 WoongJaeIsHere 팀으로 나갔다.
 그래도 이 대회를 통해 UNIST에서 PS를 좋아하는 사람들과 친해지고, 이후에도 연락하고 같이 수업도 듣게 되었다.
 
@@ -67,14 +67,15 @@ toc:
 11th  
 
 
-<!-- <div class="row mt-3">
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC1.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/ps/UDPC2.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-</div> -->
+</div>
+
 너무 알고리즘 문제를 오랜만에 풀어서 아쉽다. 10등까지 수상인데 한문제 차이라서 아쉬웠지만, 그래도 흥미로웠다.  
 스코어보드 까는 재미도 있었고, 특별상도 받을 수 있었다.
 
