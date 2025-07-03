@@ -97,20 +97,20 @@ arr의 길이가 10만 이하인 테스트 케이스를 넣는다고 하자.
 
 다음 예시는 시간복잡도가 **O(n)** 인 코드이다.
 
-**python
+```python
 n = int(input())
 
 print('1부터 n까지 2배씩 곱해주어 출력하기')
 for i in range(1, n+1):
     i*=2
     print(i, end=' ')
-**
+```
 
 
 
 그렇다면 다음 코드는 시간복잡도가 O(3n)일까?
 
-**python
+```python
 n = int(input())
 
 print('1부터 2n까지 3배씩 곱해주어 출력하기')
@@ -122,7 +122,7 @@ print('\n\n1부터 n까지 2배씩 곱해주어 출력하기')
 for i in range(1, n+1):
     i*=2
     print(i, end=' ')
-**
+```
 
 
 
@@ -191,14 +191,14 @@ ex) 이진 탐색, 퀵 정렬, 병합 정렬, 힙 정렬
 
 ### 💡 O(n) - 선형 시간 (Linear time)
 
-**python
+```python
 n = int(input())
 
 print('1부터 n까지 2배씩 곱해주어 출력하기')
 for i in range(1, n+1):
     i*=2
     print(i, end=' ')
-**
+```
 
 위의 상수를 무시하는 설명에서 사용했던 예시다.
 
