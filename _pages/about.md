@@ -6,7 +6,7 @@ subtitle: <a href='#'>Computer Science and Engineering</a> · UNIST · Ulsan, Re
 
 profile:
   align: right
-  image: profile/profile1.jpg
+  image: profile/profile1.webp
   image_circular: false # crops the image to make it circular
   more_info: # >
     # <p>555 your office number</p>

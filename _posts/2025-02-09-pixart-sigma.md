@@ -25,10 +25,6 @@ Venue & Year: 24, ArXiv
 | Project Page | https://pixart-alpha.github.io/PixArt-sigma-project/ |
 | Github Code | https://github.com/PixArt-alpha/PixArt-sigma |
 
-[250213_JeonghoonPark_PixArt-Σ_ Weak-to-Strong_Training.pptx](/files/2025-02-09-pixart-sigma/250213_JeonghoonPark_PixArt-__Weak-to-Strong_Training.pptx)
-
-[250213_JeonghoonPark_PixArt-Σ_ Weak-to-Strong_Training.pdf](/files/2025-02-09-pixart-sigma/250213_JeonghoonPark_PixArt-__Weak-to-Strong_Training.pdf)
-
 [**PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis**](https://www.notion.so/PixArt-Fast-Training-of-Diffusion-Transformer-for-Photorealistic-Text-to-Image-Synthesis-198451cf7b798018891cfb85e1cd3523?pvs=21) 
 
 > 💡
@@ -101,7 +97,7 @@ PixArt-α 는 LLaVa를 사용하였고, PixArt-Σ는 Share-Captioner 사용
 
 다음과 같은 환각 (Hallucinations)가 발생했었음
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 | **항목** | **PixArt-α** | **PixArt-Σ** |
 | --- | --- | --- |
@@ -122,7 +118,7 @@ PixArt-α 는 LLaVa를 사용하였고, PixArt-Σ는 Share-Captioner 사용
     1. **Fréchet Inception Distance (FID)** → 이미지 품질 평가
     2. **CLIP Score** → 텍스트-이미지 정렬 성능 평가
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%201.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%201.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## 3.2 Efficient DiT Design
 
@@ -135,7 +131,7 @@ PixArt-α 는 LLaVa를 사용하였고, PixArt-Σ는 Share-Captioner 사용
 
 **🔹 PixArt-Σ의 KV Token Compression 방식**
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%202.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%202.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - **PixArt-Σ (토큰 압축 적용)**:
     - Key(K)와 Value(V)를 **Stride 2의 Group Convolution**을 사용해 압축
@@ -149,9 +145,9 @@ PixArt-α 는 LLaVa를 사용하였고, PixArt-Σ는 Share-Captioner 사용
 - **메모리 사용량 감소 → 더 작은 GPU에서도 실행 가능**
 - **기존 PixArt-α 모델에서 자연스럽게 업그레이드 가능** (기존 모델의 가중치를 활용)
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%203.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%203.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%204.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%204.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## 3.3 Weak-to-Strong Training Strategy
 
@@ -165,7 +161,7 @@ PixArt-Σ의 Weak-to-Strong Training은 **기존 모델의 가중치를 활용�
 - **VAE 교체 후 빠른 적응을 위해 2K Training Steps 만에 수렴하도록 학습 전략 적용**.
 - 새로운 VAE 적용 후에도 **기존 모델의 가중치를 재사용하여 빠르게 학습 가능**.
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%205.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%205.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### **(2) 해상도 업그레이드 (Resolution Upscaling)**
 
@@ -182,7 +178,7 @@ PixArt-Σ의 Weak-to-Strong Training은 **기존 모델의 가중치를 활용�
 
 - **단 1000 Training Steps만으로도 해상도 증가에 적응 가능**.
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%206.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%206.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### **(3) KV Token Compression 도입 (연산 최적화)**
 
@@ -200,7 +196,7 @@ PixArt-Σ의 Weak-to-Strong Training은 **기존 모델의 가중치를 활용�
 
  **결과적으로, 기존 PixArt-α 대비 적은 연산량과 빠른 학습으로 4K 이미지 생성이 가능해짐.**
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%207.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%207.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 # 4. Experiment
 
@@ -278,7 +274,7 @@ PixArt-Σ는 **포토리얼리즘(Photorealism), 디테일 수준, 스타일 다
 
 아래와 같은 모델들과 비교됨:
 
-{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%208.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-02-09-pixart-sigma/image%208.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## PixArt-α vs PixArt-Σ
 

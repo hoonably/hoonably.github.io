@@ -21,7 +21,7 @@ toc:
 
 [🧩 N-Queen (Hard)](https://www.acmicpc.net/problem/30243)
 
-{% include figure.liquid loading="eager" path="files/baekjoon/30243.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/baekjoon/30243.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 기존의 N-Queen 문제와 같지만, N<=30으로 30단계까지 가야 해서 비트마스킹 없이는 절대로 시간제한 안에 문제를 풀 수 없다.
 

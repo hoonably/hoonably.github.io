@@ -11,7 +11,7 @@ related_posts: false  # 이거 키면 마지막에 "Enjoy Reading This Article?"
 featured: false  # 상단에 고정할건지
 pretty_table: true  # 활성화해줘야 table 선이 보임
 
-tabs: false  # 탭으로 여러가지 보이게
+tabs: true  # 탭으로 여러가지 보이게
 
 pseudocode: true
 
@@ -41,6 +41,9 @@ toc:
 
 citation: true  # 맨 아레에 이 사이트가 유용했다면 다음과 같은 방법으로 인용해주세요~ 붙음
 ---
+
+al-folio로 블로그를 바꾼 후 신기한 기능들이 많아서 정리를 해보고자 
+[https://alshedivat.github.io/al-folio/blog/](https://alshedivat.github.io/al-folio/blog/)에 있는 기능들을 모아봤다.
 
 ## detail box
 {% details Click here to know more %}
@@ -134,16 +137,16 @@ pseudocode: true
 ## Image, Video, Audio
 
 ### single image
-{% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
+{% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 ### multiple image
 2~3개의 이미지를 같은 줄에 넣기 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/logo/UAI_logo2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/logo/UAI_logo2.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -157,26 +160,26 @@ images:
   slider: true  # 이미지 여러장 옆으로 넘기면서 보기
 ```
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/logo/UAI_logo2.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/logo/Topmath.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/logo/UAI_logo2.webp" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.webp" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/logo/Topmath.webp" class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
 ### img-comparison-slider
 좌우로 슬라이더로 비교  
 ```yml
 images:
-  slider: true  # 이미지 여러장 옆으로 넘기면서 보기
+  compare: true  # 좌우로 슬라이드하면서 흑백 변경같은거
 ```
 <img-comparison-slider>
-  {% include figure.liquid loading="eager" path="assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
-  {% include figure.liquid loading="eager" path="assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" slot="second" %}
+  {% include figure.liquid loading="eager" path="assets/img/logo/UNIST_logo.webp" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid loading="eager" path="assets/img/logo/UAI_logo2.webp" class="img-fluid rounded z-depth-1" slot="second" %}
 </img-comparison-slider>
 
 ---
 
 ### video
-{% include video.liquid loading="eager" path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+<!-- {% include video.liquid loading="eager" path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
 
 유튜브 링크를 그대로 가져올 경우 다음과 같은 embed 링크로 변환해줘야함
 ```
@@ -187,7 +190,7 @@ https://youtu.be/kCc8FmEb1nY → https://www.youtube.com/embed/kCc8FmEb1nY
 ---
 
 ### audio
-{% include audio.liquid loading="eager" path="assets/audio/epicaly-short-113909.mp3" controls=true %}
+<!-- {% include audio.liquid loading="eager" path="assets/audio/epicaly-short-113909.mp3" controls=true %} -->
 {% include audio.liquid loading="eager" path="https://cdn.pixabay.com/download/audio/2022/06/25/audio_69a61cd6d6.mp3" controls=true %}
 
 ---

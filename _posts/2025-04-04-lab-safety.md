@@ -24,7 +24,7 @@ toc:
 
 ### 1. 동영상 틀기
 
-{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### 2. 개발자 모드 진입
 
@@ -34,7 +34,7 @@ Mac : `cmd+opt+I`
 
 ### 3. Console 창 진입
 
-{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%201.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%201.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 이제 Console 창에 다음 내용을 붙여넣기 하고 `Enter` 누르면 된다.
 
@@ -74,8 +74,8 @@ $("input[name='qustionAnswerList["+i+"].Answer']:radio[value="+answer+"]").attr(
 }
 ```
 
-{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%202.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%202.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%203.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%203.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%204.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-04-lab-safety/image%204.webp" class="img-fluid rounded z-depth-1" zoomable=true %}

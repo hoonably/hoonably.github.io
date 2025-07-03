@@ -99,7 +99,7 @@ toc:
 
 백준에 문제를 눌러보면 **"단계별로 풀어보기"** 파트가 있다.
 
-{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/1.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 공부하기 좋게 순서가 짜여져 있다.
 
@@ -162,7 +162,7 @@ toc:
 
 자신이 택한 언어로 선택하고 맞았습니다 옵션을 선택하고 검색해주자.
 
-{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/2.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
+{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/2.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 이렇듯 같은 문제이고,  같은 정답이라도, 코드의 속도는 문제에 따라 크게 다를 수 있다.
 
@@ -176,7 +176,7 @@ toc:
 
 나중에는 메모리도 비교해보고, `메모리를 낭비하고 있는지`, 메모리를 줄일 수 있는 방법이 있는지 생각도 해보자.
 
-{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/3.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
+{% include figure.liquid loading="eager" path="files/2024-05-08-solvedac-Diamond/3.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 위 사진처럼 다른 사람의 코드에 시간이 더 적은게 있어서 그 코드를 보고, 그 사람의 코드를 참고해서 내 코드를 수정해서 제출했다.
 

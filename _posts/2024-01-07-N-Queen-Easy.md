@@ -21,7 +21,7 @@ toc:
 
 [🧩 N-Queen (Easy)](https://www.acmicpc.net/problem/30242)
 
-{% include figure.liquid loading="eager" path="files/baekjoon/30242.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/baekjoon/30242.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 전에 했던 문제와 다르게, 이미 퀸이 놓여져 있을 수 있다.
 
@@ -245,7 +245,7 @@ x1[i+n] 가 True면 겹치지 않고, False면 겹쳐서 불가능 한것이다.
 
 아래의 풀이가 느렸던 첫번째 방식이고, 위의 풀이가 더 빠른 풀이이다.
 
-{% include figure.liquid loading="eager" path="files/baekjoon/30242-1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/baekjoon/30242-1.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 ---
 
 ### 💡 마무리 

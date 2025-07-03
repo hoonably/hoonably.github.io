@@ -12,7 +12,7 @@ featured: false
 pretty_table: true
 
 toc:
-  beginning: true  # 맨 앞에 목차
+  beginning: false  # 맨 앞에 목차
   sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
@@ -34,8 +34,6 @@ toc:
 > 
 {: .block-warning }
 
-**목차**
-
 # 프로그램 다운로드 종류
 
 설정과 좋은 어플을 소개하기 전에 맥 기본 프로그램 다운로드 종류를 알려주겠다.
@@ -51,18 +49,18 @@ toc:
     근데 맥에서는 은근 잘 안쓰인다.
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%201.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%201.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 1. `.dmg` 파일 : 친절하게 넣도록 유도
     
     → 다음처럼 친절하게 드래그드롭으로 넣도록 유도해준다.
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%202.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%202.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%203.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%203.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 1. `.zip` 파일 : 알아서 넣기
     
@@ -71,15 +69,15 @@ toc:
     → 직접 `응용 프로그램` 폴더에 드래그드랍 해주자.
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%204.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%204.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%205.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%205.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 다음과 같이 `응용 프로그램` 폴더에 들어가면 `LaunchPad`에 보인다.
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%206.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%206.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%207.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%207.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -91,7 +89,7 @@ toc:
 
 오래걸릴 수 있으니 미리 다운로드 시작하고 아래 진행
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%208.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%208.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -102,32 +100,32 @@ toc:
     이거부터 하고 시작하자.
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-02-22_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.44.03.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-02-22_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.44.03.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 시동음 제거
     
     노트북 켰을때 이거 안해놓으면 밖에서 관종처럼 시끄럽게 킬 수 있다.
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%209.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%209.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 키보드 → 키보드 단축키
     
     이건 내 나름대로 선호하는 설정이다.
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2010.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2010.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2011.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2011.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2012.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2012.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 핫 코너 단축키
     
     마우스로 코너를 찍어서 Mission Control이나 데스크탑 보기를 할 수 있는데, 정말 유용하다.
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2013.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2013.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 앱스토어 암호 없이 다운로드
     
@@ -136,7 +134,7 @@ toc:
     미디어 및 구입 항목 → 무료 다운로드 → 입력 안함
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2014.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2014.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - **문서(PDF) 탭으로 열기**
     
@@ -144,7 +142,7 @@ toc:
     
     맥은 이 설정을 안해주면 각각 다른 창으로 열린다.
     
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2015.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2015.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     
 
 ---
@@ -157,9 +155,9 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
 
 [https://pilotmoon.com/scrollreverser/](https://pilotmoon.com/scrollreverser/)
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2016.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2016.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2017.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2017.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -171,49 +169,49 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
     
 - 여러 권한 부여 작업
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2018.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2018.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2019.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2019.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 다음과 같이 설정
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2020.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2020.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2021.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2021.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 참고로 몇몇 키보드는 바로 허용이 안되서 직접 Device에 들어가서 `Modify events` 해줘야함!!
     
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2022.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2022.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     
 - 설정 → 키보드 → 키보드 단축키
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2023.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2023.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 `F18` 하는 방법 : 위에서 설정했던 `우커맨드` 누르면 됨
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2024.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2024.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 키보드 → 입력 소스 → 편집
 
 한영키 우커맨드로만 쓸거면 Caps Lock 쓸 수 있음
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2025.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2025.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 # 📁 Finder
 
 - 도구 막대 사용자화
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2026.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2026.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2027.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2027.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2028.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2028.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 경로 막대 보기, 상태막대 보기로 변경 → 아래 경로랑 용량 나옴
 
 왼쪽 위의 메뉴바에 보기 누르면 저렇게 나옴
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2029.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2029.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 항상 자동으로 정렬
 
@@ -221,13 +219,13 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
 
 → 아래 `기본값으로 사용` 누르기
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2030.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2030.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 파인더에서 단축키로 바로 그 경로의 터미널 열기 (컴공이면 Good)
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2031.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2031.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2032.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2032.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 반드시 먼저 설정한 항목을 글자 그래도 옮겨적어야한다.
 
@@ -235,9 +233,9 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
 폴더에서 새로운 터미널 탭 열기
 ```
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2033.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2033.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2034.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2034.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 위처럼 폴더를 누른 후 설정한 단축어를 사용하면 바로 터미널이 열린다.
 
@@ -249,11 +247,11 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
 
 [https://rectangleapp.com/](https://rectangleapp.com/)
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2035.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2035.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2036.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2036.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2037.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2037.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -269,7 +267,7 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
 
 다운로드 후 압축풀면 바로 어플리케이션인데, 경로를 ‘응용 프로그램’으로 옮겨주면 된다.
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2038.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2038.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -277,7 +275,7 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
 
 어플들은 대부분 기본 설정으로 시스템이 다크모드면 다크모드를 따라가도록 되어있고, 설정에서 라이트/다크 모드를 고정할 수도 있다.
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2039.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2039.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 하지만, 인기가 없는 앱은 무조건 시스템 설정을 따라가는 경우가 있다. (ex. QTSpim)
 
@@ -307,9 +305,9 @@ Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
 
 난 클램쉘로 쓰니까 편하게 하려고 결제도 하고 사용중
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2040.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2040.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2041.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2041.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -348,11 +346,11 @@ sudo pmset -a disablesleep 0
 
 - 기존 모니터 설정→ 직접 컨트롤 불가능.
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2042.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2042.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 직접 컨트롤 가능 + 키보드로도 가능
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2043.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2043.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - Homebrew 통해 설치
 
@@ -365,9 +363,9 @@ brew install --cask monitorcontrol
     [https://github.com/MonitorControl/MonitorControl/releases](https://github.com/MonitorControl/MonitorControl/releases) 에서 최신버전 dmg 파일 다운로드
     
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2044.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2044.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2045.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2045.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -399,7 +397,7 @@ brew install --cask maccy
 
 단점 : 바꿔보니까 맥이 프로그램 끝을 둥글게 만들어서 작은 틈이 보여서 색이 바탕화면과 많이 차이나면 창을 최대화해도 틈이 살짝 보인다. **생각보다 별로임**
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2046.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2046.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -436,16 +434,16 @@ Blackhole을 설치하면 소리도 동시에 녹화할 수 있다.
     
 - 이름은 왼쪽에 있는 이름을 직접 클릭하면 바꿀 수 있음
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2047.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2047.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **사용법**
 
 - 출력 (스피커) : [기존 스피커]+blackhole2ch
 - 입력 (마이크) : blackhole2ch
     
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2048.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2048.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2049.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2049.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     
 
 스피커에 blackhole이 있어서 내 컴퓨터 소리를 blackhole로 넘기고,
@@ -454,7 +452,7 @@ Blackhole을 설치하면 소리도 동시에 녹화할 수 있다.
 
 ---
 
-# :chrome_icon: Chrome 앱을 사용하자
+# Chrome 앱을 사용하자
 
 대부분의 프로그램에서 웹 > 앱 이다.
 
@@ -464,7 +462,7 @@ GPT는 특히 데스크탑 앱을 사용하면 표가 애매하게 잘리는 문
 
 하지만, 웹에서 쓰기에는 GPT만큼은 크롬에서 다른 탭이랑 같이 쓴는것 보다는 따로 창을 쓰는게 좋을 것 같기 때문에, 크롬에서 자체로 앱처럼 웹을 따로 만들어서 사용할 수 있다. (+ 난 인스타도 만들어놨다.)
 
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2050.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2050.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 `전송, 저장, 공유`
 

@@ -18,8 +18,6 @@ toc:
 
 메모: docker start -ai pintos
 
-[Environment Setup with Docker(250321).pdf](/files/2025-03-20-pintos-setting/Environment_Setup_with_Docker%28250321).pdf)
-
 > Welcome to Pintos. Pintos is a simple operating system framework for the 80x86 architecture.
 > 
 
@@ -128,7 +126,7 @@ View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux
 
 내가 전에 핀토스 미리 해보려고 블로그 찾아보다가 이 설정을 꺼야 x86으로 확실하게 돌아간다고 해서 꺼놨었는데, 이거 키니까 잘 된다.
 
-{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 이전에 핀토스 미리 해보려고 할때, 어떤 블로그 보고 
 
@@ -146,7 +144,7 @@ View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux
 docker build --platform=linux/amd64 -t pintos .
 ```
 
-{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%201.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%201.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 # Start
 
@@ -217,7 +215,7 @@ find pintos/ -type f -perm -111 -exec ls -l {} \;
 
 `pintos/src/misc/bochs-2.2.6-build.sh`
 
-{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%202.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%202.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 다음 내용으로 수정
 
@@ -296,7 +294,7 @@ cd build
 pintos -q run alarm-multiple
 ```
 
-{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%203.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%203.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 # github repo 생성
 
@@ -336,7 +334,7 @@ echo 'cd /root/pintos/src' >> ~/.bashrc
 
 # 한번 Run 이후 Container 시작
 
-{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%204.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%204.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 컨테이너에서 `exit` 를 했다면,
 
@@ -400,7 +398,7 @@ git push -u origin feat/alarm-clock
 
 - VSCode에서 한다면 이렇게 커밋 어디에 하는건지 확인해 볼 수 있음
 
-{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%205.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%205.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 # Github Pull 이후 Error
 
@@ -467,7 +465,7 @@ sed -i 's/\r$//' bochs-2.2.6-build.sh
 
 VSCode로 보면 다음과 같이 FF가 들어간 신기한 문자가 있다.
 
-{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%206.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2025-03-20-pintos-setting/image%206.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 이 `FF`는 **Form Feed (줄 바꿈 명령 중 하나)**
 
