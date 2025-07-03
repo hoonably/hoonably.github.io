@@ -7,6 +7,10 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
+  //! ✅ 폰트 지정
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+
   h1,
   h2,
   h3,
