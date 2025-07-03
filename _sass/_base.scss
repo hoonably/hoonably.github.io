@@ -889,7 +889,8 @@ pre {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
   border-radius: 6px;
-  padding: 6px 12px;
+  // padding: 6px 12px;
+  padding: 24px 12px;  //! 코드블럭 위아래 padding 넓게
 
   pre,
   code {
