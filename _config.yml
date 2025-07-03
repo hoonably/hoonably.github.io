@@ -15,7 +15,7 @@ footer_text: # >
   # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: UNIST, computer science, undergraduate, on-device AI, optimization, problem solving # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: profile/profile.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: profile/profile.webp # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://hoonably.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -78,7 +78,7 @@ pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: #! your google-site-verification ID (Google Search Console)
+google_site_verification: UF9aPIHL0gyy9XNMhsgSZizZ_Ni9ciW6GIzLr4ZYIZc #! your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
@@ -102,9 +102,9 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
   repo: hoonably/hoonably.github.io # <your-github-user-name>/<your-github-repo-name>
-  repo_id: R_kgDOPFCdOg # leave empty or specify your repo_id (see https://giscus.app/)
+  repo_id: R_kgDOPBaE1Q # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
-  category_id: DIC_kwDOPFCdOs4CsU3N # leave empty or specify your category_id (see https://giscus.app/)
+  category_id: DIC_kwDOPBaE1c4Cr9sR # leave empty or specify your category_id (see https://giscus.app/)
   mapping: title # identify discussions by post title
   strict: 1 # use strict identification mode
   reactions_enabled: 0 # enable (1) or disable (0) emoji reactions
@@ -165,8 +165,8 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: true  # 코드블럭에 넣을건지
-      start_line: 1
+      line_numbers: false  # 코드블럭에 줄 카운트 넣을건지
+      start_line: 1  # 시작 넘버
 
 # Includes & excludes
 include: ["_pages", "_scripts"]
