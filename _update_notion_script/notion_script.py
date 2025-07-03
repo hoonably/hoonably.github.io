@@ -14,6 +14,7 @@ from datetime import datetime
 from urllib.parse import unquote, quote
 import shutil
 import zipfile
+from PIL import Image
 
 current_time = ""  # 현재 시간 (YYYY-MM-DD HH:MM:SS)
 current_date = ""  # 날짜 (YYYY-MM-DD)
@@ -29,11 +30,12 @@ def safe_filename(filename):
 # ![]() 형태의 이미지 마크다운을 {% include figure.liquid %}로 변환하는 함수
 def replace_markdown_images_with_include(md_text):
     pattern = re.compile(r'!\[[^\]]*\]\(([^)]+)\)')
-    
+
     def replacer(match):
         img_path = match.group(1)
         filename = os.path.basename(img_path)
-        safe_name = safe_filename(filename)
+        base, _ = os.path.splitext(filename)
+        safe_name = safe_filename(base + ".webp")
         encoded_filename = quote(unquote(safe_name))
         return (
             '{% include figure.liquid loading="eager" '
@@ -42,6 +44,7 @@ def replace_markdown_images_with_include(md_text):
         )
 
     return pattern.sub(replacer, md_text)
+
 
 # 일반 URL을 자동으로 링크로 변환하는 함수
 def autolink_bare_urls(md_text):
@@ -201,6 +204,27 @@ toc:
         file.write(final_content)
     print(f"⭐️ 마크다운 파일 생성 완료: {new_filepath}")
 
+# 이미지 파일을 webp로 변환하는 함수
+def convert_to_webp(input_path, output_path, quality=80):
+    try:
+        img = Image.open(input_path)
+
+        ext = os.path.splitext(input_path)[1].lower()
+        if ext in [".jpg", ".jpeg"]:
+            img = img.convert("RGB")   # JPG/JPEG → RGB (불투명)
+        elif ext == ".png":
+            img = img.convert("RGBA")  # PNG → RGBA (투명도 유지)
+
+        img.save(output_path, "webp", quality=quality)
+
+        # 변환 성공한 경우 원본 삭제
+        os.remove(input_path)
+
+    except Exception as e:
+        print(f"❌ 이미지 변환 실패: {input_path} → {output_path}\n에러: {e}")
+
+
+
 # 이미지가 들어있는 폴더를 "files/" 안으로 복사하는 함수
 def copy_folder(md_path):
     """
@@ -229,7 +253,10 @@ def copy_folder(md_path):
         src_path = os.path.join(original_image_folder, item)
         dst_path = os.path.join(target_folder, item)
         if os.path.isfile(src_path):
-            shutil.copy2(src_path, dst_path)
+            base, _ = os.path.splitext(item)
+            dst_filename = base + ".webp"
+            dst_path = os.path.join(target_folder, dst_filename)
+            convert_to_webp(src_path, dst_path)
 
     print(f"⭐️ 이미지 복사 완료 → {target_folder}")
 
