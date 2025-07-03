@@ -2,25 +2,32 @@
 layout: pagein
 title: Tiny LLM
 description: Investigating LLMs that can run in resource-constrained environments (such as on-device) and analyzed the accuracy and inference time of each model through various evaluation sets
-img: assets/img/projects/tinyllm.png
+img: assets/img/projects/tinyllm.webp
 importance: 1
 category: Research
 related_publications: false
 giscus_comments: true
 pretty_table: true
+
+toc:
+  beginning: false  # 맨 앞에 목차
+  sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
-> **💻 Project Page:** [https://github.com/unist-uai/TinyLLM](https://github.com/unist-uai/TinyLLM)  
-> **📄 Notion (Korean):** [Notion - TinyLLM](https://foil-plant-837.notion.site/TinyLLM-181451cf7b798058b1d0dc189ab6d30d?
-source=copy_link)  
+<div class="repo p-2 text-center">
+  <a href="https://github.com/unist-uai/TinyLLM" rel="external nofollow noopener" target="_blank">
+    <img class="only-light w-100" alt="unist-uai/TinyLLM" src="https://github-readme-stats.vercel.app/api/pin/?username=unist-uai&amp;repo=TinyLLM&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+    <img class="only-dark w-100" alt="unist-uai/TinyLLM" src="https://github-readme-stats.vercel.app/api/pin/?username=unist-uai&amp;repo=TinyLLM&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+  </a>
+</div>
+
+> **📄 Notion (Korean):** [Notion - TinyLLM](https://foil-plant-837.notion.site/tinyllm)  
 {: .block-tip }
 
 ---
 
 You can see what I worked on through the Notion link above.
 I will only include the **Result** and **Comments** here.
-
----
 
 ### Models
 
@@ -110,7 +117,7 @@ nan: Failed inference (memory issue)
 | pythia-160m | 160M | 26.3158 | 38 | 25.2 | 48.6 | 33 | 49.2502 | 36.7277 |
 | pythia-410m | 410M | 26.3158 | 37.8 | 25 | 49.2 | 33.7 | 49.6448 | 36.9434 |
 
-{% include figure.liquid loading="eager" path="assets/img/projects/tinyllm/accuracy.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tinyllm/accuracy.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### 3. Inference Time (ms)
 
@@ -133,7 +140,7 @@ nan: Failed inference (memory issue)
 | pythia-160m | 160M | 57.3411 | 89.2453 | 53.2252 | 63.1686 | 55.5747 | 50.21 | 61.4608 |
 | pythia-410m | 410M | 153.6 | 247.236 | 135.242 | 153.365 | 150.89 | 103.307 | 157.273 |
 
-{% include figure.liquid loading="eager" path="assets/img/projects/tinyllm/inference.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tinyllm/inference.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 ### 4. Peak GPU Memory Usage (GB)
@@ -157,7 +164,7 @@ nan: Failed inference (memory issue)
 | pythia-160m | 160M | 0.727875 | 0.838728 | 0.719082 | 0.834872 | 0.717061 | 0.689547 | 0.754528 |
 | pythia-410m | 410M | 1.7104 | 1.8971 | 1.68983 | 1.8946 | 1.6853 | 1.65406 | 1.75521 |
 
-{% include figure.liquid loading="eager" path="assets/img/projects/tinyllm/gpu_usage.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tinyllm/gpu_usage.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 ---

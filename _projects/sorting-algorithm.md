@@ -2,16 +2,26 @@
 layout: pagein
 title: Sorting Algorithm
 description: Implementation and benchmarking of classic and modern sorting algorithms with a focus on performance, memory, and stability across diverse input patterns.
-img: assets/img/projects/sort.png
+img: assets/img/projects/sort.webp
 importance: 1
 category: Academic
 related_publications: false
 giscus_comments: true
 pretty_table: true
+
+toc:
+  beginning: false  # 맨 앞에 목차
+  sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
-> **💻 Project Page:** [https://github.com/hoonably/Sorting-Project](https://github.com/hoonably/Sorting-Project)  
-> **📄 PDF:** [Project PDF](/assets/pdf/Sorting_Algorithm_Analysis_and_Implementation.pdf)  
+<div class="repo p-2 text-center">
+  <a href="https://github.com/hoonably/Sorting-Project" rel="external nofollow noopener" target="_blank">
+    <img class="only-light w-100" alt="hoonably/Sorting-Project" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=Sorting-Project&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+    <img class="only-dark w-100" alt="hoonably/Sorting-Project" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=Sorting-Project&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+  </a>
+</div>
+
+> **📄 PDF:** [Project PDF](https://hoonably.github.io/sorting-project)  
 {: .block-tip }
 
 ---
@@ -475,7 +485,7 @@ Each sorting algorithm was evaluated on the same randomly generated dataset of s
 
 ---
 
-{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/random.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/random.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 #### Algorithms with Log-Linear Complexity (O(n log n))
 
@@ -571,7 +581,7 @@ These tests show how the initial structure of the data affects algorithm perform
 
 ### Execution Time for 50% Partially Sorted Inputs
 
-{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/partial_50.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/partial_50.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **Unexpected Behavior at Small Scales**
 On partially sorted inputs of size *n = 10³*, **Insertion Sort** ranked as the second fastest algorithm, outperforming several *O(n log n)* methods.
@@ -590,7 +600,7 @@ For small inputs, the number of required shifts is small, while more complex alg
 
 **Ascending Sorted Inputs**
 
-{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/sorted_asc.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/sorted_asc.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 When the input is already sorted in ascending order, several algorithms achieve best-case behavior:
 
@@ -603,7 +613,7 @@ When the input is already sorted in ascending order, several algorithms achieve 
 
 **Descending Sorted Inputs**
 
-{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/sorted_desc.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/sorted_desc.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 When input is sorted in descending order, many algorithms hit their worst-case behavior:
 
@@ -726,7 +736,7 @@ We define:
 * **vector\_only** = memory after loading vector − memory before loading
 * **sort\_overhead** = peak memory during sort − memory after vector load
 
-{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/quick_sort.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/quick_sort.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 In visualizations, **blue** indicates memory used for `std::vector`, and **red** shows memory fluctuation during sorting.
 
@@ -781,7 +791,7 @@ The following algorithms reported **0 KB overhead**, confirming they are truly *
 
 ### Memory Growth Pattern in Library Sort
 
-{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/library_sort.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/sorting-algorithm/library_sort.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 🟦 **Blue region**: `std::vector` memory  
 🟥 **Red region**: temporary buffers, recursion stacks, trees, etc.  

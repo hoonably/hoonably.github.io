@@ -2,16 +2,24 @@
 layout: pagein
 title: Pintos
 description: Implements the PintOS OS with priority scheduling, system calls, virtual memory, and a growable file system using indexed and sparse allocation.
-img: assets/img/projects/pintos.png
+img: assets/img/projects/pintos.webp
 importance: 1
 category: Academic
 related_publications: false
 giscus_comments: true
 pretty_table: true
+
+toc:
+  beginning: false  # 맨 앞에 목차
+  sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
-> **💻 Project Page:** [https://github.com/hoonably/pintos](https://github.com/hoonably/pintos)  
-{: .block-tip }
+<div class="repo p-2 text-center">
+  <a href="https://github.com/hoonably/pintos" rel="external nofollow noopener" target="_blank">
+    <img class="only-light w-100" alt="hoonably/pintos" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=pintos&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+    <img class="only-dark w-100" alt="hoonably/pintos" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=pintos&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+  </a>
+</div>
 
 ---
 

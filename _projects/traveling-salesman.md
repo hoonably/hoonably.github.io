@@ -2,16 +2,26 @@
 layout: pagein
 title: TSP Algorithm
 description: Implements and evaluates classical and novel algorithms for the Traveling Salesman Problem, with a focus on flow-based cycle covers and local refinements.
-img: assets/img/projects/tsp.png
+img: assets/img/projects/tsp.webp
 importance: 1
 category: Academic
 related_publications: false
 giscus_comments: true
 pretty_table: true
+
+toc:
+  beginning: false  # 맨 앞에 목차
+  sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
-> **💻 Project Page:** [https://github.com/hoonably/traveling-salesman](https://github.com/hoonably/traveling-salesman)  
-> **📄 PDF:** [Project PDF](/assets/pdf/Solving_the_Traveling_Salesman_Problem.pdf)  
+<div class="repo p-2 text-center">
+  <a href="https://github.com/hoonably/traveling-salesman" rel="external nofollow noopener" target="_blank">
+    <img class="only-light w-100" alt="hoonably/traveling-salesman" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=traveling-salesman&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+    <img class="only-dark w-100" alt="hoonably/traveling-salesman" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=traveling-salesman&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+  </a>
+</div>
+
+> **📄 PDF:** [Project PDF](https://hoonably.github.io/traveling-salesman/)  
 {: .block-tip }
 
 ---
@@ -249,7 +259,7 @@ So, total time ranges from **𝒪(n²)** to **𝒪(n³)** depending on input str
 
 ### Table: Comparison between base and +2opt variants across datasets
 
-{% include figure.liquid loading="eager" path="assets/img/projects/tsp/table.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tsp/table.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 | Dataset    | Opt     | Algorithm   | Base Length | Base Approx | Base Time (s) | +2opt Length | +2opt Approx | +2opt Time (s) | 2opt Iters |
@@ -429,7 +439,7 @@ In particular, **Flow\_kNN** demonstrates superior scalability compared to the f
 
 #### Visual Comparison Before and After 2-opt Refinement
 
-{% include figure.liquid loading="eager" path="assets/img/projects/tsp/flow.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tsp/flow.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **Figure:** Effect of 2-opt on the Flow-based tour for `a280`.
 
@@ -497,7 +507,7 @@ Results are shown in Table\~\ref{tab\:extreme\_cases}.
 
 ### Visual Comparison: Flow\_kNN vs MST Tours
 
-{% include figure.liquid loading="eager" path="assets/img/projects/tsp/mona_lisa.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/projects/tsp/mona_lisa.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 **Figure:** Comparison of Flow\_kNN and MST tours on `mona_lisa100K`.
