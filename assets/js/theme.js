@@ -252,19 +252,26 @@ let transTheme = () => {
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default is "system".
 let determineThemeSetting = () => {
+
+  //! local storage가 있다면 그 설정 따라감
   let themeSetting = localStorage.getItem("theme");
   if (themeSetting === "light" || themeSetting === "dark") {
     return themeSetting;
   }
 
   // localStorage에 저장된 설정 없으면 system preference 감지
-  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  return prefersDark ? "dark" : "light";
+  // const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // return prefersDark ? "dark" : "light";
+
+  //! localStorage에 저장된 설정 없으면 무조건 light (첫 방문자나 캐시 없는 사람)
+  return "light";
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
 // "system", the computed theme is determined based on the user's system preference.
 let determineComputedTheme = () => {
+
+  //! system 테마는 아예 제거함
   // let themeSetting = determineThemeSetting();
   // if (themeSetting == "system") {
   //   const userPref = window.matchMedia;
