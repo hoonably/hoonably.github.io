@@ -25,7 +25,7 @@ vscode에서 setting.json 이란 파일이 있다.
 
 이 작업 영역에서 setting을 어떻게 할 지에 대해서 설정한다.
 
-{% include figure.liquid loading="eager" path="files/2024-04-14-Code-Runnder-Setting/coderunner1.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2024-04-14-code-runner-setting/coderunner1.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -53,7 +53,7 @@ vscode에서 setting.json 이란 파일이 있다.
 
 아래 내용을 복붙해 이런식으로 넣으면 된다.
 
-{% include figure.liquid loading="eager" path="files/2024-04-14-Code-Runnder-Setting/coderunner2.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2024-04-14-code-runner-setting/coderunner2.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ```json
 {
