@@ -9,6 +9,7 @@ related_publications: false
 giscus_comments: true
 pretty_table: true
 
+pseudocode: true
 toc:
   beginning: false  # 맨 앞에 목차
   sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
@@ -64,13 +65,19 @@ Merge Sort is a classical divide-and-conquer algorithm introduced by **John von 
 
 #### Pseudocode
 
-```text
-Input: Array A, indices left, right
-if left < right:
-    mid ← floor((left + right) / 2)
-    MergeSort(A, left, mid)
-    MergeSort(A, mid + 1, right)
-    Merge(A, left, mid, right)
+```pseudocode
+\begin{algorithm}
+\caption{MergeSort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A, indices left, right
+\IF{left < right}
+  \STATE mid := floor((left + right) / 2)
+  \STATE \CALL{MergeSort}{A, left, mid}
+  \STATE \CALL{MergeSort}{A, mid + 1, right}
+  \STATE \CALL{Merge}{A, left, mid, right}
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
 ````
 
 #### Characteristics
@@ -87,22 +94,28 @@ if left < right:
 
 ---
 
-## Heap Sort
+### Heap Sort
 
 Heap Sort is a comparison-based sorting algorithm that uses a **binary heap** data structure to sort elements. It first builds a **max-heap** from the input array, and then repeatedly extracts the maximum element and moves it to the end of the array. This process continues until the entire array is sorted in-place. The algorithm was introduced by **J. W. J. Williams in 1964** and further optimized by **R. W. Floyd**.
 
-### Pseudocode
+#### Pseudocode
 
-```text
-Input: Array A of size n
-BuildMaxHeap(A, n)
-for i = n - 1 downto 1:
-    Swap A[0] and A[i]
-    heapSize ← heapSize - 1
-    MaxHeapify(A, 0, heapSize)
+```pseudocode
+\begin{algorithm}
+\caption{Heap Sort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A of size n
+\CALL{BuildMaxHeap}{A, n}
+\FOR{i := n - 1 \DOWNTO 1}
+  \STATE swap A[0] and A[i]
+  \STATE heapSize := heapSize - 1
+  \CALL{MaxHeapify}{A, 0, heapSize}
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
 ````
 
-### Characteristics
+#### Characteristics
 
 * Unlike Merge Sort, Heap Sort does not require additional memory and operates entirely **in-place**.
 
@@ -122,21 +135,29 @@ for i = n - 1 downto 1:
 
 ---
 
-## Bubble Sort
+### Bubble Sort
 
 Bubble Sort is a simple comparison-based algorithm that repeatedly steps through the array, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until the array is fully sorted. The algorithm gets its name because smaller elements gradually “bubble up” to the front of the array through successive swaps.
 
-### Pseudocode
+#### Pseudocode
 
-```text
-Input: Array A of size n
-for i = 0 to n - 2:
-    for j = 0 to n - i - 2:
-        if A[j] > A[j + 1]:
-            Swap A[j] and A[j + 1]
+```pseudocode
+\begin{algorithm}
+\caption{Bubble Sort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A of size n
+\FOR{i := 0 \TO n - 2}
+  \FOR{j := 0 \TO n - i - 2}
+    \IF{A[j] > A[j + 1]}
+      \STATE swap A[j] and A[j + 1]
+    \ENDIF
+  \ENDFOR
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
 ```
 
-### Characteristics
+#### Characteristics
 
 * Easy to implement and understand, but **highly inefficient** for large datasets due to its **quadratic time complexity**.
 
@@ -154,24 +175,31 @@ for i = 0 to n - 2:
 
 ---
 
-## Insertion Sort
+### Insertion Sort
 
 Insertion Sort builds the sorted array one element at a time by repeatedly picking the next element from the input and inserting it into its correct position among the previously sorted elements. It is intuitive and performs efficiently on **small or nearly sorted datasets**, making it a good choice for simple use cases or as a subroutine in hybrid algorithms.
 
-### Pseudocode
+#### Pseudocode
 
-```text
-Input: Array A of size n
-for i = 1 to n - 1:
-    key ← A[i]
-    j ← i - 1
-    while j ≥ 0 and A[j] > key:
-        A[j + 1] ← A[j]
-        j ← j - 1
-    A[j + 1] ← key
+```pseudocode
+\begin{algorithm}
+\caption{Insertion Sort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A of size n
+\FOR{i := 1 \TO n - 1}
+  \STATE key := A[i]
+  \STATE j := i - 1
+  \WHILE{j >= 0 and A[j] > key}
+    \STATE A[j + 1] := A[j]
+    \STATE j := j - 1
+  \ENDWHILE
+  \STATE A[j + 1] := key
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
 ```
 
-### Characteristics
+#### Characteristics
 
 * Particularly effective when the input is already **partially sorted**, requiring fewer comparisons and shifts.
 
@@ -189,24 +217,33 @@ for i = 1 to n - 1:
 
 ---
 
-## Selection Sort
+### Selection Sort
 
 Selection Sort repeatedly selects the minimum (or maximum) element from the unsorted portion and moves it to the beginning (or end) of the sorted portion. Unlike Insertion Sort, it performs fewer swaps, but makes significantly more comparisons. Its structure is simple and intuitive, which makes it useful for teaching sorting principles, though not for performance-critical applications.
 
-### Pseudocode
+#### Pseudocode
 
-```text
-Input: Array A of size n
-for i = 0 to n - 2:
-    min ← i
-    for j = i + 1 to n - 1:
-        if A[j] < A[min]:
-            min ← j
-    if min ≠ i:
-        Swap A[i] and A[min]
+```pseudocode
+\begin{algorithm}
+\caption{Selection Sort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A of size n
+\FOR{i := 0 \TO n - 2}
+  \STATE min := i
+  \FOR{j := i + 1 \TO n - 1}
+    \IF{A[j] < A[min]}
+      \STATE min := j
+    \ENDIF
+  \ENDFOR
+  \IF{min != i}
+    \STATE swap A[i] and A[min]
+  \ENDIF
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
 ````
 
-### Characteristics
+#### Characteristics
 
 * Inefficient for large datasets due to **quadratic time complexity O(n²)** regardless of input order
 
@@ -224,28 +261,36 @@ for i = 0 to n - 2:
 
 ---
 
-## Quick Sort
+### Quick Sort
 
 Quick Sort is a divide-and-conquer algorithm that recursively partitions the array around a pivot. Elements less than the pivot are moved to its left, and elements greater than the pivot to its right. In the CLRS version, the **last element is used as the pivot**, which can lead to highly unbalanced partitions on already sorted data.
 
-### Pseudocode
+#### Pseudocode
 
-```text
-Input: Array A, indices low, high
-if low < high:
-    pivot ← A[high]
-    i ← low - 1
-    for j = low to high - 1:
-        if A[j] ≤ pivot:
-            i ← i + 1
-            Swap A[i] and A[j]
-    Swap A[i + 1] and A[high]
-    p ← i + 1
-    QuickSort(A, low, p - 1)
-    QuickSort(A, p + 1, high)
+```pseudocode
+\begin{algorithm}
+\caption{Quick Sort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A, indices low, high
+\IF{low < high}
+  \STATE pivot := A[high]
+  \STATE i := low - 1
+  \FOR{j := low \TO high - 1}
+    \IF{A[j] <= pivot}
+      \STATE i := i + 1
+      \STATE swap A[i] and A[j]
+    \ENDIF
+  \ENDFOR
+  \STATE swap A[i + 1] and A[high]
+  \STATE p := i + 1
+  \CALL{QuickSort}{A, low, p - 1}
+  \CALL{QuickSort}{A, p + 1, high}
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
 ```
 
-### Characteristics
+#### Characteristics
 
 * Simple and fast on average with **expected time complexity O(n log n)** when balanced partitions are formed
 
@@ -279,22 +324,30 @@ We follow the practical scheme proposed by Faujdar and Ghrera, using an auxiliar
 
 #### Pseudocode
 
-```
-Input: Array A of size n
-Initialize G ← empty array of size (1 + ε)n filled with GAPs
-Insert A[0] into center of G
-Set inserted ← 1, round ← 0
-for i = 1 to n - 1:
-    if inserted == 2^round:
-        Rebalance G
-        round ← round + 1
-    Use gap-aware binary search to find insert index i
-    while G[i] is occupied:
-        i ← i + 1
-    Shift elements to make space at i
-    Insert A[i] at position i
-    inserted ← inserted + 1
-Return G with gaps removed
+```pseudocode
+\begin{algorithm}
+\caption{Library Sort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A of size n
+\STATE initialize G as empty array of size (1 + epsilon) * n filled with GAPs
+\STATE insert A[0] into center of G
+\STATE inserted := 1, round := 0
+\FOR{i := 1 \TO n - 1}
+  \IF{inserted = 2^round}
+    \STATE rebalance G
+    \STATE round := round + 1
+  \ENDIF
+  \STATE use gap-aware binary search to find insert index i
+  \WHILE{G[i] is occupied}
+    \STATE i := i + 1
+  \ENDWHILE
+  \STATE shift elements to make space at i
+  \STATE insert A[i] at position i
+  \STATE inserted := inserted + 1
+\ENDFOR
+\RETURN G with gaps removed
+\end{algorithmic}
+\end{algorithm}
 ```
 
 Library Sort has average-case time complexity O(n log n), but may degrade to O(n²) due to excessive shifts. In ideal conditions, it can reach O(n) in the best case. It is not stable, as rebalancing disrupts the order of equal keys, and it is not in-place, requiring O((1 + ε)n) memory.
@@ -311,17 +364,25 @@ The algorithm partitions the input array into segments called *runs*, which are 
 
 #### Pseudocode
 
-```
-Input: Array A of size n
-Partition A into runs of size RUN
-for each run:
-    Sort the run using Insertion Sort
-run size ← RUN
-while run size < n:
-    for each pair of adjacent runs:
-        Merge them using Merge Sort logic
-    run size ← run size × 2
-Return fully merged and sorted array
+```pseudocode
+\begin{algorithm}
+\caption{Tim Sort}
+\begin{algorithmic}
+\STATE \textbf{Input:} Array A of size n
+\STATE partition A into runs of size RUN
+\FOR{each run}
+  \STATE sort the run using Insertion Sort
+\ENDFOR
+\STATE runSize := RUN
+\WHILE{runSize < n}
+  \FOR{each pair of adjacent runs}
+    \STATE merge them using Merge Sort logic
+  \ENDFOR
+  \STATE runSize := runSize * 2
+\ENDWHILE
+\RETURN fully merged and sorted array
+\end{algorithmic}
+\end{algorithm}
 ```
 
 Tim Sort leverages the simplicity of Insertion Sort on small or nearly sorted subarrays and the efficiency of Merge Sort for large-scale merging. It guarantees a worst-case time complexity of O(n log n) and performs optimally on real-world data, often achieving best-case O(n) when the input is already sorted. The algorithm is also stable, preserving the relative order of equal elements.
@@ -338,23 +399,34 @@ In standard Bubble Sort, larger elements "bubble" toward the end of the array vi
 
 #### Pseudocode
 
-```
-Input: Array A of size n
-left ← 0, right ← n - 1
-swapped ← true
-while swapped is true:
-    swapped ← false
-    for i = left to right - 1:
-        if A[i] > A[i+1]:
-            Swap A[i] and A[i+1]
-            swapped ← true
-    right ← right - 1
-    for i = right downto left + 1:
-        if A[i] < A[i-1]:
-            Swap A[i] and A[i-1]
-            swapped ← true
-    left ← left + 1
-return A
+```pseudocode
+\begin{algorithm}
+\caption{Cocktail Shaker Sort}
+\begin{algorithmic}
+\STATE Input: Array A of size n
+\STATE left := 0
+\STATE right := n - 1
+\STATE swapped := true
+\WHILE{swapped = true}
+  \STATE swapped := false
+  \FOR{i := left \TO right - 1}
+    \IF{A[i] > A[i + 1]}
+      \STATE swap A[i] and A[i + 1]
+      \STATE swapped := true
+    \ENDIF
+  \ENDFOR
+  \STATE right := right - 1
+  \FOR{i := right \DOWNTO left + 1}
+    \IF{A[i] < A[i - 1]}
+      \STATE swap A[i] and A[i - 1]
+      \STATE swapped := true
+    \ENDIF
+  \ENDFOR
+  \STATE left := left + 1
+\ENDWHILE
+\RETURN A
+\end{algorithmic}
+\end{algorithm}
 ```
 
 #### Characteristics
@@ -378,19 +450,30 @@ The core idea is to compare and swap elements that are a fixed distance apart, c
 
 #### Pseudocode
 
-```
-Input: Array A of size n
-gap ← n, shrink ← 1.3, sorted ← false
-while not sorted:
-    gap ← floor(gap / shrink)
-    if gap ≤ 1:
-        gap ← 1
-        sorted ← true
-    for i = 0 to n - gap - 1:
-        if A[i] > A[i + gap]:
-            Swap A[i] and A[i + gap]
-            sorted ← false
-return A
+```pseudocode
+\begin{algorithm}
+\caption{Comb Sort}
+\begin{algorithmic}
+\STATE Input: Array A of size n
+\STATE gap := n
+\STATE shrink := 1.3
+\STATE sorted := false
+\WHILE{sorted = false}
+  \STATE gap := floor(gap / shrink)
+  \IF{gap <= 1}
+    \STATE gap := 1
+    \STATE sorted := true
+  \ENDIF
+  \FOR{i := 0 \TO n - gap - 1}
+    \IF{A[i] > A[i + gap]}
+      \STATE swap A[i] and A[i + gap]
+      \STATE sorted := false
+    \ENDIF
+  \ENDFOR
+\ENDWHILE
+\RETURN A
+\end{algorithmic}
+\end{algorithm}
 ```
 
 #### Characteristics
@@ -413,17 +496,25 @@ After extracting the root, the winner’s original leaf is replaced with a senti
 
 #### Pseudocode
 
-```
-Input: Array A of size n
-Build complete binary tree T with n leaves storing elements of A
-for each internal node:
-    Store minimum of its two children
-for i = 1 to n:
-    winner ← T[1]  // root of the tree
-    Output winner to result
-    Replace winner’s original leaf with ∞
-    Update tree values upward along winner’s path
-return sorted result
+```pseudocode
+\begin{algorithm}
+\caption{Tim Sort}
+\begin{algorithmic}
+\STATE Input: Array A of size n
+\STATE partition A into runs of size RUN
+\FOR{each run}
+  \STATE sort the run using Insertion Sort
+\ENDFOR
+\STATE runSize := RUN
+\WHILE{runSize < n}
+  \FOR{each pair of adjacent runs}
+    \STATE merge them using Merge Sort
+  \ENDFOR
+  \STATE runSize := runSize * 2
+\ENDWHILE
+\RETURN fully sorted array
+\end{algorithmic}
+\end{algorithm}
 ```
 
 #### Characteristics
@@ -444,16 +535,24 @@ It recursively applies Quick Sort while monitoring the call stack depth. If the 
 
 #### Pseudocode
 
-```
-Procedure Introsort(A, p, r, depth_limit):
-    if r - p + 1 ≤ threshold:
-        Use Insertion Sort on A[p..r]
-    else if depth_limit = 0:
-        Use Heap Sort on A[p..r]
-    else:
-        q ← Partition(A, p, r)
-        Introsort(A, p, q - 1, depth_limit - 1)
-        Introsort(A, q + 1, r, depth_limit - 1)
+```pseudocode
+\begin{algorithm}
+\caption{Tournament Sort}
+\begin{algorithmic}
+\STATE Input: Array A of size n
+\STATE build complete binary tree T with n leaves holding elements of A
+\FOR{each internal node}
+  \STATE store the minimum of its two children
+\ENDFOR
+\FOR{i := 1 \TO n}
+  \STATE winner := T[1]  // root of the tree
+  \STATE output winner to result
+  \STATE replace winner’s original leaf with INF
+  \STATE update tree values upward along winner's path
+\ENDFOR
+\RETURN sorted result
+\end{algorithmic}
+\end{algorithm}
 ```
 
 #### Characteristics

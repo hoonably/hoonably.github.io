@@ -9,6 +9,7 @@ related_publications: false
 giscus_comments: true
 pretty_table: true
 
+pseudocode: true
 toc:
   beginning: false  # 맨 앞에 목차
   sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
@@ -87,17 +88,27 @@ min over j ≠ 1 of [ C({1,...,n}, j) + c_j1 ]
 
 #### Pseudocode: Held-Karp-TSP
 
-```plaintext
-for j = 2 to n:
-    C[{1,j}][j] ← c_1j
+```pseudocode
+\begin{algorithm}
+\caption{Held-Karp TSP}
+\begin{algorithmic}
+\FOR{$j := 2$ \TO $n$}
+  \STATE $C[\{1,j\}][j] := c_{1j}$
+\ENDFOR
 
-for s = 3 to n:
-    for each subset S ⊆ {1,...,n} of size s containing 1:
-        for j ∈ S \ {1}:
-            C[S][j] ← min over k ∈ S \ {j} of [ C[S \ {j}][k] + c_kj ]
+\FOR{$s := 3$ \TO $n$}
+  \FOR{each $S$ of size $s$ containing $1$}
+    \FOR{$j \in S \setminus \{1\}$}
+      \STATE $C[S][j] := \min_k \left(C[S \setminus \{j\}][k] + c_{kj}\right)$
+    \ENDFOR
+  \ENDFOR
+\ENDFOR
 
-Reconstruct tour T by backtracking through C  
-Return Hamiltonian tour T
+\STATE Reconstruct tour $T$ from $C$
+\RETURN $T$
+\end{algorithmic}
+\end{algorithm}
+
 ```
 
 ### Time and Space Complexity
@@ -124,12 +135,17 @@ This classical algorithm \[CLRS 3rd ed.] constructs a tour with cost at most twi
 
 ### Pseudocode: MST-Based-TSP
 
-```plaintext
-1. Choose start node r  
-2. Compute MST T rooted at r (e.g., Prim’s algorithm)  
-3. Perform preorder traversal on T to obtain path P  
-4. Shortcut repeated nodes in P to construct Hamiltonian tour H  
-5. Return tour H
+```pseudocode
+\begin{algorithm}
+\caption{MST-Based TSP}
+\begin{algorithmic}
+\STATE choose start node r
+\STATE compute MST T rooted at r (e.g., Prim’s algorithm)
+\STATE perform preorder traversal on T to obtain path P
+\STATE shortcut repeated nodes in P to construct Hamiltonian tour H
+\RETURN tour H
+\end{algorithmic}
+\end{algorithm}
 ```
 
 
@@ -179,14 +195,20 @@ This heuristic, originally introduced by Flood \[1956], builds a tour by repeate
 
 ### Pseudocode: Greedy-TSP
 
-```plaintext
-Initialize tour ← [v₀], visited ← {v₀}
-while some cities remain unvisited:
-    let u be the nearest unvisited neighbor of last node in tour
-    append u to tour
-    mark u as visited
-append v₀ to close the tour
-return tour
+```pseudocode
+\begin{algorithm}
+\caption{Greedy TSP}
+\begin{algorithmic}
+\STATE tour := [v0], visited := \{v0\}
+\WHILE{some cities remain unvisited}
+  \STATE let u be the nearest unvisited neighbor of last node in tour
+  \STATE append u to tour
+  \STATE mark u as visited
+\ENDWHILE
+\STATE append v0 to close the tour
+\RETURN tour
+\end{algorithmic}
+\end{algorithm}
 ```
 
 
@@ -225,7 +247,7 @@ Despite its simplicity, Greedy offers **no worst-case or approximation guarantee
 
 ### Pseudocode: Two-Opt
 
-```plaintext
+```pseudocode
 while any 2-swap improves cost:
     check all pairs of non-adjacent edges
     if a swap improves the tour:
@@ -299,7 +321,7 @@ We model the TSP as a **cycle cover problem**. The idea is to:
 
 #### Pseudocode: Flow-Cycle-Cover-TSP
 
-```plaintext
+```pseudocode
 Construct bipartite graph with source s, sink t, and city sets L and R
 Connect s → Lᵢ and Rⱼ → t with capacity 1 and cost 0
 Connect Lᵢ → Rⱼ with capacity 1 and cost cᵢⱼ for all i ≠ j
