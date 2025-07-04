@@ -118,6 +118,17 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
+            window.location.href = "/blog/ablation-study/";
+          
+        },
+      },{id: "post-ablation-study-란",
+        
+          title: "Ablation Study 란?",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
             window.location.href = "/blog/Ablation-Study/";
           
         },
@@ -151,7 +162,29 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
+            window.location.href = "/blog/ds-store/";
+          
+        },
+      },{id: "post-ds-store",
+        
+          title: ".DS_Store",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
             window.location.href = "/blog/DS-Store/";
+          
+        },
+      },{id: "post-mlops",
+        
+          title: "MLOps",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/mlops/";
           
         },
       },{id: "post-mlops",
@@ -206,7 +239,18 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/NetworkFlow/";
+            window.location.href = "/blog/network-flow/";
+          
+        },
+      },{id: "post-백준-c-구슬-탈출-2-13460번",
+        
+          title: "[백준] [C++] 🔮 구슬 탈출 2 13460번",
+        
+        description: "Gold - 구현",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/ps-13460/";
           
         },
       },{id: "post-백준-c-구슬-탈출-2-13460번",
@@ -228,7 +272,29 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
+            window.location.href = "/blog/solvedac-diamond/";
+          
+        },
+      },{id: "post-백준-다이아몬드-달성-및-tip",
+        
+          title: "[백준] 💎 다이아몬드 달성 및 Tip",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
             window.location.href = "/blog/solvedac-Diamond/";
+          
+        },
+      },{id: "post-백준-c-가르침-1062번",
+        
+          title: "[백준] [C++] 👨‍🏫 가르침 1062번",
+        
+        description: "Gold - bitmasking",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/ps-1062/";
           
         },
       },{id: "post-백준-c-가르침-1062번",
@@ -250,7 +316,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/Code-Runnder-Setting/";
+            window.location.href = "/blog/code-runner-setting/";
           
         },
       },{id: "post-c-c-버전-체크-방법",
@@ -261,7 +327,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/C++-version-check/";
+            window.location.href = "/blog/cpp-version-check/";
           
         },
       },{id: "post-c-c-2진수-8진수-16진수-표기법",
@@ -283,7 +349,29 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
+            window.location.href = "/blog/ps-1202/";
+          
+        },
+      },{id: "post-백준-c-보석-도둑-1202번",
+        
+          title: "[백준] [C++] 💎 보석 도둑 1202번",
+        
+        description: "Gold - Greedy",
+        section: "Posts",
+        handler: () => {
+          
             window.location.href = "/blog/PS-1202/";
+          
+        },
+      },{id: "post-백준-c-경찰차-2618번",
+        
+          title: "[백준] [C++] 🚓 경찰차 2618번",
+        
+        description: "Platinum - DP",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/ps-2618/";
           
         },
       },{id: "post-백준-c-경찰차-2618번",
@@ -305,7 +393,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/N-Queen-Hard/";
+            window.location.href = "/blog/ps-30243/";
           
         },
       },{id: "post-백준-python-n-queen-easy-30242번",
@@ -316,7 +404,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/N-Queen-Easy/";
+            window.location.href = "/blog/ps-30242/";
           
         },
       },{id: "post-백준-python-️-n-queen-9663번",
@@ -327,7 +415,18 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/N-Queen-9663/";
+            window.location.href = "/blog/ps-9663/";
+          
+        },
+      },{id: "post-sql로-간소한-카카오뱅크-데이터베이스-만들어보기",
+        
+          title: "SQL로 간소한 카카오뱅크 데이터베이스 만들어보기",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/sql-kakaobank/";
           
         },
       },{id: "post-sql로-간소한-카카오뱅크-데이터베이스-만들어보기",
@@ -349,7 +448,29 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
+            window.location.href = "/blog/time-complexity/";
+          
+        },
+      },{id: "post-시간-복잡도-time-complexity",
+        
+          title: "시간 복잡도 (Time Complexity)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
             window.location.href = "/blog/Time-Complexity/";
+          
+        },
+      },{id: "post-java-string-stringbuffer-stringbuilder-bufferedwriter-비교",
+        
+          title: "[Java] String, StringBuffer, StringBuilder, BufferedWriter 비교",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/java-buffer/";
           
         },
       },{id: "post-java-string-stringbuffer-stringbuilder-bufferedwriter-비교",
@@ -371,7 +492,29 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
+            window.location.href = "/blog/gcdlcm/";
+          
+        },
+      },{id: "post-유클리드-호제법을-이용한-최대공약수-최소공배수",
+        
+          title: "유클리드 호제법을 이용한 최대공약수, 최소공배수",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
             window.location.href = "/blog/GCDLCM/";
+          
+        },
+      },{id: "post-버블-정렬-bubble-sort",
+        
+          title: "버블 정렬 (Bubble Sort)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/bubble-sort/";
           
         },
       },{id: "post-버블-정렬-bubble-sort",
