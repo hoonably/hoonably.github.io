@@ -242,7 +242,7 @@ public class Main {
 
 시간 복잡도가 무엇인지 모른다면 이 글을 참고하자.
 
-[[알고리즘] 시간 복잡도 (Time Complexity)](/algorithm/Time-Complexity)
+[[알고리즘] 시간 복잡도 (Time Complexity)](/blog/time-complexity/)
 
 {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/76be57bb-c35a-4225-a1df-58db08724fd1" class="img-fluid rounded z-depth-1" zoomable=true %}
 
