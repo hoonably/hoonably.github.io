@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-various-techniques-in-al-folio",
+        },{id: "post-test-time-learning-for-large-language-models",
+        
+          title: "Test-Time Learning for Large Language Models",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/ttl-llm/";
+          
+        },
+      },{id: "post-various-techniques-in-al-folio",
         
           title: "Various techniques in al-folio",
         
