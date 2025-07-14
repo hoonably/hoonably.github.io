@@ -21,7 +21,7 @@ current_date = ""  # 날짜 (YYYY-MM-DD)
 old_filename = ""  # 기존 md 파일명 ()
 new_filename = ""  # 마크다운 파일명과 폴더명 (YYYY-MM-DD-Data-Structure)
 
-import unicodedata  # ← 너가 말한 이 줄 포함
+import unicodedata
 
 def safe_filename(filename):
     filename = unicodedata.normalize("NFKD", filename)
