@@ -66,17 +66,6 @@ ninja.data = [{
             window.location.href = "/blog/al-folio-tech/";
           
         },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/math/";
-          
-        },
       },{id: "post-sana-efficient-high-resolution-image-synthesis-with-linear-diffusion-transformers",
         
           title: "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers",
