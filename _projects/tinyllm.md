@@ -5,6 +5,8 @@ description: Investigating LLMs that can run in resource-constrained environment
 img: assets/img/projects/tinyllm.webp
 importance: 1
 category: Research
+github: https://github.com/unist-uai/TinyLLM
+github_stars: false
 related_publications: false
 giscus_comments: true
 pretty_table: true

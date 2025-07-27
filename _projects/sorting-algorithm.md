@@ -5,6 +5,8 @@ description: Implementation and benchmarking of classic and modern sorting algor
 img: assets/img/projects/sort.webp
 importance: 1
 category: Academic
+github: https://github.com/hoonably/sorting-project
+github_stars: false
 related_publications: false
 giscus_comments: true
 pretty_table: true

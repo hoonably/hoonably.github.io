@@ -5,6 +5,8 @@ description: Solved algorithm problems every single day for a full year (1-year 
 img: assets/img/projects/baekjoon.webp
 importance: 1
 category: Personal
+github: https://github.com/hoonably/algorithm
+github_stars: false
 related_publications: false
 giscus_comments: true
 pretty_table: true

@@ -5,6 +5,8 @@ description: Implements the PintOS OS with priority scheduling, system calls, vi
 img: assets/img/projects/pintos.webp
 importance: 1
 category: Academic
+github: https://github.com/hoonably/pintos
+github_stars: false
 related_publications: false
 giscus_comments: true
 pretty_table: true

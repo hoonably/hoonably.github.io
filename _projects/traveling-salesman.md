@@ -5,6 +5,8 @@ description: Implements and evaluates classical and novel algorithms for the Tra
 img: assets/img/projects/tsp.webp
 importance: 1
 category: Academic
+github: https://github.com/hoonably/traveling-salesman
+github_stars: false
 related_publications: false
 giscus_comments: true
 pretty_table: true
