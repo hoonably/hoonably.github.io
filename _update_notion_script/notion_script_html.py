@@ -15,7 +15,7 @@ from urllib.parse import unquote, quote
 import shutil
 import zipfile
 from PIL import Image
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
 current_time = ""  # 현재 시간 (YYYY-MM-DD HH:MM:SS)
 current_date = ""  # 날짜 (YYYY-MM-DD)
@@ -29,20 +29,72 @@ def safe_filename(filename):
     return filename.encode("ascii", "ignore").decode("ascii")
 
 def merge_paragraphs_inside_callouts(html: str) -> str:
-    soup = BeautifulSoup(html, "html.parser")
+    # 콜아웃 내부 <p>들을 <br>로 연결하여 한 단락처럼 만들기
+    pattern = re.compile(
+        r'(<figure[^>]*class="[^"]*callout[^"]*"[^>]*>.*?<div[^>]*style="width:100%">)(.*?)(</div>\s*</figure>)',
+        re.DOTALL
+    )
 
-    for fig in soup.find_all("figure", class_=lambda c: c and "callout" in c):
-        div = fig.find("div", style=lambda s: s and "width:100%" in s)
-        if not div:
+    def replacer(match):
+        prefix = match.group(1)
+        inner = match.group(2)
+        suffix = match.group(3)
+
+        # <p>...</p> → 텍스트 추출 후 <br>로 연결
+        merged = re.sub(r'</p>\s*<p[^>]*>', '<br>', inner)
+        merged = re.sub(r'<p[^>]*>', '', merged)
+        merged = re.sub(r'</p>', '', merged)
+
+        return f"{prefix}{merged}{suffix}"
+
+    return pattern.sub(replacer, html)
+
+
+def normalize_lang(lang: str) -> str:
+    """language-XXX에서 뽑은 언어명을 소문자화하고 흔한 별칭을 정규화."""
+    s = lang.lower()
+    mapping = {
+        'py': 'python',
+        'python3': 'python',
+        'c#': 'csharp',
+        'c++': 'cpp',
+        'js': 'javascript',
+        'ts': 'typescript',
+        'sh': 'bash',
+        'plaintext': '',
+        'none': '',
+        'text': '',
+    }
+    return mapping.get(s, s)
+
+def convert_prism_codeblocks_to_md(html_content: str) -> str:
+    soup = BeautifulSoup(html_content, 'html.parser')
+
+    # 0) Prism 스크립트/스타일 제거(원하면 유지해도 됨)
+    for tag in soup.find_all(['script', 'link']):
+        src = tag.get('src', '') or tag.get('href', '')
+        if 'prism' in src:
+            tag.decompose()
+
+    # 1) <pre><code class="language-...">...</code></pre> → ```lang ... ```
+    for pre in soup.find_all('pre'):
+        code = pre.find('code')
+        if not code:
             continue
 
-        # 콜아웃 내부 <p>들을 <br>로 연결하여 한 단락처럼 만들기
-        parts = []
-        for p in div.find_all("p"):
-            parts.append("".join(str(x) for x in p.contents))
-        div.clear()
-        div.append(BeautifulSoup("<br>".join(parts), "html.parser"))
+        # class 속성에서 language-xxx 추출(대/소문자 혼합 대응)
+        classes = code.get('class', [])
+        class_str = ' '.join(classes)
+        m = re.search(r'language-([A-Za-z0-9#+._-]+)', class_str, flags=re.I)
+        lang = normalize_lang(m.group(1)) if m else ''
 
+        # 코드 텍스트 추출 (BS가 엔티티 디코드/개행 처리)
+        code_text = code.get_text()
+
+        md_block = f"\n```{lang}\n{code_text}\n```\n"
+        pre.replace_with(NavigableString(md_block))
+
+    # soup 전체를 텍스트로(다른 HTML도 함께 마크다운으로 바꿔야 한다면 별도 파이프라인에서 처리)
     return str(soup)
 
 # html 파일 내에 있는 src, href 속성의 경로를 변경하는 함수
@@ -65,7 +117,6 @@ def rewrite_image_paths_soup(html: str, old_filename: str, new_filename: str) ->
                 img["src"] = img["src"].replace(ext, ".webp")
 
     return str(soup)
-
 
 
 def convert_figure_images(html: str) -> str:
@@ -106,17 +157,22 @@ def write_markdown_file(filepath, html_content):
     # 제목 추출
     title = html_content.split("<title>")[1].split("</title>")[0].strip()
 
-    # <div class="page-body"> 이전 내용 제거
-    marker = '<div class="page-body">'
-    marker_index = html_content.find(marker)
-    if marker_index != -1:
-        html_content = html_content[marker_index:]
 
-    # 마지막 줄 </article> 이후 제거
-    end_marker = '</article>'
-    end_index = html_content.find(end_marker)
-    if end_index != -1:
-        html_content = html_content[:end_index]
+    # 1) <div class="page-body"> 포함해서 그 전부 제거
+    html_content = re.sub(
+        r'(?is).*?<div class="page-body">\s*',  # DOTALL + IGNORECASE
+        '',
+        html_content,
+        count=1
+    )
+
+    # 2) </article>부터 끝까지 제거하면서, 뒤에 바로 따라오는 </div> 하나도 함께 제거
+    html_content = re.sub(
+        r'(?is)</article>\s*(?:</div>\s*)?$',   # 뒤에 </div> 하나는 선택적으로 함께 제거
+        '',
+        html_content,
+        count=1
+    )
 
     # <details> 태그 수정 (기본적으로 열려있는 상태가 아니도록)
     html_content = html_content.replace("<details open=\"\">", "<details>")
@@ -125,11 +181,14 @@ def write_markdown_file(filepath, html_content):
     # <figure> 태그내 줄바꿈 중복 제거
     html_content = merge_paragraphs_inside_callouts(html_content)
 
+    # codeblock md로 변환
+    html_content = convert_prism_codeblocks_to_md(html_content)
+
 
     print(f"⭐️ {title}.html 변환작업을 시작합니다.")
 
     # .html 파일명과 이미지 등이 들어있는 폴더명 사용자가 지정
-    new_filename = input("파일명을 영어로 입력해주세요 (공백은 '-'으로 자동 변경됩니다): ").strip()
+    new_filename = input("파일명을 영어로 입력해주세요 (공백은 '-'으로, 대문자는 소문자로 자동 변경됩니다.): ").strip()
 
     # 허용: 알파벳(a-zA-Z), 숫자(0-9), 공백, 하이픈(-)만 → 그 외는 모두 거부
     while not new_filename or not re.fullmatch(r"[a-zA-Z0-9 \-]+", new_filename):
@@ -138,6 +197,7 @@ def write_markdown_file(filepath, html_content):
         else:
             print("❌ 영어, 숫자, 공백, 하이픈(-)만 사용할 수 있습니다.")
         new_filename = input("다시 입력해주세요: ").strip()
+    new_filename = new_filename.lower()  # 대문자를 소문자로 변경
     new_filename = new_filename.replace(" ", "-")  # 공백을 '-'로 변경
     new_filename = f"{current_date}-{new_filename}"  # 날짜 추가
 
@@ -265,8 +325,6 @@ def process_html_file(filepath):
 
     # ✅ 사용자 입력 날짜 + 현재 시각 조합으로 date 고정
     current_time = f"{current_date} {datetime.now().strftime('%H:%M:%S')}"
-
-
 
     # 파일 읽기
     with open(filepath, 'r', encoding='utf-8') as file:
