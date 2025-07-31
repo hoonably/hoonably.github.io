@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: notion
 title: "Mac 초기설정 + 유용한 프로그램"
 description:
-date: 2025-04-13 16:24:31 +09:00
+date: 2025-04-13 23:54:20 +09:00
 tags: 
 categories: Tip
 giscus_comments: true
@@ -15,505 +15,125 @@ toc:
   beginning: false  # 맨 앞에 목차
   sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
 ---
-
-> 💡
-> 
-> MacBook Pro 14 inch M2 Pro (2023)
-> 
-> `Sequoia 15.3.1` Version
-> 
-> 버전이 다르다면 다를 수 있음
-> 
-> 어플 내 상세 설정은 내가 선호하는 대로 기록하려고 캡쳐해둠
-> 
-> 어느정도 컴퓨터를 다룰 줄 아는 사람이라는 전제 하에 작성
-> 
-> (ex. Github 오픈소스니까 링크 들어가서 최신 버전 다운받기)
-> 
-> Homebrew 등 다루는것도 있는데 궁금하면 알아서 GPT gogo
-> 
-{: .block-warning }
-
-# 프로그램 다운로드 종류
-
-설정과 좋은 어플을 소개하기 전에 맥 기본 프로그램 다운로드 종류를 알려주겠다.
-
-앱스토어로 다운은 생각보다 별로 없으니까 일단 넘기고,
-
-맥은 소프트웨어를 다운받았을 경우, 직접 `응용 프로그램` 폴더에 넣어줘야한다.
-
-프로그램별로 보통 세가지 방식이 있다.
-
-1. `.pkg` 파일 : 우리가 아는 평범한 설치 프로그램. 
-    
-    근데 맥에서는 은근 잘 안쓰인다.
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%201.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-1. `.dmg` 파일 : 친절하게 넣도록 유도
-    
-    → 다음처럼 친절하게 드래그드롭으로 넣도록 유도해준다.
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%202.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%203.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-1. `.zip` 파일 : 알아서 넣기
-    
-    → 다음과같이 zip 파일만 딸랑 있을때, 압축을 풀었는데 바로 응용 프로그램이 나온다면
-    
-    → 직접 `응용 프로그램` 폴더에 드래그드랍 해주자.
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%204.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%205.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-다음과 같이 `응용 프로그램` 폴더에 들어가면 `LaunchPad`에 보인다.
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%206.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%207.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# ⭐️ Software Update
-
-업데이트 일부러 안하는 사람도 있는데, 개인적으로는 추천한다.
-
-계속 안하고 버티면 안돌아가는 어플들이 꽤 있다.
-
-오래걸릴 수 있으니 미리 다운로드 시작하고 아래 진행
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%208.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# ⚙️ 설정
-
-- Apple Login
-    
-    이거부터 하고 시작하자.
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-02-22_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.44.03.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 시동음 제거
-    
-    노트북 켰을때 이거 안해놓으면 밖에서 관종처럼 시끄럽게 킬 수 있다.
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%209.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 키보드 → 키보드 단축키
-    
-    이건 내 나름대로 선호하는 설정이다.
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2010.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2011.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2012.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 핫 코너 단축키
-    
-    마우스로 코너를 찍어서 Mission Control이나 데스크탑 보기를 할 수 있는데, 정말 유용하다.
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2013.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 앱스토어 암호 없이 다운로드
-    
-    이 과정을 해줘야 앱스토어에서 앱 설치시 귀찮게 자꾸 암호를 입력하는 일이 없다.
-    
-    미디어 및 구입 항목 → 무료 다운로드 → 입력 안함
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2014.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- **문서(PDF) 탭으로 열기**
-    
-    PDF를 열때 윈도우는 자동으로 하나의 창에 여러 탭으로 열리는데,
-    
-    맥은 이 설정을 안해주면 각각 다른 창으로 열린다.
-    
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2015.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-    
-
----
-
-# 🖱️ Scroll Reverser 설치
-
-트랙패드 스크롤은 그대로 두고 마우스 휠만 반전시켜서 윈도우랑 일치하도록 할 수 있음
-
-Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음
-
-[https://pilotmoon.com/scrollreverser/](https://pilotmoon.com/scrollreverser/)
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2016.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2017.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# ⌨️ 우command → 한영키로
-
-- Karabiner 버전에 맞게 다운로드
-    
-    [https://karabiner-elements.pqrs.org/](https://karabiner-elements.pqrs.org/)
-    
-- 여러 권한 부여 작업
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2018.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2019.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 다음과 같이 설정
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2020.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2021.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 참고로 몇몇 키보드는 바로 허용이 안되서 직접 Device에 들어가서 `Modify events` 해줘야함!!
-    
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2022.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-    
-- 설정 → 키보드 → 키보드 단축키
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2023.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-`F18` 하는 방법 : 위에서 설정했던 `우커맨드` 누르면 됨
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2024.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 키보드 → 입력 소스 → 편집
-
-한영키 우커맨드로만 쓸거면 Caps Lock 쓸 수 있음
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2025.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-# 📁 Finder
-
-- 도구 막대 사용자화
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2026.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2027.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2028.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 경로 막대 보기, 상태막대 보기로 변경 → 아래 경로랑 용량 나옴
-
-왼쪽 위의 메뉴바에 보기 누르면 저렇게 나옴
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2029.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 항상 자동으로 정렬
-
-우클릭 → 보기 옵션 → 정렬 → 이름 등 원하는 걸로
-
-→ 아래 `기본값으로 사용` 누르기
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2030.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 파인더에서 단축키로 바로 그 경로의 터미널 열기 (컴공이면 Good)
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2031.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2032.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-반드시 먼저 설정한 항목을 글자 그래도 옮겨적어야한다.
-
-```
+<figure class="block-color-gray_background callout" id="1a2451cf-7b79-80f2-99b0-ce8743380395" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">MacBook Pro 14 inch M2 Pro (2023)<br/><code>Sequoia 15.3.1</code> Version<br/>버전이 다르다면 다를 수 있음<br/>어플 내 상세 설정은 내가 선호하는 대로 기록하려고 캡쳐해두었다.<br/>어느정도 컴퓨터를 다룰 줄 아는 사람이라는 전제 하에 작성했다.<br/>(ex. Github 오픈소스니까 링크 들어가서 최신 버전 다운받기)<br/>Homebrew 등 다루는것도 있는데 궁금하면 알아서 GPT gogo</div></figure><figure class="block-color-teal_background callout" id="230451cf-7b79-80ba-be02-f8895fb480e4" style="white-space:pre-wrap;display:flex"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">모두 다 따라하기보단, 읽어보고 자신이 필요할것 같으면 따라해보자.<br/>단, ⭐️ 5개짜리는 적극 추천한다.</div></figure><hr id="1c0451cf-7b79-805e-ad75-e047c007edeb"/><h1 class="" id="1a3451cf-7b79-8051-a83d-e8618aca2da1">⭐️ [필독] 프로그램 다운로드 종류</h1><p class="" id="22c451cf-7b79-8074-824f-e66108afa3e9">⭐️⭐️⭐️⭐️⭐️</p><p class="" id="1c0451cf-7b79-8070-9d8a-f0640b53dd10">설정과 좋은 어플을 소개하기 전에 맥 기본 프로그램 다운로드 종류를 알려주겠다.</p><p class="" id="22c451cf-7b79-8082-b3c7-c7ca8157f949"><strong>제발 모르면 이거부터 정독하자.</strong></p><p class="" id="1c0451cf-7b79-806b-8ed9-e8c7e469bc3c">
+</p><p class="" id="1a3451cf-7b79-80fb-93cb-ffe1fbca7ff6">앱스토어로 다운은 생각보다 별로 없으니까 일단 넘기고,</p><p class="" id="1a3451cf-7b79-801a-8f56-f1cfefd85b74">맥은 소프트웨어를 다운받았을 경우, 직접 <code>응용 프로그램</code> 폴더에 넣어줘야한다.</p><p class="" id="1a3451cf-7b79-80e6-8bc7-f1396e401e12">프로그램별로 보통 세가지 방식이 있다.</p><ol class="numbered-list" id="1a3451cf-7b79-8084-8f38-c15840731c8e" start="1" type="1"><li><code>.pkg</code> 파일 : 우리가 아는 평범한 설치 프로그램. <p class="" id="1a8451cf-7b79-801b-9318-f09b32807849">근데 맥에서는 은근 잘 안쓰인다.</p></li></ol><div class="column-list" id="1a3451cf-7b79-80b8-8180-ffc4715fb5e4"><div class="column" id="1a3451cf-7b79-80f1-ac0a-e92b08f59a66" style="width:50%"><figure class="image" id="1a3451cf-7b79-80aa-8b9f-f5016da65568"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image.webp" style="width:2064px"/></picture></figure><p class="" id="1a8451cf-7b79-8008-ace8-ea57549e4c07">
+</p></div><div class="column" id="1a3451cf-7b79-8040-b7c9-e464147a0c17" style="width:50%"><figure class="image" id="1a3451cf-7b79-80cb-932f-fa8871d1fb59"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%201.webp" style="width:332px"/></picture></figure></div></div><ol class="numbered-list" id="1a3451cf-7b79-804b-9f23-cc6205b7c3d9" start="2" type="1"><li><code>.dmg</code> 파일 : 친절하게 넣도록 유도<p class="" id="1a3451cf-7b79-8016-b39e-cc070fcfb3f5">→ 다음처럼 친절하게 드래그드롭으로 넣도록 유도해준다.</p></li></ol><div class="column-list" id="1a3451cf-7b79-8002-b8eb-d60bcaf4da49"><div class="column" id="1a3451cf-7b79-80f4-8478-ecb7405e1826" style="width:50%"><figure class="image" id="1a3451cf-7b79-8066-809f-d53ad5c623a5"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%202.webp" style="width:694.984375px"/></picture></figure></div><div class="column" id="1a3451cf-7b79-80a7-bb06-f15a5bb0ad01" style="width:50%"><figure class="image" id="1a3451cf-7b79-808e-8d52-dde009d2dded"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%203.webp" style="width:332px"/></picture></figure></div></div><ol class="numbered-list" id="1a3451cf-7b79-807d-9d25-ca2298c279d5" start="3" type="1"><li><code>.zip</code> 파일 : 알아서 넣기<p class="" id="1a3451cf-7b79-8007-89ca-fc9bebb865a0">→ 다음과같이 zip 파일만 딸랑 있을때, 압축을 풀었는데 바로 응용 프로그램이 나온다면</p><p class="" id="1a3451cf-7b79-801e-b86a-ea98e93ff59f">→ 직접 <code>응용 프로그램</code> 폴더에 드래그드랍 해주자.</p></li></ol><div class="column-list" id="1a3451cf-7b79-80d6-8c55-c341fa0d95b7"><div class="column" id="1a3451cf-7b79-8003-8bd1-eefa4cd6c6c0" style="width:50%"><figure class="image" id="1a3451cf-7b79-80fe-a155-d2f463769049"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%204.webp" style="width:2064px"/></picture></figure></div><div class="column" id="1a3451cf-7b79-8017-b176-fa370bc06986" style="width:50%"><figure class="image" id="1a3451cf-7b79-8088-8d48-dcfb52266dcb"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%205.webp" style="width:2064px"/></picture></figure></div></div><p class="" id="1a3451cf-7b79-80a8-8011-c2bfd9e958db">다음과 같이 <code>응용 프로그램</code> 폴더에 들어가면 <code>LaunchPad</code>에 보인다.</p><div class="column-list" id="1a3451cf-7b79-80bd-93d1-f9ed51a466eb"><div class="column" id="1a3451cf-7b79-808f-b0e4-ca70ee215b14" style="width:56.25%"><figure class="image" id="1a3451cf-7b79-806a-a5d8-c7278b9ab4eb"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%206.webp" style="width:2064px"/></picture></figure></div><div class="column" id="1a3451cf-7b79-80a3-8a94-d7c684f68736" style="width:43.75000000000001%"><figure class="image" id="1a3451cf-7b79-801d-b1c0-c9727d0e5907"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%207.webp" style="width:3600px"/></picture></figure></div></div><p class="" id="1bf451cf-7b79-80c4-844e-f9574e9fd03c">
+</p><p class="" id="1bf451cf-7b79-80dc-ad59-d4c5dcb016aa">
+</p><hr id="1bf451cf-7b79-80b6-b244-fe1e34e59352"/><p class="" id="1bf451cf-7b79-8086-b8e8-e9b559e6c8dd">
+</p><p class="" id="1bf451cf-7b79-802e-99d6-eae4529c9bf5">
+</p><h1 class="" id="1a2451cf-7b79-80f7-8a61-f5205f5394ec">⬇️ Software Update</h1><p class="" id="1a2451cf-7b79-800e-bccc-f24b38974eba">업데이트 일부러 안하는 사람도 있는데, 개인적으로는 추천한다.</p><p class="" id="1a3451cf-7b79-804d-83b0-cb64445fdf63">계속 안하고 버티면 안돌아가는 어플들이 꽤 있다.</p><p class="" id="22c451cf-7b79-8078-86df-f63aeecbf424">그리고 마이그레이션 하려면 양쪽 다 이거 최신으로 업데이트 해줘야한다.</p><p class="" id="1a4451cf-7b79-8091-8d1f-e06be342ce89">오래걸릴 수 있으니 미리 다운로드 시작하고 아래 진행</p><figure class="image" id="1a2451cf-7b79-80c2-8330-d86c90e22040"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%208.webp" style="width:576px"/></picture></figure><p class="" id="1bf451cf-7b79-80d4-9af2-d17e7407e638">
+</p><p class="" id="1bf451cf-7b79-8073-9e1f-f468926d9857">
+</p><hr id="1bf451cf-7b79-80be-bf68-e1ba03596f32"/><p class="" id="1bf451cf-7b79-80c6-9f7b-d1cd25ed8aba">
+</p><p class="" id="1bf451cf-7b79-80d1-adc9-e7ee17ad20dd">
+</p><h1 class="" id="1a2451cf-7b79-80f1-b2d8-c804e3c9734c">⚙️ 설정</h1><p class="" id="22c451cf-7b79-8069-877a-f24e2c6be45f">⭐️⭐️</p><ul class="bulleted-list" id="1a2451cf-7b79-80d6-8510-fe648da74011"><li style="list-style-type:disc">Apple Login<p class="" id="1c0451cf-7b79-8028-9a95-e3ee78872da3">이거부터 하고 시작하자.</p></li></ul><figure class="image" id="1a2451cf-7b79-8022-84e3-fc091ea69518"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-02-22_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.44.03.webp" style="width:576px"/></picture></figure><ul class="bulleted-list" id="1a2451cf-7b79-80a2-bfa9-cd49daaf746e"><li style="list-style-type:disc">시동음 제거<p class="" id="1c0451cf-7b79-8080-8f28-cb5cfe09dca6">노트북 켰을때 이거 안해놓으면 밖에서 관종처럼 시끄럽게 킬 수 있다.</p></li></ul><figure class="image" id="1a2451cf-7b79-80e9-ad2f-ee450d083355"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%209.webp" style="width:576px"/></picture></figure><ul class="bulleted-list" id="1a2451cf-7b79-801f-96a9-c6bcb64a1984"><li style="list-style-type:disc">키보드 → 키보드 단축키<p class="" id="1c0451cf-7b79-807a-bad4-cb6f176a31dd">이건 내 나름대로 선호하는 설정이다.</p></li></ul><div class="column-list" id="1a2451cf-7b79-804a-b822-d4c8330440ee"><div class="column" id="1a2451cf-7b79-80f7-b68f-d57ccf53844f" style="width:50%"><figure class="image" id="1a2451cf-7b79-8044-9ba4-ebe91af51fbf"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2010.webp" style="width:709.9921875px"/></picture></figure><figure class="image" id="1a2451cf-7b79-80af-aed2-fb62005fefc1"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2011.webp" style="width:332px"/></picture></figure></div><div class="column" id="1a2451cf-7b79-80c7-8dd1-c8fb0a441299" style="width:50%"><figure class="image" id="1a2451cf-7b79-80be-8771-d844332860f9"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2012.webp" style="width:332px"/></picture></figure><p class="" id="1a2451cf-7b79-8095-9cec-fb39af82737e">
+</p></div></div><ul class="bulleted-list" id="1a2451cf-7b79-8075-8594-ddfc3c848dbb"><li style="list-style-type:disc">핫 코너 단축키<p class="" id="1c0451cf-7b79-80a3-b87d-dcc4ffde2a3a">마우스로 코너를 찍어서 Mission Control이나 데스크탑 보기를 할 수 있는데, 정말 유용하다.</p></li></ul><figure class="image" id="1a2451cf-7b79-80bc-967b-c78f6882c080"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2013.webp" style="width:576px"/></picture></figure><ul class="bulleted-list" id="1c0451cf-7b79-80c2-9363-fd45784ef876"><li style="list-style-type:disc">앱스토어 암호 없이 다운로드<p class="" id="1c0451cf-7b79-8023-996b-e456680cd939">이 과정을 해줘야 앱스토어에서 앱 설치시 귀찮게 자꾸 암호를 입력하는 일이 없다.</p><p class="" id="1c0451cf-7b79-80d9-a7b3-c3b4d1f1f390">미디어 및 구입 항목 → 무료 다운로드 → 입력 안함</p></li></ul><figure class="image" id="1c0451cf-7b79-80cf-b250-e56fce1fe463"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2014.webp" style="width:576px"/></picture></figure><ul class="bulleted-list" id="1c0451cf-7b79-80f1-9fcb-c2ad77dccb8e"><li style="list-style-type:disc"><strong>문서(PDF) 탭으로 열기</strong><p class="" id="1c0451cf-7b79-805e-9395-c5d7eb2db65b">PDF를 열때 윈도우는 자동으로 하나의 창에 여러 탭으로 열리는데,</p><p class="" id="1c0451cf-7b79-801a-9d4f-ee4c3693d8e7">맥은 이 설정을 안해주면 각각 다른 창으로 열린다.</p><figure class="image" id="196451cf-7b79-8085-9067-f522805b09a9"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2015.webp" style="width:624px"/></picture></figure></li></ul><p class="" id="196451cf-7b79-80cd-9b67-ff811b257da6">
+</p><p class="" id="1bf451cf-7b79-8069-8a2a-fe87c30e81cb">
+</p><hr id="1bf451cf-7b79-80b5-aea6-feef3e84693a"/><p class="" id="1bf451cf-7b79-80fb-b28c-cebdc3d5313a">
+</p><p class="" id="1bf451cf-7b79-8078-b68f-c47961a34a6f">
+</p><h1 class="" id="1a2451cf-7b79-80dd-b703-f09ca76267c8">🖱️ Scroll Reverser 설치</h1><p class="" id="22c451cf-7b79-8001-9fdd-e5cee702af57">⭐️⭐️⭐️⭐️⭐️</p><p class="" id="22c451cf-7b79-8073-b0d2-c9b2cec07c7c">
+</p><p class="" id="22c451cf-7b79-80c5-8fe5-edfac9ad62fd">맥 쓰면 마우스 휠이 반대인데, 이게 은근 불편하다.</p><p class="" id="22c451cf-7b79-806f-b4cd-f9ecf8be6da3">나만 적응하면 끝이다 싶을 수 있는데,</p><p class="" id="22c451cf-7b79-806f-8a8a-d10b60fce21b">남이 내 맥을 잠깐 만지거나, 내가 오랜만에 윈도우 쓸 일 있으면 자꾸 헷갈린다.</p><p class="" id="22c451cf-7b79-80a6-a542-ea13d2a2d765">
+</p><p class="" id="1a2451cf-7b79-80ff-86da-c1fbd3695f06">트랙패드 스크롤은 그대로 두고 마우스 휠만 반전시켜서 윈도우랑 일치하도록 할 수 있음</p><p class="" id="1a2451cf-7b79-8039-a2fb-cf9221182812">Mac 소프트웨어 버전 낮으면 실행 안됨 13.xx 에서 안됐음</p><p class="" id="1a2451cf-7b79-803e-980f-e966dcded30b"><a href="https://pilotmoon.com/scrollreverser/">https://pilotmoon.com/scrollreverser/</a></p><div class="column-list" id="1a2451cf-7b79-80c1-be74-f5a1269e84ed"><div class="column" id="1a2451cf-7b79-80e1-908d-d32330ee102d" style="width:50%"><figure class="image" id="1a2451cf-7b79-8080-8acd-c038d965d124"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2016.webp" style="width:710px"/></picture></figure></div><div class="column" id="1a2451cf-7b79-804d-b977-c629f3aceb21" style="width:50%"><figure class="image" id="1a2451cf-7b79-808d-96fb-e606856e15a5"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2017.webp" style="width:332px"/></picture></figure></div></div><p class="" id="1bf451cf-7b79-809b-bc0e-e94c0ef78c4e">
+</p><p class="" id="1bf451cf-7b79-800c-8621-ec3749df570e">
+</p><hr id="1bf451cf-7b79-8088-a4c8-f1d9c0489a46"/><p class="" id="1bf451cf-7b79-8046-aa7d-fdf00f77f275">
+</p><p class="" id="1bf451cf-7b79-8021-b968-c622e77086dc">
+</p><h1 class="" id="1a2451cf-7b79-80dd-9aa7-e4877b2710f8"> ⌨️ 우command → 한영키로</h1><p class="" id="22c451cf-7b79-80f9-b720-ed81bf297cb4">⭐️⭐️⭐️⭐️⭐️</p><p class="" id="22c451cf-7b79-807a-8c30-fc5759a71231">
+</p><p class="" id="22c451cf-7b79-8044-9236-dba54578bd3d">맥 쓰면 capslock 자리에 있는 한영키 적응해야하는데, 불편하다.</p><p class="" id="22c451cf-7b79-8025-a57f-f8a4535b950c">나만 적응하면 끝이다 싶을 수 있는데,</p><p class="" id="22c451cf-7b79-8046-8848-f1cd1f6cbe88">남이 내 맥을 잠깐 만지거나, 내가 오랜만에 윈도우 쓸 일 있으면 자꾸 헷갈린다.</p><p class="" id="22c451cf-7b79-8099-b8bf-c540dc217ce1">오른쪽 command를 한영키로 바꾸면 서로 편하고 좋다.</p><p class="" id="22c451cf-7b79-805d-b3f7-c16e56282824">
+</p><ul class="bulleted-list" id="1a2451cf-7b79-8026-bb59-e8d49073ffbd"><li style="list-style-type:disc">Karabiner 버전에 맞게 다운로드<p class="" id="1a2451cf-7b79-8038-9ee4-e35dcf380f51"><a href="https://karabiner-elements.pqrs.org/">https://karabiner-elements.pqrs.org/</a></p></li></ul><ul class="bulleted-list" id="1a2451cf-7b79-80d7-9957-e10892fc6fc3"><li style="list-style-type:disc">여러 권한 부여 작업</li></ul><div class="column-list" id="1a2451cf-7b79-8078-9fc4-fb776f3e9b66"><div class="column" id="1a2451cf-7b79-80a2-8b04-ed9b39372932" style="width:50%"><figure class="image" id="1a2451cf-7b79-805c-b74f-c39fce4f164f"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2018.webp" style="width:432px"/></picture></figure></div><div class="column" id="1a2451cf-7b79-8059-b300-fa9731f6a7f0" style="width:50%"><figure class="image" id="1a2451cf-7b79-8024-b188-dab18008dc8c"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2019.webp" style="width:332px"/></picture></figure></div></div><ul class="bulleted-list" id="1a2451cf-7b79-8032-9f2e-d9ada035e265"><li style="list-style-type:disc">다음과 같이 설정</li></ul><figure class="image" id="1a2451cf-7b79-808c-8a32-ce4e4fe889cf"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2020.webp" style="width:2px"/></picture></figure><figure class="image" id="1a2451cf-7b79-80f1-acb8-cd0064007c71"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2021.webp" style="width:2px"/></picture></figure><ul class="block-color-orange_background bulleted-list" id="1a8451cf-7b79-808a-9a46-ff78625fdf02"><li style="list-style-type:disc">참고로 몇몇 키보드는 바로 허용이 안되서 직접 Device에 들어가서 <code>Modify events</code> 해줘야함!!<figure class="image" id="1a8451cf-7b79-80c2-9acf-eb2ae0c6c3bb"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2022.webp" style="width:2424px"/></picture></figure></li></ul><ul class="bulleted-list" id="1a2451cf-7b79-804e-a641-f673edc44553"><li style="list-style-type:disc">설정 → 키보드 → 키보드 단축키</li></ul><div class="column-list" id="1a2451cf-7b79-8006-ab4e-e58a986f01de"><div class="column" id="1a2451cf-7b79-8070-85fb-c5c381ce1e26" style="width:50%"><figure class="image" id="1a2451cf-7b79-809d-a0a6-ccc95fadc897"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2023.webp" style="width:709.9921875px"/></picture><figcaption><code>F18</code> 하는 방법 : 위에서 설정했던 <code>우커맨드</code> 누르면 됨</figcaption></figure><p class="" id="1a5451cf-7b79-808c-a968-d73e4f98000d">
+</p></div><div class="column" id="1a2451cf-7b79-80b7-8511-efb19f6a7d18" style="width:50%"><figure class="image" id="1a2451cf-7b79-80b8-837a-de6775e34e2d"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2024.webp" style="width:332px"/></picture></figure><p class="" id="1a2451cf-7b79-80f4-bd5e-e00ab84f74d5">
+</p></div></div><ul class="bulleted-list" id="1a2451cf-7b79-80a0-8da9-e0d5eb01054d"><li style="list-style-type:disc">키보드 → 입력 소스 → 편집</li></ul><p class="" id="1a2451cf-7b79-808c-a236-f224f2080c88">한영키 우커맨드로만 쓸거면 캡스락 자리를 Caps Lock 쓸 수 있음</p><figure class="image" id="1a2451cf-7b79-80c9-aaa0-dc493c2439e2"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2025.webp" style="width:709.9921875px"/></picture></figure><h1 class="" id="1a2451cf-7b79-800c-8a53-ea0966ebf9d6">📁 Finder</h1><p class="" id="22c451cf-7b79-8092-b745-c792dffffc94">⭐️⭐️⭐️</p><ul class="bulleted-list" id="1a2451cf-7b79-80b5-b3f9-cd814e27f61d"><li style="list-style-type:disc">도구 막대 사용자화</li></ul><figure class="image" id="1a2451cf-7b79-8013-8049-f4dfba02887e"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2026.webp" style="width:624px"/></picture></figure><div class="column-list" id="1a2451cf-7b79-80db-a0d7-fe7861ab387a"><div class="column" id="1a2451cf-7b79-800f-bf11-cdd8922ade65" style="width:37.5%"><figure class="image" id="1a2451cf-7b79-80bc-81be-d764dc0dc400"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2027.webp" style="width:709.9921875px"/></picture></figure></div><div class="column" id="1a2451cf-7b79-805f-9738-eed858bd5daa" style="width:62.5%"><figure class="image" id="1a2451cf-7b79-8082-b6cd-eb4c1651a569"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2028.webp" style="width:331.9921875px"/></picture></figure></div></div><div class="column-list" id="230451cf-7b79-8018-94fd-d4073a1a947f"><div class="column" id="230451cf-7b79-80a4-81d8-f1e1d31b7f6a" style="width:31.25%"><figure class="image" id="1a2451cf-7b79-80c9-9c09-edc5ecec788a"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2029.webp" style="width:240px"/></picture></figure></div><div class="column" id="230451cf-7b79-80b8-858a-c47c7e8a0467" style="width:68.75%"><ul class="bulleted-list" id="1a2451cf-7b79-8067-884e-f1f4eef87a52"><li style="list-style-type:disc">경로 막대 보기, 상태막대 보기로 변경 → 아래 경로랑 용량 나옴</li></ul><p class="" id="1a2451cf-7b79-8000-ad89-ebea0a72f5e7">왼쪽 위의 메뉴바에 보기 누르면 저렇게 나옴</p></div></div><div class="column-list" id="230451cf-7b79-8077-867b-f2b4cf3a3de4"><div class="column" id="230451cf-7b79-804d-af4e-cecd8ad79815" style="width:31.25%"><figure class="image" id="1a2451cf-7b79-807d-8998-f2a2c3b7876f"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2030.webp" style="width:192px"/></picture></figure></div><div class="column" id="230451cf-7b79-80c2-8329-edcfe031d245" style="width:68.75%"><ul class="bulleted-list" id="1a2451cf-7b79-80a7-88ab-d61ccca3cb6a"><li style="list-style-type:disc">항상 자동으로 정렬</li></ul><p class="" id="1a2451cf-7b79-80a7-a439-f3be7700deb3">우클릭 → 보기 옵션 → 정렬 → 이름 등 원하는 걸로</p><p class="" id="1a2451cf-7b79-8041-adcd-c6fb14e233ec">→ 아래 <code>기본값으로 사용</code> 누르기</p><p class="" id="230451cf-7b79-8008-bf0c-f9d085116102">
+</p><p class="" id="230451cf-7b79-80f1-8c07-deb0b8200c80">
+</p></div></div><ul class="bulleted-list" id="1bf451cf-7b79-80d2-8b73-f9576a4d400e"><li style="list-style-type:disc">파인더에서 단축키로 바로 그 경로의 터미널 열기 (컴공이면 Good)</li></ul><figure class="image" id="1c6451cf-7b79-8021-9daa-ff4e002f37a7"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2031.webp" style="width:528px"/></picture></figure><figure class="image" id="1c6451cf-7b79-8013-aba4-ff0286374d5d"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2032.webp" style="width:528px"/></picture></figure><p class="" id="1c6451cf-7b79-8064-bc86-ea32a923d9c1">반드시 먼저 설정한 항목을 글자 그래도 옮겨적어야한다.</p>
+```plain
 폴더에서 새로운 터미널 탭 열기
 ```
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2033.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2034.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-위처럼 폴더를 누른 후 설정한 단축어를 사용하면 바로 터미널이 열린다.
-
----
-
-# ⬛️ Rectangle
-
-맥 소프트웨어 업데이트하면서 기본 설정에서도 있는데, 이 어플이 더 최적화가 부드럽고 기능이 많음
-
-[https://rectangleapp.com/](https://rectangleapp.com/)
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2035.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2036.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2037.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# ⌨️ KeyBoardCleanTool
-
-맥북은 키보드를 누르기만 하면 노트북이 켜져버리기 때문에 키보드 청소하기가 불편하다.
-
-키보드를 아예 꺼버리고 물티슈 등으로 청소할 수 있다.
-
-(전원키는 이거 실행해도 눌리는듯 하니까 조심)
-
-[https://folivora.ai/keyboardcleantool](https://folivora.ai/keyboardcleantool)
-
-다운로드 후 압축풀면 바로 어플리케이션인데, 경로를 ‘응용 프로그램’으로 옮겨주면 된다.
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2038.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# 🐨 Grey
-
-어플들은 대부분 기본 설정으로 시스템이 다크모드면 다크모드를 따라가도록 되어있고, 설정에서 라이트/다크 모드를 고정할 수도 있다.
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2039.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-하지만, 인기가 없는 앱은 무조건 시스템 설정을 따라가는 경우가 있다. (ex. QTSpim)
-
-컴구 과제때문에 QTSpim을 깔아서 하는데, 다크모드를 항상 쓰는 나에게는 코드 보기가 눈이 너무 아팠고, 이거 하나때문에 다크모드를 끄자니 싫었다.
-
-이를 해결하는 각 어플마다 시스템 설정을 다르게 설정해주는 어플이다.
-
-- 다운로드
-
-[https://github.com/zenangst/Gray?tab=readme-ov-file](https://github.com/zenangst/Gray?tab=readme-ov-file)
-
----
-
-# 🧹 AppCleaner
-
-앱만 드래그로 지우면 앱 파일이 많은 용량을 차지할 수 있다. 자동으로 찾아서 지우도록 도와주는 어플
-
-[https://freemacsoft.net/appcleaner/](https://freemacsoft.net/appcleaner/)
-
----
-
-# 🔋 AlDente
-
-맥북 필수 배터리 관리 앱
-
-[https://apphousekitchen.com/](https://apphousekitchen.com/)
-
-난 클램쉘로 쓰니까 편하게 하려고 결제도 하고 사용중
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2040.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2041.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# 💊 Amphetamine
-
-- Download
-
-[https://apps.apple.com/kr/app/amphetamine/id937984704?mt=12](https://apps.apple.com/kr/app/amphetamine/id937984704?mt=12)
-
-- Power Protect
-
-[https://x74353.github.io/Amphetamine-Power-Protect/](https://x74353.github.io/Amphetamine-Power-Protect/)
-
-- 위 링크에서 Power Protect도 설치
-- 설치 후 암호 입력 없이 가능하도록 실행
-
+<div class="column-list" id="1c6451cf-7b79-8075-a4cc-dd707f1d6f80"><div class="column" id="1c6451cf-7b79-80c2-a0b4-d9359845fa25" style="width:50%"><figure class="image" id="1c6451cf-7b79-8000-8011-c4721eef7d28"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2033.webp" style="width:2064px"/></picture></figure></div><div class="column" id="1c6451cf-7b79-801a-b5fe-f2f1ed919470" style="width:50%"><figure class="image" id="1c6451cf-7b79-800d-bad3-cceb388a09f2"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2034.webp" style="width:709.9921875px"/></picture></figure></div></div><p class="" id="1c6451cf-7b79-80bf-a2e9-d62854ae44b4">위처럼 폴더를 누른 후 설정한 단축어를 사용하면 바로 터미널이 열린다.</p><p class="" id="1c6451cf-7b79-803c-a82b-f6899b6c77f4">
+</p><p class="" id="1c6451cf-7b79-8046-ad91-f2eacb014582">
+</p><p class="" id="1c6451cf-7b79-8004-8e13-d6f922cea525">
+</p><hr id="1bf451cf-7b79-80dd-b578-c5afa1bba061"/><p class="" id="1bf451cf-7b79-80f7-a2ec-d8e8eb568c42">
+</p><p class="" id="1bf451cf-7b79-803d-81e0-e21d54f21f79">
+</p><h1 class="" id="1a2451cf-7b79-805b-a23f-c85a7a56ced3">⬛️ Rectangle</h1><p class="" id="22c451cf-7b79-80a2-ac8f-f149f89de114">⭐️⭐️⭐️⭐️⭐️</p><p class="" id="1a3451cf-7b79-8026-85a8-d355bbb1489b">맥 소프트웨어 업데이트하면서 기본 설정에서도 있는데, 이 어플이 더 최적화가 부드럽고 기능이 많음</p><p class="" id="1a2451cf-7b79-80c6-9fe7-f42c78633d80"><a href="https://rectangleapp.com/">https://rectangleapp.com/</a></p><figure class="image" id="1a2451cf-7b79-80c0-84d1-f985e032fdc1"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2035.webp" style="width:709.984375px"/></picture></figure><div class="column-list" id="1a2451cf-7b79-80fa-bcc7-cdeaf081f100"><div class="column" id="1a2451cf-7b79-803f-9ee4-e07a3997ad5e" style="width:62.5%"><figure class="image" id="1a2451cf-7b79-80b6-bd4f-dc21a2d72c4d"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2036.webp" style="width:415px"/></picture></figure></div><div class="column" id="1a2451cf-7b79-80c1-b2c9-f118e4ae5469" style="width:37.5%"><figure class="image" id="1a2451cf-7b79-8061-a3e2-d16de39b5497"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2037.webp" style="width:709.9921875px"/></picture></figure></div></div><p class="" id="1bf451cf-7b79-8014-8334-c65c2bf9fc6b">
+</p><p class="" id="1bf451cf-7b79-80c5-a168-d744d11d29df">
+</p><hr id="1bf451cf-7b79-80b0-81a1-f963e88628cf"/><p class="" id="1bf451cf-7b79-802a-b9df-e8034a69535f">
+</p><p class="" id="1bf451cf-7b79-80e1-8edb-e6102c923b5d">
+</p><h1 class="" id="1a2451cf-7b79-80ef-9d7a-d4b5e4820a2d">⌨️ KeyBoardCleanTool</h1><p class="" id="22c451cf-7b79-80fa-85c6-c6b24fcc8064">⭐️⭐️</p><p class="" id="1a2451cf-7b79-80ab-a2aa-df23178003fd">맥북은 키보드를 누르기만 하면 노트북을 꺼도 노트북이 켜져버리기 때문에 키보드 청소하기가 불편하다.</p><p class="" id="1a2451cf-7b79-8032-8648-f3ca3daad314">키보드를 아예 꺼버리고 물티슈 등으로 청소할 수 있다.</p><p class="" id="1a2451cf-7b79-807b-9588-d9460457b893">(전원키는 이거 실행해도 눌리는듯 하니까 조심)</p><p class="" id="1a2451cf-7b79-80ab-8d38-ec83802425fa"><a href="https://folivora.ai/keyboardcleantool">https://folivora.ai/keyboardcleantool</a></p><p class="" id="1a2451cf-7b79-80e1-a60b-d7d3875e3e0e">다운로드 후 압축풀면 바로 어플리케이션인데, 경로를 ‘응용 프로그램’으로 옮겨주면 된다.</p><figure class="image" id="1a2451cf-7b79-8031-9564-eaa7e1d5e96f"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2038.webp" style="width:624px"/></picture></figure><p class="" id="1bf451cf-7b79-804d-9cf7-e54241d8d27b">
+</p><p class="" id="1bf451cf-7b79-8040-a40f-c5cb1c69d058">
+</p><hr id="1bf451cf-7b79-80bf-9dac-d2d29faa0ed2"/><p class="" id="1bf451cf-7b79-8089-b29b-c10ac897844e">
+</p><p class="" id="1bf451cf-7b79-80c7-b43a-f7bd6d0e294b">
+</p><h1 class="" id="1a2451cf-7b79-80f4-a74f-f3846456f8e9">🐨 Grey</h1><p class="" id="22c451cf-7b79-80d3-a962-efc7477a33d5">⭐️</p><p class="" id="1a3451cf-7b79-806d-9d64-c9014e912b30">어플들은 대부분 기본 설정으로 시스템이 다크모드면 다크모드를 따라가도록 되어있고, 설정에서 라이트/다크 모드를 고정할 수도 있다.</p><figure class="image" id="1a3451cf-7b79-80cf-a1be-fe93aeff9823"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2039.webp" style="width:710px"/></picture></figure><p class="" id="1a3451cf-7b79-8011-80b9-d69a514d0b65">하지만, 인기가 없는 앱은 무조건 시스템 설정을 따라가는 경우가 있다. (ex. QTSpim)</p><p class="" id="1a3451cf-7b79-8006-9b5d-c9f5bef6eb09">컴구 과제때문에 QTSpim을 깔아서 하는데, 다크모드를 항상 쓰는 나에게는 코드 보기가 눈이 너무 아팠고, 이거 하나때문에 다크모드를 끄자니 싫었다.</p><p class="" id="1a3451cf-7b79-80a8-a59f-dc157189d574">
+</p><p class="" id="1a3451cf-7b79-8037-824a-e95cff5407ec">이를 해결하는 각 어플마다 시스템 설정을 다르게 설정해주는 어플이다.</p><ul class="bulleted-list" id="1a3451cf-7b79-8029-93dd-feca26083bf7"><li style="list-style-type:disc">다운로드</li></ul><p class="" id="1a3451cf-7b79-80ae-beda-d8930646b821"><a href="https://github.com/zenangst/Gray?tab=readme-ov-file">https://github.com/zenangst/Gray?tab=readme-ov-file</a></p><p class="" id="1bf451cf-7b79-8001-b180-fd253b2c4aa4">
+</p><p class="" id="1bf451cf-7b79-80f3-9fe2-f5920e1a571a">
+</p><hr id="1bf451cf-7b79-8048-a319-ee10ac5224c7"/><p class="" id="1bf451cf-7b79-807a-9840-f7327ea2e0ea">
+</p><p class="" id="1bf451cf-7b79-8050-a5f0-d6414fda280e">
+</p><h1 class="" id="1a3451cf-7b79-80f1-b858-ff4f4b2ee061">🧹 AppCleaner</h1><p class="" id="22c451cf-7b79-80a5-b905-cef7c7e78820">⭐️⭐️⭐️⭐️⭐️</p><p class="" id="1a3451cf-7b79-808c-ace0-cbf6c3eadac5">앱만 드래그로 지우면 앱 파일을 자동으로 못지우는 경우가 많아 많은 용량을 차지할 수 있다. </p><p class="" id="22c451cf-7b79-80c1-bec7-e0789cd22433">자동으로 찾아서 지우도록 도와주는 어플</p><p class="" id="22c451cf-7b79-80d1-adba-cfcab5e08091">앱 지우는 법 : application 폴더에서 휴지통으로 드래그해서 넣으면 됨</p><p class="" id="22c451cf-7b79-8000-a9b8-cef393c2b357">이 어플 굳이 킬 필요 없이 설치만 되어있으면 위 방법대로 휴지통에 삭제하면 알아서 팝업 뜨면서 지울거냐고 물어보니까 간편하다.</p><p class="" id="1a3451cf-7b79-8050-8401-e6f774a314b2"><a href="https://freemacsoft.net/appcleaner/">https://freemacsoft.net/appcleaner/</a></p><p class="" id="1bf451cf-7b79-8028-83e7-fb8528a104f3">
+</p><p class="" id="1bf451cf-7b79-801f-9bfe-fad08a08df1c">
+</p><hr id="1bf451cf-7b79-80b6-9be5-d78fb610150c"/><p class="" id="1bf451cf-7b79-80e2-b777-c7a6acd32719">
+</p><p class="" id="1bf451cf-7b79-802f-98b7-d07e757e3e34">
+</p><h1 class="" id="1a4451cf-7b79-8011-a0a2-faf1ea7d2f82">🔋 AlDente</h1><p class="" id="22c451cf-7b79-8001-bf20-ebf0b94b181b">⭐️⭐️</p><p class="" id="1a4451cf-7b79-8097-97b4-f3839082bfdd">맥북 필수 배터리 관리 앱</p><p class="" id="22c451cf-7b79-808b-953a-f0543ddc1d23">충전기를 꽂아놔도 알아서 지정한 한도까지만 충전하고, 딱 사용하는 전력만큼만 충전기에서 받아온다.</p><p class="" id="22c451cf-7b79-80d1-9618-e3de558c7a6e">만약 외출 전이라 100% 까지 충전하고 싶다면 충전 버튼 한번 누르면 된다.</p><p class="" id="1a4451cf-7b79-8089-94c9-dce13c4ef6bf"><a href="https://apphousekitchen.com/">https://apphousekitchen.com/</a></p><p class="" id="1a4451cf-7b79-8041-b8e9-fa081351a4c4">난 클램쉘로 쓰니까 편하게 하려고 결제도 하고 사용중</p><div class="column-list" id="1a4451cf-7b79-80a9-93b2-d16927c6c79d"><div class="column" id="1a4451cf-7b79-803f-98b3-e652c48937a2" style="width:56.25%"><figure class="image" id="1a4451cf-7b79-80e7-87f1-c3075a862910"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2040.webp" style="width:709.9921875px"/></picture></figure><p class="" id="1bf451cf-7b79-8051-a689-d9708d30257a">
+</p></div><div class="column" id="1a4451cf-7b79-805e-8cea-eb390d5f3b23" style="width:43.75%"><figure class="image" id="1a4451cf-7b79-809d-a80e-d4e98b4b9e3f"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2041.webp" style="width:709.9921875px"/></picture></figure></div></div><p class="" id="1bf451cf-7b79-80e4-a0ae-c98a1d020302">
+</p><p class="" id="1bf451cf-7b79-805c-9db1-f0e611939db6">
+</p><hr id="1bf451cf-7b79-80f9-89e0-eb1b940485b4"/><p class="" id="1bf451cf-7b79-8026-9ca7-df3a853f2a3e">
+</p><p class="" id="1bf451cf-7b79-8096-b022-ddd2a107948b">
+</p><h1 class="" id="1a4451cf-7b79-803b-ba6f-e1e298faa2b3">💊 Amphetamine</h1><ul class="bulleted-list" id="1a4451cf-7b79-80cc-b8f1-d06e8fbbc8bc"><li style="list-style-type:disc">Download</li></ul><p class="" id="1a4451cf-7b79-8084-8eaf-fc4eeb16d2c2"><a href="https://apps.apple.com/kr/app/amphetamine/id937984704?mt=12">https://apps.apple.com/kr/app/amphetamine/id937984704?mt=12</a></p><ul class="bulleted-list" id="1a4451cf-7b79-80e3-8352-fa12f653e351"><li style="list-style-type:disc">Power Protect</li></ul><p class="" id="1a4451cf-7b79-8096-83ee-c5cd9acbbecd"><a href="https://x74353.github.io/Amphetamine-Power-Protect/">https://x74353.github.io/Amphetamine-Power-Protect/</a></p><ul class="bulleted-list" id="1a4451cf-7b79-80ed-b144-d04b261846f5"><li style="list-style-type:disc">위 링크에서 Power Protect도 설치</li></ul><ul class="bulleted-list" id="1a4451cf-7b79-8007-abce-d349aa403c63"><li style="list-style-type:disc">설치 후 암호 입력 없이 가능하도록 실행</li></ul>
 ```bash
 sudo pmset -a disablesleep 1
 ```
-
-- 비활성화한다면?
-
+<ul class="bulleted-list" id="1a4451cf-7b79-8003-ab2c-ed140dc8b32a"><li style="list-style-type:disc">비활성화한다면?</li></ul>
 ```bash
 sudo pmset -a disablesleep 0
 ```
-
----
-
-# 🖥️ MonitorControl
-
-외장모니터의 밝기를 편하게 컨트롤 하는 툴
-
-외장 모니터 안쓰면 설치할 필요 없음
-
-있으면 무조건 쓰는게 굿
-
-- 기존 모니터 설정→ 직접 컨트롤 불가능.
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2042.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- 직접 컨트롤 가능 + 키보드로도 가능
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2043.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-- Homebrew 통해 설치
-
+<p class="" id="1bf451cf-7b79-8051-a8b6-e52190a2d352">
+</p><p class="" id="1bf451cf-7b79-8046-8c9d-e856ac22ec36">
+</p><hr id="1bf451cf-7b79-8049-bcc4-e2e9d90d12da"/><p class="" id="1bf451cf-7b79-806e-bfed-e608af638138">
+</p><p class="" id="1bf451cf-7b79-80a7-92a9-dc2a53acbe4a">
+</p><h1 class="" id="1a3451cf-7b79-80dd-928c-e732e5d8774a">🖥️ MonitorControl</h1><p class="" id="22c451cf-7b79-80cb-a331-db174a23fc7b">⭐️⭐️⭐️⭐️⭐️</p><p class="" id="1a4451cf-7b79-80f1-88bd-c878f7573369">외장모니터의 밝기를 편하게 컨트롤 하는 툴</p><p class="" id="1a4451cf-7b79-8070-bf00-fad09980b0b7">외장 모니터들이 보통 밝기를 직접 모니터 버튼 눌러서 설정해야하는데, 이걸 가능하게 해줌</p><p class="" id="1c0451cf-7b79-809f-966d-df2e0cd7e86b"><strong>외장 모니터 있으면 있으면 무조건 쓰는거 강추!</strong></p><div class="column-list" id="1a4451cf-7b79-80c6-b840-e3f4c3666856"><div class="column" id="1a4451cf-7b79-80e7-8d92-def312120866" style="width:50%"><ul class="bulleted-list" id="1a4451cf-7b79-8014-9a4f-d99ece317c9a"><li style="list-style-type:disc">기존 모니터 설정→ 직접 컨트롤 불가능.</li></ul><figure class="image" id="1a4451cf-7b79-80e6-ad22-fd3b9849a649"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2042.webp" style="width:331.9921875px"/></picture></figure></div><div class="column" id="1a4451cf-7b79-80d6-bc7d-d810c1cd4d4b" style="width:50%"><ul class="bulleted-list" id="1a4451cf-7b79-8027-8936-f10103c771e1"><li style="list-style-type:disc">직접 컨트롤 가능 + 키보드로도 가능</li></ul><figure class="image" id="1a4451cf-7b79-809e-910e-ec53ddeb303f"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2043.webp" style="width:331.9921875px"/></picture></figure></div></div><ul class="bulleted-list" id="1a4451cf-7b79-80c0-ae5d-e44282c0374d"><li style="list-style-type:disc">Homebrew 통해 설치</li></ul>
 ```bash
 brew install --cask monitorcontrol
 ```
-
-- 웹으로 설치
-    
-    [https://github.com/MonitorControl/MonitorControl/releases](https://github.com/MonitorControl/MonitorControl/releases) 에서 최신버전 dmg 파일 다운로드
-    
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2044.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2045.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# 📎 Maccy
-
-클립보드를 여러개 할 수 있고 저장시켜서 꺼내쓸 수 있는 도구다.
-
-막상 나는 잘 안쓴다.
-
-- Homebrew로 설치
-
+<ul class="bulleted-list" id="1a4451cf-7b79-80ec-a8c7-fe72b94ef4b2"><li style="list-style-type:disc">웹으로 설치<p class="" id="1a4451cf-7b79-80fb-9b19-eba0487b6776"><a href="https://github.com/MonitorControl/MonitorControl/releases">https://github.com/MonitorControl/MonitorControl/releases</a> 에서 최신버전 dmg 파일 다운로드</p></li></ul><div class="column-list" id="1a4451cf-7b79-80cb-b690-c871d83431c1"><div class="column" id="1a4451cf-7b79-80f3-8e26-c3b638359117" style="width:50%"><figure class="image" id="1a4451cf-7b79-8085-9da7-e744a0daa3fd"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2044.webp" style="width:709.984375px"/></picture></figure></div><div class="column" id="1a4451cf-7b79-80a1-a50d-cbb0ebd96b22" style="width:50%"><figure class="image" id="1a4451cf-7b79-8007-86ff-f96fbd8beffe"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2045.webp" style="width:709.9921875px"/></picture></figure></div></div><p class="" id="1bf451cf-7b79-80b1-94f0-ddd9780c6da7">
+</p><p class="" id="1bf451cf-7b79-80b4-842c-e559478d11d1">
+</p><hr id="1bf451cf-7b79-80aa-beb9-c483884b8ab6"/><p class="" id="1bf451cf-7b79-8033-a6de-d1967b3aefb4">
+</p><p class="" id="1bf451cf-7b79-80fa-8c59-d1516f6d0989">
+</p><h1 class="" id="1a3451cf-7b79-807c-8aa3-d94c5f6821d9">📎 Maccy</h1><p class="" id="22c451cf-7b79-80ca-9808-c946d0b4756f">⭐️</p><p class="" id="1a3451cf-7b79-80d1-b8d2-f18dc9c07c96">클립보드를 여러개 할 수 있고 저장시켜서 꺼내쓸 수 있는 도구다.</p><p class="" id="1c0451cf-7b79-8049-be14-d84a1070af16">막상 나는 잘 안쓴다.</p><ul class="bulleted-list" id="1a3451cf-7b79-8003-8ba6-f23fb4595dcc"><li style="list-style-type:disc">Homebrew로 설치</li></ul>
 ```bash
 brew install --cask maccy
 ```
-
-[https://maccy.app/](https://maccy.app/)
-
-[https://blog.naver.com/finway/223487330217](https://blog.naver.com/finway/223487330217)
-
----
-
-# 🎨 Top Notch (메뉴바 검은색으로)
-
-[https://topnotch.app/](https://topnotch.app/)
-
-무조건 메뉴바를 검정색으로 바꿔서 M자 탈모 모양을 없애주는 것
-
-원래 메뉴바 색은 배경화면에 맞게 설정되는데, 색이 맘에 안들면 검정색으로 바꿀 수 있다.
-
-단점 : 바꿔보니까 맥이 프로그램 끝을 둥글게 만들어서 작은 틈이 보여서 색이 바탕화면과 많이 차이나면 창을 최대화해도 틈이 살짝 보인다. **생각보다 별로임**
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2046.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
----
-
-# 🎥 화면녹화시 소리 녹화 방법
-
-기본적으로 `cmd + shift + 5` 를 사용해서 녹화할 수 있는데, 소리 녹화가 동시에 안된다.
-
-Blackhole을 설치하면 소리도 동시에 녹화할 수 있다.
-
-**설치**
-
-2ch로도 충분하다는거 같음. (ch이 뭘 의미하는지 사실 잘 모름)
-
-**Option 1: Download Installer**
-
-1. [Download the latest installer](https://existential.audio/blackhole)
-2. Donate 하지말고 I can’t afford to donate
-3. 이메일 적고 대충 이름 적으면 이메일로 다운링크 줌
-
-**Option 2: Install via Homebrew**
-
-맥좀 써보고 컴공이라면 Homebrew 무조건 있을텐데 이걸로 깔면 바로 깔아짐
-
-- 2ch: `brew install blackhole-2ch`
-- 16ch: `brew install blackhole-16ch`
-- 64ch: `brew install blackhole-64ch`
-
-**설정**
-
-- 오디오 MIDI 설정 → + 버튼 → 다중 출력 기기 생성
-- 아래 사진과 같이 실제로 들을 오디오 기기와 BlackHole2ch을 체크
-    
-    (동시에 두 기기가 출력기기라는거임)
-    
-- 이름은 왼쪽에 있는 이름을 직접 클릭하면 바꿀 수 있음
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2047.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-**사용법**
-
-- 출력 (스피커) : [기존 스피커]+blackhole2ch
-- 입력 (마이크) : blackhole2ch
-    
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2048.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-    
-    {% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2049.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-    
-
-스피커에 blackhole이 있어서 내 컴퓨터 소리를 blackhole로 넘기고,
-
-마이크가 blackhole이라서 내 컴퓨터 소리가 녹화됨 !
-
----
-
-# Chrome 앱을 사용하자
-
-대부분의 프로그램에서 웹 > 앱 이다.
-
-대부분이 웹개발 먼저 이루어지고, 운영체제에 맞게 앱개발이 이루어지기 때문에, 웹이 더 클린한 경우가 많다.
-
-GPT는 특히 데스크탑 앱을 사용하면 표가 애매하게 잘리는 문제, 프로젝트에서 파일을 첨부하지 못하는 문제 등이 발생한다. 
-
-하지만, 웹에서 쓰기에는 GPT만큼은 크롬에서 다른 탭이랑 같이 쓴는것 보다는 따로 창을 쓰는게 좋을 것 같기 때문에, 크롬에서 자체로 앱처럼 웹을 따로 만들어서 사용할 수 있다. (+ 난 인스타도 만들어놨다.)
-
-{% include figure.liquid loading="eager" path="files/2025-04-13-mac-setting/image%2050.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-`전송, 저장, 공유`
-
-`페이지를 앱으로 설치(…`
-
-웹인데 따로 창을 앱처럼 사용하고, 깔끔하게 따로 빼서 사용할 수 있다.
-
-대부분의 기능에서 웹이 더 좋은 것 같다.
-
----
-
-# 🥃 Whisky
-
-.exe 파일을 실행시킬 수 있는 도구다. 게임도 지원이된다. (안되는것도있음)
-
-다만, USB 연결은 안되는것같다.
-
-[https://getwhisky.app/ko/](https://getwhisky.app/ko/)
-
----
-
-# 💽 UTM
-
-무료 가상머신이다. 대신 설치는 살짝 복잡하다. 굳이 안써도 됨. 용량 많이 차지
-
-추천 설정: 실제 메모리 크기와 CPU 코어 개수의 절반 이하로
-
-**Window 11**
-
-난 NFC RFID Reader가 .exe 파일인데, Whisky로는 USB 연결이 안되서 깔았다.
-
-USB연결도 물론 되고, 그냥 윈도우도 쓰는 느낌이다. 
-
-램 8GB하고 싱글 카트라이더 돌려보니까 렉걸리더라
-
-유료보다는 렉걸리지만, 유료는 너무 비싼듯?
-
-[https://xanzhu.com/ko/blog/windows-on-apple-silicon](https://xanzhu.com/ko/blog/windows-on-apple-silicon)
-
-다운르도 링크 (윈도우 10,11 둘다있는데 10은 자꾸 오류뜸)
-
-[https://mac.getutm.app/](https://mac.getutm.app/)
-
-[https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12)
-
-**Ubuntu**
-
-아래 링크에서 ARM 버전 다운로드
-
-[https://cdimage.ubuntu.com/releases/22.04/release/](https://cdimage.ubuntu.com/releases/22.04/release/)
-
-참고 링크 :
-
-[https://solearn.tistory.com/275](https://solearn.tistory.com/275)
+<p class="" id="1a3451cf-7b79-8004-a981-ce1655943479"><a href="https://maccy.app/">https://maccy.app/</a></p><p class="" id="1a3451cf-7b79-8005-a30f-dda85d069ca6"><a href="https://blog.naver.com/finway/223487330217">https://blog.naver.com/finway/223487330217</a></p><p class="" id="1bf451cf-7b79-80af-a1f3-e786d1d47f44">
+</p><p class="" id="1bf451cf-7b79-8099-9aa3-e083f5ca4962">
+</p><hr id="1bf451cf-7b79-80ba-bf5f-d5a910c31685"/><p class="" id="1bf451cf-7b79-806c-be13-ec496816ff61">
+</p><p class="" id="1bf451cf-7b79-80a8-8bbb-f45bd8d730c2">
+</p><h1 class="" id="1a3451cf-7b79-801f-b820-ec2317acccce">🎨 Top Notch (메뉴바 검은색으로)</h1><p class="" id="22c451cf-7b79-805a-b954-d37ce81b0212">⭐️</p><p class="" id="1c2451cf-7b79-80f1-a0c9-e27bb1ef0fea"><a href="https://topnotch.app/">https://topnotch.app/</a></p><p class="" id="1c2451cf-7b79-808b-9f39-fae2a6ba9282">무조건 메뉴바를 검정색으로 바꿔서 M자 탈모 모양을 없애주는 것</p><p class="" id="210451cf-7b79-8034-9eeb-c52fae435159">
+</p><p class="" id="1a4451cf-7b79-8061-a4fd-d562a2fae20a">원래 메뉴바 색은 배경화면에 맞게 설정되는데, 색이 맘에 안들면 검정색으로 바꿀 수 있다.</p><p class="" id="210451cf-7b79-80cc-8fe8-cd92cfefd69a">단점 : 바꿔보니까 맥이 프로그램 끝을 둥글게 만들어서 작은 틈이 보여서 색이 바탕화면과 많이 차이나면 창을 최대화해도 틈이 살짝 보인다. <strong>생각보다 별로임</strong></p><figure class="image" id="1c2451cf-7b79-80ff-89ca-eb54b44016b1"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2046.webp" style="width:709.984375px"/></picture></figure><p class="" id="1c2451cf-7b79-8024-b6be-dbfa29af33b4">
+</p><p class="" id="1bf451cf-7b79-807c-b17d-c207f1b2fbc9">
+</p><p class="" id="1bf451cf-7b79-80fd-8aa9-f5310d108bc4">
+</p><hr id="1bf451cf-7b79-8023-afe1-e53dbdbe3492"/><p class="" id="1bf451cf-7b79-80e8-8f1f-e2fbe152a79b">
+</p><p class="" id="1bf451cf-7b79-8008-9c1b-e189d894f32e">
+</p><h1 class="" id="1af451cf-7b79-80c8-b3a1-ee5320c5c4c1">🎥 화면녹화시 소리 녹화 방법</h1><p class="" id="22c451cf-7b79-8095-bc73-f0cd75f6664e">⭐️⭐️⭐️⭐️</p><p class="" id="1af451cf-7b79-8071-bff0-fe77a0960d63">기본적으로 <code>cmd + shift + 5</code> 를 사용해서 녹화할 수 있는데, 소리 녹화가 동시에 안된다.</p><p class="" id="1af451cf-7b79-8009-bb92-edbfd9896243">Blackhole을 설치하면 소리도 동시에 녹화할 수 있다.</p><p class="" id="1c0451cf-7b79-80c0-8289-d851fb1d0329">
+</p><p class="" id="1c0451cf-7b79-803f-8653-d5523cab8952"><strong>설치</strong></p><p class="" id="1c0451cf-7b79-80bf-996f-c2faa93faa66">2ch로도 충분하다는거 같음. (ch이 뭘 의미하는지 사실 잘 모름)</p><p class="" id="22c451cf-7b79-80dc-ba7a-f422ffa73302">
+</p><p class="" id="1af451cf-7b79-80e5-8573-c7764673399c"><strong>Option 1: Download Installer</strong></p><ol class="numbered-list" id="1af451cf-7b79-8036-9bbd-ca51d6a38ee7" start="1" type="1"><li><a href="https://existential.audio/blackhole">Download the latest installer</a></li></ol><ol class="numbered-list" id="1c0451cf-7b79-801c-ab32-e2776c02823c" start="2" type="1"><li>Donate 하지말고 I can’t afford to donate</li></ol><ol class="numbered-list" id="1c0451cf-7b79-80db-b4a8-fab7033bac9c" start="3" type="1"><li>이메일 적고 대충 이름 적으면 이메일로 다운링크 줌</li></ol><p class="" id="22c451cf-7b79-80fb-8478-d605df2647d9">
+</p><p class="" id="1af451cf-7b79-80d0-9835-ec721be5c1eb"><strong>Option 2: Install via Homebrew</strong></p><p class="" id="1c0451cf-7b79-807f-8e00-f5c45c067fb6">맥좀 써보고 컴공이라면 Homebrew 무조건 있을텐데 이걸로 깔면 바로 깔아짐</p><ul class="bulleted-list" id="1af451cf-7b79-80a1-b397-e6d3af54fd66"><li style="list-style-type:disc">2ch: <code>brew install blackhole-2ch</code></li></ul><p class="" id="1c0451cf-7b79-802a-bfcc-d5224208ffef">
+</p><p class="" id="1bf451cf-7b79-8047-b368-f0de1370fb68"><strong>설정</strong></p><ul class="bulleted-list" id="1c0451cf-7b79-8095-a908-d38aa4380b8d"><li style="list-style-type:disc">오디오 MIDI 설정 → + 버튼 → 다중 출력 기기 생성</li></ul><ul class="bulleted-list" id="1c0451cf-7b79-80a2-8497-ca8cc477ba33"><li style="list-style-type:disc">아래 사진과 같이 실제로 들을 오디오 기기와 BlackHole2ch을 체크<p class="" id="1c0451cf-7b79-80a2-bfbd-d4a51d0d971f">(동시에 두 기기가 출력기기라는거임)</p></li></ul><ul class="bulleted-list" id="1c0451cf-7b79-804f-aaed-dbb40b9ad177"><li style="list-style-type:disc">이름은 왼쪽에 있는 이름을 직접 클릭하면 바꿀 수 있음</li></ul><figure class="image" id="1c0451cf-7b79-8014-8418-f6acdbe03542"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2047.webp" style="width:548.9921875px"/></picture></figure><p class="" id="1c0451cf-7b79-8052-a086-f63441adcdec">
+</p><p class="block-color-default_background" id="1bf451cf-7b79-80cb-8051-dfccf5e1d9fe"><strong>사용법</strong></p><ul class="bulleted-list" id="1bf451cf-7b79-8062-ab33-dfa989012991"><li style="list-style-type:disc">출력 (스피커) : [기존 스피커]+blackhole2ch</li></ul><ul class="bulleted-list" id="1bf451cf-7b79-8060-ac63-d3354927c4af"><li style="list-style-type:disc">입력 (마이크) : blackhole2ch</li></ul><figure class="image" id="1c0451cf-7b79-8086-b038-e384815c4aeb"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2048.webp" style="width:522.9921875px"/></picture></figure><figure class="image" id="1c0451cf-7b79-8003-960c-c2f1b8fdc4dc"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2049.webp" style="width:522.9921875px"/></picture></figure><p class="" id="1bf451cf-7b79-809b-a8e4-cbf3dc4632e5">스피커에 blackhole이 있어서 내 컴퓨터 소리를 blackhole로 넘기고,</p><p class="" id="1bf451cf-7b79-8029-b4fe-e950c4d4614c">마이크가 blackhole이라서 내 컴퓨터 소리가 녹화됨 !</p><p class="" id="1bf451cf-7b79-801c-a77e-f458adbd17c1">
+</p><p class="" id="1bf451cf-7b79-804e-87ff-efa2a42f3065">
+</p><hr id="1bf451cf-7b79-80ab-b3a5-f724ed4ece0b"/><p class="" id="1bf451cf-7b79-8036-bf37-e32ff03368c3">
+</p><p class="" id="1bf451cf-7b79-8087-bc42-df261d289327">
+</p><h1 class="" id="1a4451cf-7b79-8076-9105-dcb7f5e1535c">Chrome 앱을 사용하자</h1><p class="" id="22c451cf-7b79-8097-ac98-dd6c3250cdc0">⭐️⭐️</p><p class="" id="1a4451cf-7b79-8052-8f27-f0c47cc59564">대부분의 프로그램에서 웹 &gt; 앱 이다.</p><p class="" id="1a4451cf-7b79-8091-9e0e-ea210d2ea9c2">대부분이 웹개발 먼저 이루어지고, 운영체제에 맞게 앱개발이 이루어지기 때문에, 웹이 더 클린한 경우가 많다.</p><p class="" id="1a4451cf-7b79-8096-a6c7-cdfdf381cb44">GPT는 특히 데스크탑 앱을 사용하면 표가 애매하게 잘리는 문제, 프로젝트에서 파일을 첨부하지 못하는 문제 등이 발생한다. </p><p class="" id="1a4451cf-7b79-80e2-b9a9-eb140d2ca7c6">하지만, 웹에서 쓰기에는 GPT만큼은 크롬에서 다른 탭이랑 같이 쓴는것 보다는 따로 창을 쓰는게 좋을 것 같기 때문에, 크롬에서 자체로 앱처럼 웹을 따로 만들어서 사용할 수 있다. (+ 난 인스타도 만들어놨다.)</p><figure class="image" id="1a4451cf-7b79-80e5-ab47-d7ff4f707a9f"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2050.webp" style="width:709.9921875px"/></picture></figure><p class="" id="1a4451cf-7b79-809d-8f42-db802b62c497"><code>전송, 저장, 공유</code></p><p class="" id="1a4451cf-7b79-803f-a437-da63c194f4ff"><code>페이지를 앱으로 설치(…</code></p><p class="" id="1a4451cf-7b79-8068-b02a-e63cb89d6926">웹인데 따로 창을 앱처럼 사용하고, 깔끔하게 따로 빼서 사용할 수 있다.</p><p class="" id="1a4451cf-7b79-8045-9504-eef04b9ed10a">대부분의 기능에서 웹이 더 좋은 것 같다.</p><p class="" id="1bf451cf-7b79-80ca-9d63-fad8198883dc">
+</p><p class="" id="1bf451cf-7b79-804f-92f5-d7b526b3f41a">
+</p><hr id="1bf451cf-7b79-80aa-9b38-cdcb805c89cc"/><p class="" id="1bf451cf-7b79-8002-a8ce-c2fcd4abc287">
+</p><p class="" id="1bf451cf-7b79-801b-865c-c1d69899a79f">
+</p><h1 class="" id="1a3451cf-7b79-8072-85ee-c3b1724947af">🥃 Whisky</h1><p class="" id="22c451cf-7b79-80c5-8deb-dce3faa4cd17">⭐️</p><p class="" id="1a3451cf-7b79-8092-b8bd-fba52b2c6089">.exe 파일을 실행시킬 수 있는 도구다. 게임도 지원이된다. (안되는것도있음)</p><p class="" id="1a3451cf-7b79-8044-98f2-f2f407a02d61">다만, USB 연결은 안되는것같다.</p><p class="" id="1a3451cf-7b79-8098-9581-f76810246011"><a href="https://getwhisky.app/ko/">https://getwhisky.app/ko/</a></p><p class="" id="1bf451cf-7b79-80fe-ac62-c26f8a97e75f">
+</p><p class="" id="1bf451cf-7b79-80a8-8db3-d7c689b02e65">
+</p><hr id="1bf451cf-7b79-80f9-8612-e4eb6eb7ff77"/><p class="" id="1bf451cf-7b79-8057-9c60-dcd34a0f7146">
+</p><p class="" id="1bf451cf-7b79-800a-8665-df3f767ab3c5">
+</p><h1 class="" id="1a3451cf-7b79-80a9-a665-db6d572d02cf">💽 UTM</h1><p class="" id="22c451cf-7b79-8033-ba48-e4e1567c2cff">⭐️</p><p class="" id="1a3451cf-7b79-8093-9f6c-df77eba24826">무료 가상머신이다. 대신 설치는 살짝 복잡하다. 굳이 안써도 됨. 용량 많이 차지함.</p><figure class="image" id="230451cf-7b79-80ac-8f49-cb363cfe6976"><picture><img class="img-fluid rounded z-depth-1" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" src="/files/2025-04-13-mac-setting/image%2051.webp" style="width:528px"/></picture></figure><p class="" id="1aa451cf-7b79-8032-8046-ed3cee1fb990">추천 설정: 실제 메모리 크기와 CPU 코어 개수의 절반 이하로</p><p class="" id="1aa451cf-7b79-80a3-bab6-d1ae99830cbc"><strong>Window 11</strong></p><p class="" id="1a4451cf-7b79-80b0-981e-d719e188c74d">난 NFC RFID Reader가 .exe 파일인데, Whisky로는 USB 연결이 안되서 깔았다.</p><p class="" id="1a3451cf-7b79-8028-a600-dd83bd296250">USB연결도 물론 되고, 그냥 윈도우도 쓰는 느낌이다. </p><p class="" id="1aa451cf-7b79-801f-894e-f3193c5eb0de">램 8GB하고 싱글 카트라이더 돌려보니까 렉걸리더라</p><p class="" id="1a4451cf-7b79-808c-996a-cce07d2e8ab1">유료보다는 렉걸리지만, 유료는 너무 비싼듯?</p><p class="" id="1a7451cf-7b79-8024-82be-f7561feb8350"><a href="https://xanzhu.com/ko/blog/windows-on-apple-silicon">https://xanzhu.com/ko/blog/windows-on-apple-silicon</a></p><p class="" id="1aa451cf-7b79-80c7-9be7-ea12c234c7db">
+</p><p class="" id="1a7451cf-7b79-8010-95c1-c1e12552b6a6">다운르도 링크 (윈도우 10,11 둘다있는데 10은 자꾸 오류뜸)</p><p class="" id="1a7451cf-7b79-802f-8e42-f8a48abaf061"><a href="https://mac.getutm.app/">https://mac.getutm.app/</a></p><p class="" id="1a7451cf-7b79-80ad-8259-fd4d618e1ad3"><a href="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12">https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12</a></p><p class="" id="1aa451cf-7b79-80f1-978b-e0c64ab52c9d">
+</p><p class="" id="1aa451cf-7b79-80d4-9de9-dfd9ee0964c0"><strong>Ubuntu</strong></p><p class="" id="1a7451cf-7b79-8026-9f82-f7b368ca9b1a">아래 링크에서 ARM 버전 다운로드</p><p class="" id="1aa451cf-7b79-80ed-a998-c12036d62a29"><a href="https://cdimage.ubuntu.com/releases/22.04/release/">https://cdimage.ubuntu.com/releases/22.04/release/</a></p><p class="" id="1aa451cf-7b79-80b0-86e4-c5655213fa7c">
+</p><p class="" id="1aa451cf-7b79-80d0-b908-e957f8f0feab">참고 링크 :</p><p class="" id="1a7451cf-7b79-8037-9ee9-fce767f46c04"><a href="https://solearn.tistory.com/275">https://solearn.tistory.com/275</a></p><p class="" id="1aa451cf-7b79-8053-ac54-f0aa34ad62dd">
+</p><p class="" id="223451cf-7b79-8011-8fe0-ee26bad0ce77">
+</p><hr id="1aa451cf-7b79-80eb-ad19-d0c165a22f1c"/><p class="" id="223451cf-7b79-802b-b68c-fb3b6c424b70">
+</p><h1 class="" id="223451cf-7b79-8095-a711-df5a8abb8cc8">🍯 꿀 단축키</h1><p class="" id="22c451cf-7b79-80e3-b841-d2008036b9c3">⭐️⭐️⭐️⭐️⭐️</p><p class="" id="22c451cf-7b79-80b2-b592-d7d3e8324813">
+</p><p class="" id="223451cf-7b79-802f-af50-c711163002fd"><code>Cmd + Shift + . </code>  :  파인더에서 .으로 시작하는 숨겨진 파일, 디렉토리 보이게 / 안보이게</p><p class="" id="223451cf-7b79-80d4-90ab-c8810dd7df9f">
+</p><p class="" id="223451cf-7b79-8085-8602-ee5a547faf88">
+</p><p class="" id="223451cf-7b79-8050-89d4-d8459789a1db"><code>Cmd + Shift + 5 </code>: 여러가지 캡쳐기능</p><p class="" id="223451cf-7b79-8018-9ba4-c91b6f5d4d08">중요!!! : 여기서 옵션 누르고 설정해놓으면 다음 단축키들에도 적용됨.</p><p class="" id="223451cf-7b79-8039-936e-e3218d282484">데스크탑 → 데스크탑에 저장됨</p><p class="" id="223451cf-7b79-80fa-9e7e-fdff5dc1e06a"><strong>클립보드 → 바로 클립보드에 저장되어 따로 파일저장 안하고 복붙 가능</strong></p><p class="" id="223451cf-7b79-80ad-a15e-d1db297d490f">
+</p><p class="" id="223451cf-7b79-803e-8d2d-cc94a74e7b09"><code>Cmd + Shift + 3</code> : 전체 화면 캡쳐</p><p class="" id="223451cf-7b79-8076-a97a-e569e4f15682"><code>Cmd + Shift + 4</code> : 전체 화면 캡쳐</p><p class="" id="22c451cf-7b79-802b-a128-e41983ac2aee">
+</p><p class="" id="22c451cf-7b79-80ee-836e-ef6e59b80fe5">
+</p><p class="" id="22c451cf-7b79-8087-9239-e4ba2d827afe"><code>Cmd + R</code>  : F5처럼 새로고침</p><span class="sans" style="font-size:14px;padding-top:2em"></span>
