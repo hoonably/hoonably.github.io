@@ -11,7 +11,7 @@ assets/libs/
 node_modules/
 vendor
 .idea
-.DS_store
+.DS_Store
 *.pptx
 *.pdf
 *.png
