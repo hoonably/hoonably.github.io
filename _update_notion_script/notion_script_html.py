@@ -15,10 +15,11 @@ from urllib.parse import unquote, quote
 import shutil
 import zipfile
 from PIL import Image
+from bs4 import BeautifulSoup
 
 current_time = ""  # 현재 시간 (YYYY-MM-DD HH:MM:SS)
 current_date = ""  # 날짜 (YYYY-MM-DD)
-old_filename = ""  # 기존 md 파일명 ()
+old_filename = ""  # 기존 html 파일명 ()
 new_filename = ""  # 마크다운 파일명과 폴더명 (YYYY-MM-DD-Data-Structure)
 
 import unicodedata
@@ -28,57 +29,75 @@ def safe_filename(filename):
     return filename.encode("ascii", "ignore").decode("ascii")
 
 def merge_paragraphs_inside_callouts(html: str) -> str:
-    # 콜아웃 내부 <p>들을 <br>로 연결하여 한 단락처럼 만들기
-    pattern = re.compile(
-        r'(<figure[^>]*class="[^"]*callout[^"]*"[^>]*>.*?<div[^>]*style="width:100%">)(.*?)(</div>\s*</figure>)',
-        re.DOTALL
-    )
+    soup = BeautifulSoup(html, "html.parser")
 
-    def replacer(match):
-        prefix = match.group(1)
-        inner = match.group(2)
-        suffix = match.group(3)
+    for fig in soup.find_all("figure", class_=lambda c: c and "callout" in c):
+        div = fig.find("div", style=lambda s: s and "width:100%" in s)
+        if not div:
+            continue
 
-        # <p>...</p> → 텍스트 추출 후 <br>로 연결
-        merged = re.sub(r'</p>\s*<p[^>]*>', '<br>', inner)
-        merged = re.sub(r'<p[^>]*>', '', merged)
-        merged = re.sub(r'</p>', '', merged)
+        # 콜아웃 내부 <p>들을 <br>로 연결하여 한 단락처럼 만들기
+        parts = []
+        for p in div.find_all("p"):
+            parts.append("".join(str(x) for x in p.contents))
+        div.clear()
+        div.append(BeautifulSoup("<br>".join(parts), "html.parser"))
 
-        return f"{prefix}{merged}{suffix}"
-
-    return pattern.sub(replacer, html)
+    return str(soup)
 
 # html 파일 내에 있는 src, href 속성의 경로를 변경하는 함수
-def rewrite_image_paths(html_content):
-    print(f"🔄 이미지 경로 수정 시작: {old_filename}")
+def rewrite_image_paths_soup(html: str, old_filename: str, new_filename: str) -> str:
+    soup = BeautifulSoup(html, "html.parser")
 
-    # old_filename 인코딩된 형태와 인코딩되지 않은 형태 모두 대응
-    encoded = quote(old_filename)
-    encoded_plus_fixed = encoded.replace("%2B", r"(?:\+|%2B)")  # + 또는 %2B 모두 매치
-    escaped_old = re.escape(old_filename)
+    old_paths = [old_filename, quote(old_filename), quote(old_filename).replace("%2B", "+")]
 
-    # 정규표현식으로 src / href 내부 경로 모두 수정
-    html_content = re.sub(
-        rf'src="(?:\.\/)?{encoded_plus_fixed}',
-        f'src="/files/{new_filename}',
-        html_content
-    )
-    html_content = re.sub(
-        rf'href="(?:\.\/)?{encoded_plus_fixed}',
-        f'href="/files/{new_filename}',
-        html_content
-    )
+    for tag in soup.find_all(["img", "a"]):
+        for attr in ["src", "href"]:
+            if tag.has_attr(attr):
+                for old in old_paths:
+                    if tag[attr].startswith(old) or f"./{old}" in tag[attr]:
+                        tag[attr] = tag[attr].replace(old, f"/files/{new_filename}")
 
-    # 확장자 직접 교체 (.png → .webp)
-    html_content = html_content.replace('.png">', '.webp">')
-    html_content = html_content.replace('.png"/>', '.webp"/>')
-    html_content = html_content.replace('.jpg">', '.webp">')
-    html_content = html_content.replace('.jpg"/>', '.webp"/>')
-    html_content = html_content.replace('.jpeg">', '.webp">')
-    html_content = html_content.replace('.jpeg"/>', '.webp"/>')
+    # 확장자 교체
+    for img in soup.find_all("img"):
+        for ext in [".png", ".jpg", ".jpeg"]:
+            if img["src"].endswith(ext):
+                img["src"] = img["src"].replace(ext, ".webp")
 
-    print(f"⭐️ 이미지 경로 수정 완료: {old_filename} → /files/{new_filename}")
-    return html_content
+    return str(soup)
+
+
+
+def convert_figure_images(html: str) -> str:
+    soup = BeautifulSoup(html, "html.parser")
+
+    for figure in soup.find_all("figure", class_="image"):
+        a_tag = figure.find("a")
+        img_tag = a_tag.find("img") if a_tag else None
+        if img_tag is None:
+            continue
+
+        # 새 img 태그 생성
+        new_img = soup.new_tag("img")
+
+        # 기존 img 속성 복사
+        for attr, value in img_tag.attrs.items():
+            new_img[attr] = value
+
+        # al-folio 확대용 속성 추가
+        new_img["class"] = "img-fluid rounded z-depth-1"
+        new_img["data-zoomable"] = ""
+        new_img["loading"] = "eager"
+        new_img["onerror"] = "this.onerror=null; $('.responsive-img-srcset').remove();"
+
+        # <picture>로 감싸기
+        picture_tag = soup.new_tag("picture")
+        picture_tag.append(new_img)
+
+        # 기존 <a> → <picture>로 대체
+        a_tag.replace_with(picture_tag)
+
+    return str(soup)
 
 # 마크다운 파일 수정 및 생성하는 함수
 def write_markdown_file(filepath, html_content):
@@ -107,9 +126,9 @@ def write_markdown_file(filepath, html_content):
     html_content = merge_paragraphs_inside_callouts(html_content)
 
 
-    print(f"⭐️ {title}.md 변환작업을 시작합니다.")
+    print(f"⭐️ {title}.html 변환작업을 시작합니다.")
 
-    # .md 파일명과 이미지 등이 들어있는 폴더명 사용자가 지정
+    # .html 파일명과 이미지 등이 들어있는 폴더명 사용자가 지정
     new_filename = input("파일명을 영어로 입력해주세요 (공백은 '-'으로 자동 변경됩니다): ").strip()
 
     # 허용: 알파벳(a-zA-Z), 숫자(0-9), 공백, 하이픈(-)만 → 그 외는 모두 거부
@@ -151,7 +170,8 @@ toc:
 """
 
     # 이미지 경로 수정
-    html_content = rewrite_image_paths(html_content)
+    html_content = rewrite_image_paths_soup(html_content, old_filename, new_filename)
+    html_content = convert_figure_images(html_content)
 
 
     # ⭐️ .md 수정본 생성 후 저장
@@ -186,16 +206,16 @@ def convert_to_webp(input_path, output_path, quality=80):
 
 
 # 이미지가 들어있는 폴더를 "files/" 안으로 복사하는 함수
-def copy_folder(md_path):
+def copy_folder(html_path):
     """
-    md_path: 원본 md 경로
+    html_path: 원본 html 경로
     new_filename: 예시 - '2025-04-04-MLOps.md'
     """
 
-    # 원본 이미지 폴더: md 파일 옆에 있는 동일 이름 폴더
-    md_dir = os.path.dirname(md_path)
-    md_filename = os.path.splitext(os.path.basename(md_path))[0]
-    original_image_folder = os.path.join(md_dir, md_filename)
+    # 원본 이미지 폴더: html 파일 옆에 있는 동일 이름 폴더
+    html_dir = os.path.dirname(html_path)
+    html_filename = os.path.splitext(os.path.basename(html_path))[0]
+    original_image_folder = os.path.join(html_dir, html_filename)
 
     if not os.path.exists(original_image_folder):
         print(f"🌉 이미지가 존재하지 않습니다.")
@@ -220,7 +240,7 @@ def copy_folder(md_path):
 
     print(f"⭐️ 이미지 복사 완료 → {target_folder}")
 
-def process_md_file(filepath):
+def process_html_file(filepath):
     global current_time, current_date
 
     while True:
@@ -250,10 +270,10 @@ def process_md_file(filepath):
 
     # 파일 읽기
     with open(filepath, 'r', encoding='utf-8') as file:
-        md_content = file.read()
+        html_content = file.read()
 
     # 마크다운 파일 생성
-    write_markdown_file(filepath, md_content)
+    write_markdown_file(filepath, html_content)
 
     # 이미지 들어있는 폴더 옮기기
     copy_folder(filepath)
@@ -275,16 +295,16 @@ if __name__ == "__main__":
                 zip_ref.extractall(extract_dir)
 
             # .html 파일 찾기
-            md_file = None
+            html_file = None
             for root, _, files in os.walk(extract_dir):
                 for f in files:
                     if f.endswith(".html"):
-                        md_file = os.path.join(root, f)
+                        html_file = os.path.join(root, f)
                         old_filename = os.path.splitext(f)[0]
                         break
 
-            if md_file:
-                process_md_file(md_file)
+            if html_file:
+                process_html_file(html_file)
 
             # 해제된 폴더 삭제
             shutil.rmtree(extract_dir)
