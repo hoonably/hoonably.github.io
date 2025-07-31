@@ -28,12 +28,20 @@ def safe_filename(filename):
     filename = unicodedata.normalize("NFKD", filename)
     return filename.encode("ascii", "ignore").decode("ascii")
 
+
 def merge_paragraphs_inside_callouts(html: str) -> str:
     # 콜아웃 내부 <p>들을 <br>로 연결하여 한 단락처럼 만들기
     pattern = re.compile(
         r'(<figure[^>]*class="[^"]*callout[^"]*"[^>]*>.*?<div[^>]*style="width:100%">)(.*?)(</div>\s*</figure>)',
         re.DOTALL
     )
+
+    # <ul>과 </ul> 불릿 리스트 제거
+    html = re.sub(r'<ul[^>]*?>', '', html)
+    html = re.sub(r'</ul>', '', html)
+
+    # <strong> 앞에 &nbsp; 삽입
+    html = re.sub(r'<strong>', '&nbsp;<strong>', html)
 
     def replacer(match):
         prefix = match.group(1)
@@ -91,7 +99,7 @@ def convert_prism_codeblocks_to_md(html_content: str) -> str:
         # 코드 텍스트 추출 (BS가 엔티티 디코드/개행 처리)
         code_text = code.get_text()
 
-        md_block = f"\n```{lang}\n{code_text}\n```\n"
+        md_block = f"\n\n```{lang}\n{code_text}\n```\n"
         pre.replace_with(NavigableString(md_block))
 
     # soup 전체를 텍스트로(다른 HTML도 함께 마크다운으로 바꿔야 한다면 별도 파이프라인에서 처리)
