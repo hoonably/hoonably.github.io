@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Materials for courses I taught.",
+          description: "Summaries and materials from my teaching and TA experiences.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-test-time-learning-for-large-language-models",
+        },{id: "post-ttrl-test-time-reinforcement-learning",
+        
+          title: "TTRL: Test-Time Reinforcement Learning",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/ttrl/";
+          
+        },
+      },{id: "post-test-time-learning-for-large-language-models",
         
           title: "Test-Time Learning for Large Language Models",
         
@@ -443,6 +454,36 @@ ninja.data = [{
           description: "Implements and evaluates classical and novel algorithms for the Traveling Salesman Problem, with a focus on flow-based cycle covers and local refinements.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/traveling-salesman/";
+            },},{id: "teaching-lg-electronics-living-dx-course-ldc",
+          title: 'LG Electronics Living DX Course (LDC)',
+          description: "Teaching Assistant for Theory Education",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/24-01-lg/";
+            },},{id: "teaching-lg-electronics-living-dx-course-ldc",
+          title: 'LG Electronics Living DX Course (LDC)',
+          description: "Teaching Assistant for Project-Based Learning (PBL) ⭐️",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/24-02-lg-pbl/";
+            },},{id: "teaching-gyeongnam-ai-novatus-academia-6th",
+          title: 'Gyeongnam AI Novatus Academia (6th)',
+          description: "Teaching Assistant for AI Theory Education",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/25-01-novatus/";
+            },},{id: "teaching-lg-electronics-living-dx-course-ldc",
+          title: 'LG Electronics - Living DX Course (LDC)',
+          description: "Teaching Assistant for Theory Education",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/25-02-lg/";
+            },},{id: "teaching-gyeongnam-ai-novatus-academia-6th",
+          title: 'Gyeongnam AI Novatus Academia (6th)',
+          description: "Teaching Assistant for Project-Based Learning (PBL) ⭐️",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/25-03-novatus-pbl/";
+            },},{id: "teaching-ulsan-ai-novatus-academia-8th",
+          title: 'Ulsan AI Novatus Academia (8th)',
+          description: "Teaching Assistant for AI Theory Education",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/25-04-novatus/";
             },},{
         id: 'social-email',
         title: 'email',
