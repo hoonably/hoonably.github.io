@@ -1,5 +1,5 @@
 {
-  "__":{
+  "_abc":{
     "": "이 파일은 주석을 따로 못써서 주석처리하려면 앞에 _ 붙여서 못하게 하면 됨"
   },
   "basics": {
@@ -8,10 +8,14 @@
     "image": "",
     "email": "hoonably@unist.ac.kr",
     "phone": "",
-    "summary": "Undergraduate student at UNIST, researching On-device AI in constrained environments at UAI Lab.",
+    "url": "https://hoonably.github.io",
+    "summary": "Undergraduate student at UNIST, researching at UAI Lab.",
     "location": {
+      "_address": "2712 Broadway St",
+      "_postalCode": "CA 94115",
       "city": "Ulsan",
-      "region": "Korea"
+      "countryCode": "Korea",
+      "_region": "California"
     },
     "profiles": [
       {
@@ -31,12 +35,26 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "Ulsan National Institute of Science and Technology (UNIST)",
+      "location": "Ulsan, Korea",
+      "url": "https://www.unist.ac.kr/",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2020-03-01",
+      "endDate": "",
+      "_score": "",
+      "courses": ["Member of EarthCops (Soccer Club)"]
+    }
+  ],
   "work": [
     {
       "name": "Ubiquitous AI Lab (UAI Lab)",
       "position": "Undergraduate Research Intern",
       "url": "https://sites.google.com/view/uailab/home/",
       "startDate": "2025-01-01",
+      "endDate": "",
       "summary": "Research on On-Device AI, Human-Centered AI, and Adaptive & Personalized AI.",
       "highlights": [
         "Supervisor: Prof. Taesik Gong",
@@ -57,24 +75,20 @@
       ]
     }
   ],
-  "education": [
-    {
-      "institution": "UNIST",
-      "location": "Ulsan, Korea",
-      "url": "https://www.unist.ac.kr/",
-      "area": "Computer Science and Engineering",
-      "studyType": "Bachelor of Science",
-      "startDate": "2020-03-01",
-      "_courses": [""],
-      "summary": "Member of EarthCops (Soccer Club)"
-    }
-  ],
   "awards": [
     {
       "title": "Academic Excellence Award",
       "date": "2025-02-18",
       "awarder": "UNIST",
+      "_url": "",
       "summary": "Awarded for outstanding academic performance during the Fall semester of 2024."
+    },
+    {
+      "title": "Academic Excellence Award",
+      "date": "2025-08-18",
+      "awarder": "UNIST",
+      "_url": "",
+      "summary": "Awarded for outstanding academic performance during the Spring semester of 2025."
     }
   ],
   "_publications": [
@@ -100,13 +114,22 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-  "skills": [
+  "_skills": [
+    {
+      "name": "Programming Language",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "C++",
+        "Python"
+      ]
+    },
     {
       "name": "Artificial Intelligence",
       "level": "Intermediate",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        
+        "On-device AI"
       ]
     },
     {
@@ -114,7 +137,7 @@
       "level": "Intermediate",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        
+        ""
       ]
     }
   ],
@@ -130,7 +153,7 @@
       "icon": ""
     }
   ],
-  "volunteer": [
+  "_volunteer": [
     {
       "organization": "Community Children's Center",
       "location": "Incheon, Korea",
