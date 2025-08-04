@@ -15,6 +15,7 @@ from urllib.parse import unquote, quote
 import shutil
 import zipfile
 from PIL import Image
+from pillow_heif import register_heif_opener
 from bs4 import BeautifulSoup, NavigableString
 
 current_time = ""  # 현재 시간 (YYYY-MM-DD HH:MM:SS)
@@ -256,20 +257,18 @@ toc:
 def convert_to_webp(input_path, output_path, quality=80):
     try:
         img = Image.open(input_path)
-
         ext = os.path.splitext(input_path)[1].lower()
-        if ext in [".jpg", ".jpeg"]:
-            img = img.convert("RGB")   # JPG/JPEG → RGB (불투명)
+
+        if ext in [".jpg", ".jpeg", ".heic"]:
+            img = img.convert("RGB")   # 불투명한 포맷
         elif ext == ".png":
-            img = img.convert("RGBA")  # PNG → RGBA (투명도 유지)
+            img = img.convert("RGBA")  # PNG는 투명도 유지
 
         img.save(output_path, "webp", quality=quality)
-
-        # 변환 성공한 경우 원본 삭제
         os.remove(input_path)
 
     except Exception as e:
-        print(f"❌ 이미지 변환 실패: {input_path} → {output_path}\n에러: {e}")
+        print(f"❌ 이미지 변환 실패: {input_path}\n에러: {e}")
 
 
 

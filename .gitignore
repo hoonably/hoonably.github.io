@@ -18,4 +18,6 @@ vendor
 *.jpg
 *.jpeg
 *.gif
-_update_notion_script/*.zip
+_script/*.zip
+_script/output_webp/*
+_script/input_img/*
