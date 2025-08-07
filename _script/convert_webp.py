@@ -30,7 +30,7 @@ def batch_convert_images():
     converted_success = []
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_folder = os.path.join(script_dir, "input_img")
+    input_folder = os.path.join(script_dir)
     output_folder = os.path.join(script_dir, "output_webp")
 
     os.makedirs(output_folder, exist_ok=True)

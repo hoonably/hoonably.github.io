@@ -18,6 +18,11 @@ vendor
 *.jpg
 *.jpeg
 *.gif
-_script/*.zip
-_script/output_webp/*
-_script/input_img/*
+*.zip
+
+# _script 폴더 안의 모든 파일과 폴더 무시
+_script/*
+
+# 예외: output_webp 폴더 안의 .gitkeep만 포함
+!_script/output_webp/
+!_script/output_webp/.gitkeep
