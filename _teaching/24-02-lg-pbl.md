@@ -17,3 +17,7 @@ toc:
 [https://www.lge.co.kr/company/main](https://www.lge.co.kr/company/main)
 
 [https://www.lg.com/global/](https://www.lg.com/global/)
+
+{% include figure.liquid loading="eager" path="assets/img/teaching/250228-1.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
+
+{% include figure.liquid loading="eager" path="assets/img/teaching/250228-2.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 

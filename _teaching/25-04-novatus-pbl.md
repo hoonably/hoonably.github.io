@@ -15,3 +15,5 @@ toc:
 ---
 
 [Gyeongnam AI Novatus Academia (6th)](https://www.gntp.or.kr/board/detail/notice/19368)
+
+{% include figure.liquid loading="eager" path="assets/img/teaching/250711-1.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
