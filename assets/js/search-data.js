@@ -474,16 +474,16 @@ ninja.data = [{
           description: "Teaching Assistant for Theory Education",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/25-02-lg/";
-            },},{id: "teaching-gyeongnam-ai-novatus-academia-6th",
-          title: 'Gyeongnam AI Novatus Academia (6th)',
-          description: "Teaching Assistant for Project-Based Learning (PBL) ⭐️",
-          section: "Teaching",handler: () => {
-              window.location.href = "/teaching/25-03-novatus-pbl/";
             },},{id: "teaching-ulsan-ai-novatus-academia-8th",
           title: 'Ulsan AI Novatus Academia (8th)',
           description: "Teaching Assistant for AI Theory Education",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/25-04-novatus/";
+              window.location.href = "/teaching/25-03-novatus/";
+            },},{id: "teaching-gyeongnam-ai-novatus-academia-6th",
+          title: 'Gyeongnam AI Novatus Academia (6th)',
+          description: "Teaching Assistant for Project-Based Learning (PBL) ⭐️",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/25-04-novatus-pbl/";
             },},{
         id: 'social-email',
         title: 'email',
