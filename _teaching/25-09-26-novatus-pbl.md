@@ -3,7 +3,7 @@ layout: pagein
 title: Gyeongnam AI Novatus Academia (6th)
 description: Teaching Assistant for Project-Based Learning (PBL) ⭐️
 # img: assets/img/projects/pintos.webp
-date: 2025-07-11 09:00:00 +09:00
+date: 2025-09-26 09:00:00 +09:00
 category: Project-Based Learning TA
 related_publications: false
 giscus_comments: true
