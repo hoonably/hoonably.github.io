@@ -23,7 +23,7 @@ toc:
 
 👨‍🏫 Main Instructor: Prof. Taesik Gong  
 
-🎓 Role: Teaching Assistant  
+🎓 Role: Teaching Assistant (TA)  
 
 🔗 Link: [Gyeongnam AI Novatus Academia (6th)](https://www.gntp.or.kr/board/detail/notice/19368)
 

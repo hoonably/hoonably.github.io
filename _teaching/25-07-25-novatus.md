@@ -23,7 +23,7 @@ toc:
 
 👨‍🏫 Main Instructor: Prof. Taesik Gong  
 
-🎓 Role: Teaching Assistant  
+🎓 Role: Teaching Assistant (TA)  
 
 🔗 Link: [https://aipark.unist.ac.kr/novatus/](https://aipark.unist.ac.kr/novatus/)
 

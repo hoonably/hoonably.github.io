@@ -252,6 +252,74 @@
       "url": "../projects/tinyllm"
     }
   ],
+  "teaching": [
+    {
+      "name": "Gyeongnam AI Novatus Academia (6th)",
+      "_summary": "",
+      "highlights": [
+        "Project-Based Learning (PBL)",
+        "Teaching Assistant (TA)"
+      ],
+      "startDate": "2025-06-27",
+      "endDate": "2025-09-26",
+      "url": "../teaching/25-09-26-novatus-pbl"
+    },
+    {
+      "name": "Ulsan AI Novatus Academia (8th)",
+      "_summary": "",
+      "highlights": [
+        "Theory Education",
+        "Teaching Assistant (TA)"
+      ],
+      "startDate": "2025-07-25",
+      "endDate": "2025-07-25",
+      "url": "../teaching/25-07-25-novatus"
+    },
+    {
+      "name": "LG Electronics Living DX Course (LDC)",
+      "_summary": "",
+      "highlights": [
+        "Theory Education",
+        "Teaching Assistant (TA)"
+      ],
+      "startDate": "2025-07-07",
+      "endDate": "2025-07-07",
+      "url": "../teaching/25-07-07-lg"
+    },
+    {
+      "name": "Gyeongnam AI Novatus Academia (6th)",
+      "_summary": "",
+      "highlights": [
+        "Theory Education",
+        "Teaching Assistant (TA)"
+      ],
+      "startDate": "2025-05-23",
+      "endDate": "2025-05-23",
+      "url": "../teaching/25-05-23-novatus"
+    },
+    {
+      "name": "LG Electronics Living DX Course (LDC)",
+      "_summary": "",
+      "highlights": [
+        "Project-Based Learning (PBL)",
+        "Teaching Assistant (TA)"
+      ],
+      "startDate": "2025-02-07",
+      "endDate": "2025-02-28",
+      "url": "../teaching/25-02-28-lg-pbl"
+    },
+    {
+      "name": "LG Electronics Living DX Course (LDC)",
+      "_summary": "",
+      "highlights": [
+        "Theory Education",
+        "Teaching Assistant (TA)"
+      ],
+      "startDate": "2025-01-07",
+      "endDate": "2025-01-07",
+      "url": "../teaching/25-01-07-lg"
+    }
+  ],
   "_certificates": [
     {
       "name": "Machine Learning",
