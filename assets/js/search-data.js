@@ -458,32 +458,32 @@ ninja.data = [{
           title: 'LG Electronics Living DX Course (LDC)',
           description: "Teaching Assistant for Theory Education",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/24-01-lg/";
+              window.location.href = "/teaching/25-01-07-lg/";
             },},{id: "teaching-lg-electronics-living-dx-course-ldc",
           title: 'LG Electronics Living DX Course (LDC)',
-          description: "Teaching Assistant for Project-Based Learning (PBL) ⭐️",
+          description: "Teaching Assistant for Project-Based Learning (PBL)",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/24-02-lg-pbl/";
+              window.location.href = "/teaching/25-02-28-lg-pbl/";
             },},{id: "teaching-gyeongnam-ai-novatus-academia-6th",
           title: 'Gyeongnam AI Novatus Academia (6th)',
           description: "Teaching Assistant for AI Theory Education",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/25-01-novatus/";
+              window.location.href = "/teaching/25-05-23-novatus/";
             },},{id: "teaching-lg-electronics-living-dx-course-ldc",
           title: 'LG Electronics - Living DX Course (LDC)',
           description: "Teaching Assistant for Theory Education",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/25-02-lg/";
+              window.location.href = "/teaching/25-07-07-lg/";
             },},{id: "teaching-ulsan-ai-novatus-academia-8th",
           title: 'Ulsan AI Novatus Academia (8th)',
           description: "Teaching Assistant for AI Theory Education",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/25-03-novatus/";
+              window.location.href = "/teaching/25-07-25-novatus/";
             },},{id: "teaching-gyeongnam-ai-novatus-academia-6th",
           title: 'Gyeongnam AI Novatus Academia (6th)',
-          description: "Teaching Assistant for Project-Based Learning (PBL) ⭐️",
+          description: "Teaching Assistant for Project-Based Learning (PBL)",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/25-04-novatus-pbl/";
+              window.location.href = "/teaching/25-09-26-novatus-pbl/";
             },},{
         id: 'social-email',
         title: 'email',
