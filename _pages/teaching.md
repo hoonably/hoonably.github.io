@@ -5,7 +5,7 @@ title: teaching
 description: Summaries and materials from my teaching and TA experiences.
 nav: true
 nav_order: 5
-display_categories: [Summer 2025, Spring 2025, Winter 2024]  # 여기서 category 분류해서 보여줄거 지정하기
+display_categories: [Project-Based Learning TA, Theory Education TA]  # 여기서 category 분류해서 보여줄거 지정하기
 # horizontal: false
 ---
 
@@ -23,7 +23,7 @@ Organize your courses by years, topics, or universities, however you like! -->
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_teaching = site.teaching | where: "category", category %}
-  {% assign sorted_teaching = categorized_teaching | sort: "importance" %}
+  {% assign sorted_teaching = categorized_teaching | sort: "date" | reverse %}
   <!-- Generate cards for each teaching -->
   {% if page.horizontal %}
   <div class="container">
@@ -46,7 +46,7 @@ Organize your courses by years, topics, or universities, however you like! -->
 
 <!-- Display teaching without categories -->
 
-{% assign sorted_teaching = site.teaching | sort: "importance" %}
+{% assign sorted_teaching = site.teaching | sort: "date" | reverse %}
 
   <!-- Generate cards for each teaching -->
 

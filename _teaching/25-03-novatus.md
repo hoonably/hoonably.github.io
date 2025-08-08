@@ -1,10 +1,10 @@
 ---
 layout: pagein
-title: Ulsan AI Novatus Academia (8th)
+title: Gyeongnam AI Novatus Academia (6th)
 description: Teaching Assistant for AI Theory Education
 # img: assets/img/projects/pintos.webp
-importance: 3
-category: Summer 2025
+date: 2025-05-23 09:00:00 +09:00
+category: Theory Education TA
 related_publications: false
 giscus_comments: true
 pretty_table: true
@@ -14,10 +14,32 @@ toc:
   sidebar: false  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
-[https://aipark.unist.ac.kr/novatus/](https://aipark.unist.ac.kr/novatus/)
 
-[Ulsan AI Novatus Academia (8th)](https://aipark.unist.ac.kr/unist-ai%eb%85%b8%eb%b0%94%ed%88%ac%ec%8a%a4-%ec%95%84%ec%b9%b4%eb%8d%b0%eb%af%b8%ec%95%84%ec%9a%b8%ec%82%b0%ea%b3%bc%ec%a0%95-8%ea%b8%b0-%ea%b5%90%ec%9c%a1%ec%83%9d-%eb%aa%a8%ec%a7%91-%ea%b3%b5/?p_num=1&keyword=&target=)
+📅 Date: 2025-05-23  
 
-{% include figure.liquid loading="eager" path="assets/img/teaching/250725-1.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
+🕘 Duration: 9 hours  
 
-{% include figure.liquid loading="eager" path="assets/img/teaching/250725-2.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
+📍 Location: 경남테크노파크 정보산업진흥본부, Changwon, Korea
+
+👨‍🏫 Main Instructor: Prof. Taesik Gong  
+
+🎓 Role: Teaching Assistant  
+
+🔗 Link: [Gyeongnam AI Novatus Academia (6th)](https://www.gntp.or.kr/board/detail/notice/19368)
+
+
+---
+
+I assisted in the data preprocessing session, helping students during the lectures and hands-on exercises.
+
+In the morning (3 hours) and a short afternoon session (1 hour), I supported the instructor by walking around the classroom, answering questions, giving hints, and checking students’ answers during small practice exercises.
+
+After the main lecture ended at 2 PM, I <b>led a 4-hour practical session</b>. I had <b>prepared the practice materials myself in advance</b>, aligning them with the professor’s lecture content. These materials included <b>11 exercises</b>, and students who completed all of them were able to have their work checked and leave early.
+
+During the session, I <b>answered questions</b> as they came up. After about 2 hours, I <b>started going over the exercises from Problem 1 onward</b>, providing explanations and solving them together with the class.
+
+Whenever there was an unclear question or instruction, I made real-time announcements to clarify. After the class, I also <b>revised the problematic parts and shared the updated version</b> with all participants.
+
+<br>
+
+{% include figure.liquid loading="eager" path="assets/img/teaching/250523-1.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 

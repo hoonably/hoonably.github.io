@@ -3,8 +3,8 @@ layout: pagein
 title: LG Electronics Living DX Course (LDC)
 description: Teaching Assistant for Project-Based Learning (PBL) ⭐️
 # img: assets/img/projects/pintos.webp
-importance: 1
-category: Winter 2024
+date: 2025-02-28 09:00:00 +09:00
+category: Project-Based Learning TA
 related_publications: false
 giscus_comments: true
 pretty_table: true
@@ -14,9 +14,21 @@ toc:
   sidebar: false  # 목차가 사이드바 왼쪽에 붙어있음
 ---
 
-[https://www.lge.co.kr/company/main](https://www.lge.co.kr/company/main)
 
-[https://www.lg.com/global/](https://www.lg.com/global/)
+📅 Date: 2025-02-07 ~ 2025-02-28
+
+🕘 Duration: 1 month
+
+📍 Location: UNIST, Ulsan, Korea
+
+👬 Project Team: 민병주 연구원님, 곽찬수 연구원님, 김준엽 연구원님, 공태식 (Prof), 박정훈 (TA)
+
+🎓 Role: Teaching Assistant for Project
+
+🔗 Company Link: [https://www.lge.co.kr/company/main](https://www.lge.co.kr/company/main)
+
+---
+
 
 {% include figure.liquid loading="eager" path="assets/img/teaching/250228-1.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
