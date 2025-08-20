@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-ttrl-test-time-reinforcement-learning",
+        },{id: "post-adaskip-adaptive-sublayer-skipping-for-accelerating-long-context-llm-inference",
+        
+          title: "AdaSkip: Adaptive Sublayer Skipping for Accelerating Long-Context LLM Inference",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/adaskip/";
+          
+        },
+      },{id: "post-ttrl-test-time-reinforcement-learning",
         
           title: "TTRL: Test-Time Reinforcement Learning",
         
