@@ -99,17 +99,6 @@ ninja.data = [{
             window.location.href = "/blog/sana/";
           
         },
-      },{id: "post-mac-초기설정-유용한-프로그램",
-        
-          title: "Mac 초기설정 + 유용한 프로그램",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/mac-setting/";
-          
-        },
       },{id: "post-연구실-안전교육-스킵",
         
           title: "연구실 안전교육 스킵",
