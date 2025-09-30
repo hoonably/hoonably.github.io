@@ -30,5 +30,10 @@ toc:
 
 ---
 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQRH7y0pSTC5oaPBmreJhfJZ5m0tDGFvQhuqjzc8XLwJnliOi-FhGz3ITSHDRGl4w/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<br>
+<br>
+<br>
 
 {% include figure.liquid loading="eager" path="assets/img/teaching/250711-1.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
