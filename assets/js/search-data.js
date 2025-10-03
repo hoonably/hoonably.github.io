@@ -84,17 +84,6 @@ ninja.data = [{
             window.location.href = "/blog/ttl-llm/";
           
         },
-      },{id: "post-various-techniques-in-al-folio",
-        
-          title: "Various techniques in al-folio",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/al-folio-tech/";
-          
-        },
       },{id: "post-sana-efficient-high-resolution-image-synthesis-with-linear-diffusion-transformers",
         
           title: "SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers",
