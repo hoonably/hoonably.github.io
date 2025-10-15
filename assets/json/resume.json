@@ -94,7 +94,7 @@
   "publications": [
     {  
       "name": "Topic: Efficient AI Agent",
-      "authors": "Mingyu Kim, Jeonghoon Park, Hojun Lee, Taesik Gong",
+      "authors": "Mingyu Kim*, Jeonghoon Park*, Hojun Lee, Taesik Gong",
       "publisher": "Under review at Top conf.",
       "_publisher": "ICLR 2026",
       "releaseDate": "2026-??-??",
