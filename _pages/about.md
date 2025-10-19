@@ -4,6 +4,9 @@ title: about
 permalink: /
 subtitle: <a href='#'>Computer Science and Engineering</a> · UNIST · Ulsan, Republic of Korea
 
+# cv_pdf: CV_JeonghoonPark.pdf  # /assets/pdf/안에 있어야함
+cv_pdf: https://drive.google.com/file/d/1I9_mLarky-ie7kCpFxayDdNngEZmmGyG/view?usp=sharing
+
 profile:
   align: right
   image: profile/profile1.jpg
