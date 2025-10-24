@@ -13,9 +13,7 @@ permalink: /sitemap-search.xml
   {% for project in site.projects %}
   <url>
     <loc>{{ site.url }}{{ project.url }}</loc>
-    {% if project.date %}
-    <lastmod>{{ project.date | date_to_xmlschema }}</lastmod>
-    {% endif %}
+    {% if project.date %}<lastmod>{{ project.date | date_to_xmlschema }}</lastmod>{% endif %}
   </url>
   {% endfor %}
 
@@ -23,9 +21,7 @@ permalink: /sitemap-search.xml
   {% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
-    {% if post.date %}
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    {% endif %}
+    {% if post.date %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% endif %}
   </url>
   {% endfor %}
 </urlset>
