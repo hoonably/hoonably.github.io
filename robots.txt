@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jeonghoonpark.com/sitemap.xml
+Sitemap: https://jeonghoonpark.com/sitemap-search.xml
