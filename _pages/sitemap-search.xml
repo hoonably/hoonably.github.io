@@ -1,0 +1,31 @@
+---
+layout: none
+permalink: /sitemap-search.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 메인 홈 -->
+  <url>
+    <loc>{{ site.url }}/</loc>
+  </url>
+
+  <!-- Projects -->
+  {% for project in site.projects %}
+  <url>
+    <loc>{{ site.url }}{{ project.url }}</loc>
+    {% if project.date %}
+    <lastmod>{{ project.date | date_to_xmlschema }}</lastmod>
+    {% endif %}
+  </url>
+  {% endfor %}
+
+  <!-- Blog posts -->
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    {% if post.date %}
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    {% endif %}
+  </url>
+  {% endfor %}
+</urlset>
