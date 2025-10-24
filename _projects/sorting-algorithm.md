@@ -24,7 +24,7 @@ toc:
   </a>
 </div>
 
-> **📄 PDF:** [Project PDF](https://hoonably.github.io/sorting-project)  
+> **📄 PDF:** [Project PDF](https://jeonghoonpark.com/sorting-project/)  
 {: .block-tip }
 
 ---

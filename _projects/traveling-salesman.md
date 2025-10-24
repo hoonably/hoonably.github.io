@@ -24,7 +24,7 @@ toc:
   </a>
 </div>
 
-> **📄 PDF:** [Project PDF](https://hoonably.github.io/traveling-salesman/)  
+> **📄 PDF:** [Project PDF](https://jeonghoonpark.com/traveling-salesman/)  
 {: .block-tip }
 
 ---

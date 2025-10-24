@@ -1,16 +1,19 @@
 ## This Repository is my Website
-- [About](https://hoonably.github.io/)
-- [Blog](https://hoonably.github.io/blog/)
-- [Project](https://hoonably.github.io/projects/)
-- [Repositories](https://hoonably.github.io/repositories/)
-- [Teaching](https://hoonably.github.io/teaching/)
-- [CV](https://hoonably.github.io/cv/)
+- [About](https://jeonghoonpark.com/)
+- [Blog](https://jeonghoonpark.com/blog/)
+- [Publications] (https://jeonghoonpark.com/publications/)
+- [Projects](https://jeonghoonpark.com/projects/)
+- [Repositories](https://jeonghoonpark.com/repositories/)
+- [Teaching](https://jeonghoonpark.com/teaching/)
+- [CV](https://jeonghoonpark.com/cv/)
 
 <br/>
 
 ## Blog Categories
-- Algorithm
-- Problem Solving (Baekjoon)
-- Language Study (C++, Python, Java, SQL...)
-- Reviews
-- Talking
+- CS
+- AI
+- PS
+- Talk
+- Tip
+- Study
+- Paper
