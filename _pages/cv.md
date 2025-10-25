@@ -30,11 +30,11 @@ CV -
 
 <br>
 
-<iframe 
+<div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;">
+  <iframe 
     src="https://drive.google.com/file/d/1I9_mLarky-ie7kCpFxayDdNngEZmmGyG/preview"
-    width="100%" 
-    height="800px" 
-    style="border: none;"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
     frameborder="0"
->
-</iframe>
+    allowfullscreen
+  ></iframe>
+</div>
