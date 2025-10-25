@@ -20,7 +20,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
+{% comment %} <title>
   {% if site.title == 'blank' %}
     {% capture title %}{{ author_name }}{% endcapture %}
   {% else %}
@@ -37,7 +37,22 @@
   {% else %}
     {{ title }}
   {% endif %}
+</title> {% endcomment %}
+{% assign site_title = site.title | default: author_name %}
+<title>
+  {% if page.layout == "about" %}
+    {{ site_title }}
+  {% elsif page.collection == "posts" or page.collection == "projects" or page.collection == "news" %}
+    {{ page.title | default: site_title }}
+  {% else %}
+    {%- if page.title and page.title != "" -%}
+      {{ page.title }} | {{ site_title }}
+    {%- else -%}
+      {{ site_title }}
+    {%- endif -%}
+  {% endif %}
 </title>
+
 <meta name="author" content="{{ author_name }}">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.keywords or site.keywords %}
