@@ -7,6 +7,7 @@ importance: 1
 category: Personal
 github: https://github.com/hoonably/algorithm
 github_stars: false
+document: 
 related_publications: false
 giscus_comments: true
 pretty_table: true

@@ -7,6 +7,7 @@ importance: 1
 category: Academic
 github: https://github.com/hoonably/sorting-project
 github_stars: false
+document: https://jeonghoonpark.com/sorting-project/
 related_publications: false
 giscus_comments: true
 pretty_table: true

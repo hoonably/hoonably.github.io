@@ -7,6 +7,7 @@ importance: 1
 category: Academic
 github: https://github.com/hoonably/pintos
 github_stars: false
+document: 
 related_publications: false
 giscus_comments: true
 pretty_table: true
@@ -25,104 +26,488 @@ toc:
 
 ---
 
-## Project 1: Threads
 
-### 문제
+# PintOS Project
 
-* 기본 PintOS 스레드 시스템은 우선순위 기반 스케줄링이 구현되어 있지 않고, 동기화와 우선순위 역전(priority inversion)을 고려하지 않음.
+UNIST CSE 311 Operating System
 
-### 해결한 내용
+20201118 Jeonghoon Park  
+20201032 Deokhyeon Kim  
 
-* **Priority Scheduling** 구현
-  → 각 스레드는 우선순위를 갖고, 높은 우선순위를 먼저 실행하도록 함.
-* **Priority Donation** 적용
-  → 우선순위 역전을 방지하기 위해 락을 보유한 스레드에 우선순위를 임시로 "기부"하는 구조 구현.
-* **Nested Donation** 처리
-  → 락이 중첩된 상황에서도 donation이 올바르게 전달되도록 구현.
+<br>
 
----
+## Setup
 
-## Project 2-1: User Programs (System Calls)
+### Building the Docker Image
 
-### 문제
+📁 **Make sure you are inside the `setting/` directory before building the image:**
 
-* PintOS는 유저 프로세스를 실행할 수 있으나, 시스템 콜이 제대로 정의되지 않음.
-* 파일 I/O, 프로세스 제어 등 기본적인 유저-커널 상호작용이 미구현 상태.
+```bash
+cd setting
+```
 
-### 해결한 내용
+#### For amd64 (x86\_64) – Windows
 
-* **System Call Handler** 구현
-  → `syscall.c`에서 system call dispatcher를 구현하고, syscall 번호 기반으로 처리.
-* **파일 시스템 호출 지원**
-  → `open`, `read`, `write`, `create`, `close` 등의 기본 파일 조작 구현.
-* **User Pointer Validation**
-  → 사용자로부터 들어오는 포인터가 유효한지 검사하여 kernel crash 방지.
-* **Argument Fetching**
-  → 시스템 콜 호출 시, 유저 스택에서 인자를 안전하게 추출하는 로직 구현.
+```bash
+sudo docker build -t pintos-image .
+```
 
----
+#### For ARM64 (Apple Silicon – macOS)
 
-## Project 2-2: User Programs (Process Control)
+```bash
+docker build --platform=linux/amd64 -t pintos-image .
+```
 
-### 문제
+<details><summary> ⚠️ Rosetta must be enabled for x86_64 emulation on Apple Silicon. </summary>
 
-* PintOS는 프로세스를 생성하거나 종료할 수 있으나, 부모-자식 간의 동기화 및 자원 회수가 미흡함.
+![Rosetta Setting](https://github.com/user-attachments/assets/b73e6e6e-b851-4611-82ce-3899333feb6e)
 
-### 해결한 내용
-
-* **`exec`, `wait`, `exit` 구현**
-  → 부모 프로세스가 자식의 실행 완료를 기다릴 수 있도록 wait 메커니즘 추가.
-* **Load/Execution 성공 여부 전달**
-  → 자식 프로세스의 실행 성공 여부를 부모에게 전달하는 구조 구현.
-* **File Descriptor Table 관리**
-  → 프로세스마다 독립적인 FD 테이블을 유지하고, 파일 공유 제어를 추가.
-* **Exit status 저장 및 회수**
-  → 종료 상태를 부모가 정확히 회수하도록 구현.
+</details>
 
 ---
 
-## Project 3: Virtual Memory
+<br>
 
-### 문제
+### Running the Container
 
-* 기본 PintOS는 demand paging, swapping, mmap 등을 지원하지 않으며, 모든 페이지를 고정적으로 메모리에 적재.
+📁 **Before running the container, move to the project root directory**
+(so that the `pintos/` folder is mounted correctly):
 
-### 해결한 내용
+```bash
+cd ..
+```
 
-* **Frame Table** 구현
-  → 사용자 페이지를 담는 프레임 관리 테이블 구현.
-* **Supplemental Page Table (SPT)**
-  → 각 페이지의 정보를 보관하는 자료구조 구현 (Hash 기반).
-* **Page Fault Handler**
-  → 실행 중 없는 페이지 접근 시, 해당 정보를 SPT에서 찾아서 물리 페이지 할당 및 로드.
-* **Swapping 구현**
-  → 메모리가 부족할 경우, 페이지를 디스크로 교체(swap out) 후 나중에 다시 불러옴(swap in).
-* **Page Replacement Policy**
-  → Second Chance 알고리즘으로 교체 대상 페이지 선택.
-* **Stack Growth**
-  → 유저 스택이 동적으로 확장되도록 구현 (8MB 제한).
-* **Memory-Mapped File (mmap/munmap)**
-  → 파일을 메모리에 직접 매핑하여 lazy loading 및 저장 구현.
+#### On amd64 (x86\_64) – Windows
+
+```bash
+sudo docker run -it -p 80:80 \
+  -v $(pwd)/pintos:/root/pintos \
+  --name pintos pintos-image
+```
+
+#### On ARM64 (Apple Silicon – macOS)
+
+```bash
+docker run --platform=linux/amd64 -it -p 80:80 \
+  -v $(pwd)/pintos:/root/pintos \
+  --name pintos pintos-image
+```
+
+---
+<br>
+
+### ⚠️ First-Time Setup (Install Bochs in the Container)
+
+After the first run, enter the container and run:
+
+```bash
+cd /root/pintos/src/misc
+env SRCDIR=/root/ PINTOSDIR=/root/pintos/ DSTDIR=/usr/local ./bochs-2.2.6-build.sh
+cd ..
+```
+
+You only need to do this once, unless the container is deleted.
+
+Once inside the container, you can exit by typing `exit` or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd>.
+This will automatically stop the container as long as no background processes are keeping it alive.
 
 ---
 
-## Project 4: File System Extension
+#### 🔁 Subsequent Runs
 
-### 문제
+To start the container again after it has been created:
 
-* 기존 PintOS 파일 시스템은 고정 크기 파일만 지원하며, EOF 이후 쓰기가 불가능하고, 공간 낭비(외부 단편화)가 큼.
+```bash
+docker start -ai pintos
+```
 
-### 해결한 내용
-
-* **Extensible File Structure 구현**
-  → 쓰기 요청 시 파일이 자동으로 확장되도록 inode 구조 변경.
-* **Indexed Allocation**
-  → direct, indirect, double indirect 블록 구조를 사용하여 최대 파티션 크기까지 지원 가능하도록 개선.
-* **Sparse File 지원**
-  → 빈 영역은 실제로 블록을 할당하지 않고 읽을 때만 초기화하여 효율적인 공간 사용.
-* **Block Allocation Strategy 변경**
-  → 파일이 조각나더라도 할당 가능하도록 외부 단편화 해소.
-* **Grow 관련 테스트 7종 통과**
-  → grow-create, grow-file-size, grow-sparse 등 다양한 테스트 케이스를 통과하도록 구현.
+<br><br>
 
 ---
+
+<br><br>
+
+## 🧪 Project Test Results
+
+Each project is implemented and tested on a separate branch.
+To view and re-run the tests for each project, follow the instructions below.
+
+---
+
+### 📂 Project 1 – Threads (Partial Implementation)
+
+Manual: [Pintos Project 1](https://web.stanford.edu/class/cs140/projects/pintos/pintos_2.html#SEC20)
+
+This project involved modifying the thread scheduler and timer mechanisms in PintOS.
+We implemented the **alarm clock** and **priority-based scheduling**, but **priority donation** was not included as it was optional.
+
+#### 📌 Related Code
+
+* `threads/thread.c`, `threads/thread.h` – Alarm list logic, priority-aware scheduling (`thread_set_priority()`, `thread_get_priority()`)
+* `devices/timer.c` – Reimplemented `timer_sleep()` using sleep queue
+* `lib/kernel/list.c` – Priority comparison for thread queue ordering
+
+#### 🔧 Check
+
+```bash
+git checkout project1
+docker start -ai pintos
+```
+
+```bash
+cd /root/pintos/src/threads
+make clean
+make check
+```
+
+<details>
+<summary>📋 Result</summary>
+<div markdown="1">
+
+**9 / 9 tests passed**
+```bash
+pass tests/threads/alarm-single
+pass tests/threads/alarm-multiple
+pass tests/threads/alarm-simultaneous
+pass tests/threads/alarm-priority
+pass tests/threads/alarm-zero
+pass tests/threads/alarm-negative
+pass tests/threads/priority-change
+pass tests/threads/priority-fifo
+pass tests/threads/priority-preempt
+```
+
+</div>
+</details>
+
+
+---
+
+### 📂 Project 2 – User Programs (Full Implementation)
+
+Manual: [Pintos Project 2](https://web.stanford.edu/class/cs140/projects/pintos/pintos_3.html#SEC32)
+
+This project consisted of two parts:
+
+* **2-1: Argument passing, system call framework, and basic file I/O**
+* **2-2: Full implementation of user-level system calls**
+
+The final submission includes both phases, with complete support for all required functionality and test cases.
+
+#### 📌 Related Code
+
+* `userprog/process.c` – Executable loading, argument stack setup, and child process tracking
+* `userprog/syscall.c` – System call interface: `read`, `write`, `exec`, `wait`, `remove`, `filesize`, `seek`, `tell`, etc.
+* `lib/user/syscall.c` – User-space syscall interface
+* `lib/string.c`, `threads/thread.c` – String helpers, per-thread file descriptor table
+* `filesys/file.c`, `filesys/inode.c` – Backend logic used by syscall layer for file operations
+
+#### 🔧 Check
+
+```bash
+git checkout project2-2
+docker start -ai pintos
+```
+
+```bash
+cd /root/pintos/src/userprog
+make clean
+make check
+```
+
+<details>
+<summary>📋 Result</summary>
+
+<div markdown="1">
+
+**76 / 76 tests passed**
+
+```bash
+pass tests/filesys/base/syn-write
+pass tests/userprog/args-none
+pass tests/userprog/args-single
+pass tests/userprog/args-multiple
+pass tests/userprog/args-many
+pass tests/userprog/args-dbl-space
+pass tests/userprog/sc-bad-sp
+pass tests/userprog/sc-bad-arg
+pass tests/userprog/sc-boundary
+pass tests/userprog/sc-boundary-2
+pass tests/userprog/halt
+pass tests/userprog/exit
+pass tests/userprog/create-normal
+pass tests/userprog/create-empty
+pass tests/userprog/create-null
+pass tests/userprog/create-bad-ptr
+pass tests/userprog/create-long
+pass tests/userprog/create-exists
+pass tests/userprog/create-bound
+pass tests/userprog/open-normal
+pass tests/userprog/open-missing
+pass tests/userprog/open-boundary
+pass tests/userprog/open-empty
+pass tests/userprog/open-null
+pass tests/userprog/open-bad-ptr
+pass tests/userprog/open-twice
+pass tests/userprog/close-normal
+pass tests/userprog/close-twice
+pass tests/userprog/close-stdin
+pass tests/userprog/close-stdout
+pass tests/userprog/close-bad-fd
+pass tests/userprog/read-normal
+pass tests/userprog/read-bad-ptr
+pass tests/userprog/read-boundary
+pass tests/userprog/read-zero
+pass tests/userprog/read-stdout
+pass tests/userprog/read-bad-fd
+pass tests/userprog/write-normal
+pass tests/userprog/write-bad-ptr
+pass tests/userprog/write-boundary
+pass tests/userprog/write-zero
+pass tests/userprog/write-stdin
+pass tests/userprog/write-bad-fd
+pass tests/userprog/exec-once
+pass tests/userprog/exec-arg
+pass tests/userprog/exec-multiple
+pass tests/userprog/exec-missing
+pass tests/userprog/exec-bad-ptr
+pass tests/userprog/wait-simple
+pass tests/userprog/wait-twice
+pass tests/userprog/wait-killed
+pass tests/userprog/wait-bad-pid
+pass tests/userprog/multi-recurse
+pass tests/userprog/multi-child-fd
+pass tests/userprog/rox-simple
+pass tests/userprog/rox-child
+pass tests/userprog/rox-multichild
+pass tests/userprog/bad-read
+pass tests/userprog/bad-write
+pass tests/userprog/bad-read2
+pass tests/userprog/bad-write2
+pass tests/userprog/bad-jump
+pass tests/userprog/bad-jump2
+pass tests/userprog/no-vm/multi-oom
+pass tests/filesys/base/lg-create
+pass tests/filesys/base/lg-full
+pass tests/filesys/base/lg-random
+pass tests/filesys/base/lg-seq-block
+pass tests/filesys/base/lg-seq-random
+pass tests/filesys/base/sm-create
+pass tests/filesys/base/sm-full
+pass tests/filesys/base/sm-random
+pass tests/filesys/base/sm-seq-block
+pass tests/filesys/base/sm-seq-random
+pass tests/filesys/base/syn-read
+pass tests/filesys/base/syn-remove
+pass tests/filesys/base/syn-write
+All 76 tests passed.
+```
+
+</div>
+</details>
+
+
+---
+
+### 📂 Project 3 – Virtual Memory (Partial Implementation)
+
+Manual: [Pintos Project 3](https://web.stanford.edu/class/cs140/projects/pintos/pintos_4.html#SEC53)
+
+This project required implementing virtual memory features such as supplemental page tables, demand paging, stack growth, and swapping.
+Due to time constraints, only **a subset of core VM functionality** was implemented, focusing on demand paging and stack growth.
+
+#### 📌 Related Code
+
+* `vm/frame.c`, `vm/frame.h` – Frame table and eviction policy
+* `vm/page.c`, `vm/page.h` – Supplemental page table, lazy loading, and memory tracking
+* `vm/swap.c`, `vm/swap.h` – Swap disk interface and slot management
+* `userprog/exception.c` – Page fault handler
+* `userprog/process.c` – Stack growth and lazy segment loading
+
+> 📌 All code in the `vm/` directory was written from scratch, as the directory is empty by default.
+
+#### 🔧 Check
+
+```bash
+git checkout project3
+docker start -ai pintos
+```
+
+```bash
+cd /root/pintos/src/vm
+make clean
+make check
+```
+
+<details>
+<summary>📋 Result</summary>
+<div markdown="1">
+
+**108 / 109 tests passed**
+FAIL tests/vm/page-parallel  ← only failure due to parallel page access
+
+```bash
+pass tests/filesys/base/syn-write
+pass tests/userprog/args-none
+pass tests/userprog/args-single
+pass tests/userprog/args-multiple
+pass tests/userprog/args-many
+pass tests/userprog/args-dbl-space
+pass tests/userprog/sc-bad-sp
+pass tests/userprog/sc-bad-arg
+pass tests/userprog/sc-boundary
+pass tests/userprog/sc-boundary-2
+pass tests/userprog/halt
+pass tests/userprog/exit
+pass tests/userprog/create-normal
+pass tests/userprog/create-empty
+pass tests/userprog/create-null
+pass tests/userprog/create-bad-ptr
+pass tests/userprog/create-long
+pass tests/userprog/create-exists
+pass tests/userprog/create-bound
+pass tests/userprog/open-normal
+pass tests/userprog/open-missing
+pass tests/userprog/open-boundary
+pass tests/userprog/open-empty
+pass tests/userprog/open-null
+pass tests/userprog/open-bad-ptr
+pass tests/userprog/open-twice
+pass tests/userprog/close-normal
+pass tests/userprog/close-twice
+pass tests/userprog/close-stdin
+pass tests/userprog/close-stdout
+pass tests/userprog/close-bad-fd
+pass tests/userprog/read-normal
+pass tests/userprog/read-bad-ptr
+pass tests/userprog/read-boundary
+pass tests/userprog/read-zero
+pass tests/userprog/read-stdout
+pass tests/userprog/read-bad-fd
+pass tests/userprog/write-normal
+pass tests/userprog/write-bad-ptr
+pass tests/userprog/write-boundary
+pass tests/userprog/write-zero
+pass tests/userprog/write-stdin
+pass tests/userprog/write-bad-fd
+pass tests/userprog/exec-once
+pass tests/userprog/exec-arg
+pass tests/userprog/exec-multiple
+pass tests/userprog/exec-missing
+pass tests/userprog/exec-bad-ptr
+pass tests/userprog/wait-simple
+pass tests/userprog/wait-twice
+pass tests/userprog/wait-killed
+pass tests/userprog/wait-bad-pid
+pass tests/userprog/multi-recurse
+pass tests/userprog/multi-child-fd
+pass tests/userprog/rox-simple
+pass tests/userprog/rox-child
+pass tests/userprog/rox-multichild
+pass tests/userprog/bad-read
+pass tests/userprog/bad-write
+pass tests/userprog/bad-read2
+pass tests/userprog/bad-write2
+pass tests/userprog/bad-jump
+pass tests/userprog/bad-jump2
+pass tests/vm/pt-grow-stack
+pass tests/vm/pt-grow-pusha
+pass tests/vm/pt-grow-bad
+pass tests/vm/pt-big-stk-obj
+pass tests/vm/pt-bad-addr
+pass tests/vm/pt-bad-read
+pass tests/vm/pt-write-code
+pass tests/vm/pt-write-code2
+pass tests/vm/pt-grow-stk-sc
+pass tests/vm/page-linear
+FAIL tests/vm/page-parallel     # suspected race condition
+pass tests/vm/page-merge-seq
+pass tests/vm/page-merge-par
+pass tests/vm/page-merge-stk
+pass tests/vm/page-merge-mm
+pass tests/vm/page-shuffle
+pass tests/vm/mmap-read
+pass tests/vm/mmap-close
+pass tests/vm/mmap-unmap
+pass tests/vm/mmap-overlap
+pass tests/vm/mmap-twice
+pass tests/vm/mmap-write
+pass tests/vm/mmap-exit
+pass tests/vm/mmap-shuffle
+pass tests/vm/mmap-bad-fd
+pass tests/vm/mmap-clean
+pass tests/vm/mmap-inherit
+pass tests/vm/mmap-misalign
+pass tests/vm/mmap-null
+pass tests/vm/mmap-over-code
+pass tests/vm/mmap-over-data
+pass tests/vm/mmap-over-stk
+pass tests/vm/mmap-remove
+pass tests/vm/mmap-zero
+pass tests/filesys/base/lg-create
+pass tests/filesys/base/lg-full
+pass tests/filesys/base/lg-random
+pass tests/filesys/base/lg-seq-block
+pass tests/filesys/base/lg-seq-random
+pass tests/filesys/base/sm-create
+pass tests/filesys/base/sm-full
+pass tests/filesys/base/sm-random
+pass tests/filesys/base/sm-seq-block
+pass tests/filesys/base/sm-seq-random
+pass tests/filesys/base/syn-read
+pass tests/filesys/base/syn-remove
+pass tests/filesys/base/syn-write
+1 of 109 tests failed.
+```
+</div>
+</details>
+
+
+---
+
+### 📂 Project 4 – File Systems (Partial Implementation)
+
+Manual: [Pintos Project 4](https://www.scs.stanford.edu/10wi-cs140/pintos/pintos_5.html#SEC75)
+
+This extra credit project focused solely on file growth features, omitting full file system extensions due to time constraints.
+
+> 🧭 Note: This project was not based on Project 3 (Virtual Memory).
+> It was branched directly from the final state of Project 2, as it only required file system enhancements unrelated to virtual memory.
+
+#### 📌 Related Code  
+* `filesys/inode.c` – Indexed inode (direct + single indirect), dynamic growth, and partial free logic
+
+#### 🔧 Check
+
+```bash
+git checkout project4
+docker start -ai pintos
+````
+
+```bash
+cd /root/pintos/src/filesys
+make clean
+make check
+```
+
+<details>
+<summary>📋 Result</summary>
+<div markdown="1">
+
+**7 / 7 tests passed**
+
+```bash
+pass tests/filesys/extended/grow-create
+pass tests/filesys/extended/grow-file-size
+pass tests/filesys/extended/grow-seq-lg
+pass tests/filesys/extended/grow-seq-sm
+pass tests/filesys/extended/grow-sparse
+pass tests/filesys/extended/grow-tell
+pass tests/filesys/extended/grow-two-files
+```
+
+</div>
+</details>
+
+---
+

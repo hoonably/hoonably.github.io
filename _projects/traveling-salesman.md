@@ -6,6 +6,7 @@ img: assets/img/projects/tsp.webp
 importance: 1
 category: Academic
 github: https://github.com/hoonably/traveling-salesman
+document: https://jeonghoonpark.com/traveling-salesman/
 github_stars: false
 related_publications: false
 giscus_comments: true
