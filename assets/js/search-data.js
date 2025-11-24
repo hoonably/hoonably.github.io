@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-adaskip-adaptive-sublayer-skipping-for-accelerating-long-context-llm-inference",
+        },{id: "post-imagepiece-content-aware-re-tokenization-for-efficient-image-recognition",
+        
+          title: "ImagePiece: Content-aware Re-tokenization for Efficient Image Recognition",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/imagepiece/";
+          
+        },
+      },{id: "post-adaskip-adaptive-sublayer-skipping-for-accelerating-long-context-llm-inference",
         
           title: "AdaSkip: Adaptive Sublayer Skipping for Accelerating Long-Context LLM Inference",
         
