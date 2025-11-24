@@ -281,7 +281,9 @@ def copy_folder(html_path):
 
     # 원본 이미지 폴더: html 파일 옆에 있는 동일 이름 폴더
     html_dir = os.path.dirname(html_path)
-    html_filename = os.path.splitext(os.path.basename(html_path))[0]
+    filename_without_ext = os.path.splitext(os.path.basename(html_path))[0]
+    # 마지막 공백 이후 해시 제거
+    html_filename = filename_without_ext.rsplit(' ', 1)[0] if ' ' in filename_without_ext else filename_without_ext
     original_image_folder = os.path.join(html_dir, html_filename)
 
     if not os.path.exists(original_image_folder):
@@ -357,7 +359,25 @@ if __name__ == "__main__":
 
             # 압축 해제
             with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-                zip_ref.extractall(extract_dir)
+                file_list = zip_ref.namelist()
+                
+                # zip 내부에 zip 파일 하나만 있는 경우 (Notion export 패턴)
+                if len(file_list) == 1 and file_list[0].lower().endswith('.zip'):
+                    # 내부 zip을 script_dir에 임시 추출
+                    zip_ref.extractall(script_dir)
+                    inner_zip_path = os.path.join(script_dir, file_list[0])
+                    
+                    # 내부 zip을 extract_dir에 풀기
+                    with zipfile.ZipFile(inner_zip_path, 'r') as inner_zip:
+                        inner_zip.extractall(extract_dir)
+                    
+                    # 임시 내부 zip 파일 삭제
+                    os.remove(inner_zip_path)
+                    print(f"⭐️ 중첩 zip 압축 해제 완료 → {extract_dir}")
+                else:
+                    # 일반적인 압축 해제
+                    zip_ref.extractall(extract_dir)
+                    print(f"⭐️ 압축 해제 완료 → {extract_dir}")
 
             # .html 파일 찾기
             html_file = None
@@ -365,7 +385,9 @@ if __name__ == "__main__":
                 for f in files:
                     if f.endswith(".html"):
                         html_file = os.path.join(root, f)
-                        old_filename = os.path.splitext(f)[0]
+                        # 마지막 공백 이후 해시 제거 (예: "Title 2a2451cf.html" → "Title")
+                        filename_without_ext = os.path.splitext(f)[0]
+                        old_filename = filename_without_ext.rsplit(' ', 1)[0] if ' ' in filename_without_ext else filename_without_ext
                         break
 
             if html_file:
