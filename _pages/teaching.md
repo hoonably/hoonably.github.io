@@ -19,7 +19,7 @@ Organize your courses by years, topics, or universities, however you like! -->
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized teaching -->
   {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
+  <a id="{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_teaching = site.teaching | where: "category", category %}
