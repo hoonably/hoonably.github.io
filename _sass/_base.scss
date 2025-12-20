@@ -574,7 +574,7 @@ footer.sticky-bottom {
   }
 
   h2 {
-    font-size: 1.5rem; //! blog 부제목 사이즈
+    font-size: 1.2rem; //! blog 부제목 사이즈
   }
 }
 
@@ -600,6 +600,12 @@ footer.sticky-bottom {
 .post-title {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
+  }
+}
+
+h3 {
+  .post-title {
+    font-size: 1.3rem;
   }
 }
 
