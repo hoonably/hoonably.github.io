@@ -35,6 +35,15 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: $max-content-width;
+  width: calc(100% - 10rem); // 화면이 좁을 때 좌우 5rem씩 합쳐서 10rem 여백 확보
+  padding-left: 0; // padding 방식 등 제거
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 576px) {
+    width: calc(100% - 6rem); // 모바일에서는 좌우 3rem씩 합쳐서 6rem 여백 (조금 더 넓게)
+  }
 }
 
 // Profile
@@ -47,9 +56,9 @@ body.sticky-bottom-footer {
 // 모바일 뷰에서 프로필 이미지 축소
 @media (max-width: 576px) {
   .profile img {
-    width: 60%;        // 화면 폭 대비 비율
-    max-width: 200px;  // 절대 크기 제한 (선택 사항)
-    margin: 0 auto;    // 가운데 정렬
+    width: 50%; // 화면 폭 대비 비율
+    max-width: 200px; // 절대 크기 제한 (선택 사항)
+    margin: 0 auto; // 가운데 정렬
     display: block;
   }
 }
