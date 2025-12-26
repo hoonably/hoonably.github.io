@@ -6,7 +6,7 @@ description: A growing collection of my projects.
 nav: true
 nav_order: 3
 #! Teaching, Industry
-display_categories: [Academic, Research, Personal, Team, Competition]  # 여기서 category 분류해서 보여줄거 지정하기
+display_categories: [Academic, Research, Personal]  # 여기서 category 분류해서 보여줄거 지정하기 Competition
 horizontal: false
 ---
 

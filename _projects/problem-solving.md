@@ -14,15 +14,13 @@ pretty_table: true
 
 toc:
   beginning: false  # 맨 앞에 목차
-  sidebar: left  # 목차가 사이드바 왼쪽에 붙어있음
+  sidebar: false
 ---
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/hoonably/PS" rel="external nofollow noopener" target="_blank">
-    <img class="only-light w-100" alt="hoonably/PS" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=PS&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-    <img class="only-dark w-100" alt="hoonably/PS" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=PS&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-  </a>
-</div>
+<a href="https://github.com/hoonably/PS" rel="external nofollow noopener" target="_blank">
+  <img class="only-light" alt="hoonably/PS" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=PS&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+  <img class="only-dark" alt="hoonably/PS" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=PS&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
+</a>
 
 > **💻 Baekjoon:** [https://www.acmicpc.net/user/hoonably](https://www.acmicpc.net/user/hoonably)  
 > **💻 Solved.ac:** [https://solved.ac/profile/hoonably](https://solved.ac/profile/hoonably)
