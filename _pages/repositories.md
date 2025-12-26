@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: My GitHub profile and repositories. Feel free to follow — I’m open to mutual follows and collaboration!
-nav: true
+nav: false  # true로 해주면 header에 뜸
 nav_order: 4
 ---
 
