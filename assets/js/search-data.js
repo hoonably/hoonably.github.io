@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "My GitHub profile and repositories. Feel free to follow — I’m open to mutual follows and collaboration!",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Summaries and materials from my teaching and TA experiences.",
@@ -436,9 +429,19 @@ ninja.data = [{
             },},{id: "news-this-website-has-been-rebuilt-using-the-al-folio-jekyll-theme",
           title: 'This website has been rebuilt using the al-folio Jekyll theme.',
           description: "",
-          section: "News",},{id: "projects-pintos",
+          section: "News",},{id: "projects-drone-exploration",
+          title: 'Drone exploration',
+          description: "Multi agent drone exploration",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/drone-exploration/";
+            },},{id: "projects-pigg",
+          title: 'PIGG',
+          description: "Personalized Interactive GUI Grounding",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pigg/";
+            },},{id: "projects-pintos",
           title: 'Pintos',
-          description: "Implements the PintOS OS with priority scheduling, system calls, virtual memory, and a growable file system using indexed and sparse allocation.",
+          description: "Implemented core OS components based on Stanford’s Pintos project.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pintos/";
             },},{id: "projects-problem-solving",
@@ -446,19 +449,24 @@ ninja.data = [{
           description: "Solved algorithm problems every single day for a full year (1-year streak) on Baekjoon.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/problem-solving/";
+            },},{id: "projects-skip",
+          title: 'SKiP',
+          description: "SVM with K-nearest neighbor and Probabilistic weighting",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/skip/";
             },},{id: "projects-sorting-algorithm",
           title: 'Sorting Algorithm',
-          description: "Implementation and benchmarking of classic and modern sorting algorithms with a focus on performance, memory, and stability across diverse input patterns.",
+          description: "Implemented and benchmarked 12 sorting algorithms under various input conditions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/sorting-algorithm/";
             },},{id: "projects-tiny-llm",
           title: 'Tiny LLM',
-          description: "Investigating LLMs that can run in resource-constrained environments (such as on-device) and analyzed the accuracy and inference time of each model through various evaluation sets",
+          description: "Explored LLM architectures optimized for resource-constrained environments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/tinyllm/";
             },},{id: "projects-tsp-algorithm",
           title: 'TSP Algorithm',
-          description: "Implements and evaluates classical and novel algorithms for the Traveling Salesman Problem, with a focus on flow-based cycle covers and local refinements.",
+          description: "Designed and implemented classical TSP algorithms (Held–Karp, MST, Greedy) and a novel MCMF-based heuristic.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/traveling-salesman/";
             },},{id: "teaching-lg-electronics-living-dx-course-ldc",
