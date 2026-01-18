@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-imagepiece-content-aware-re-tokenization-for-efficient-image-recognition",
+        },{id: "post-catp-contextually-adaptive-token-pruning-for-efficient-and-enhanced-multimodal-in-context-learning",
+        
+          title: "CATP: Contextually Adaptive Token Pruning for Efficient and Enhanced Multimodal In-Context Learning",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/catp/";
+          
+        },
+      },{id: "post-imagepiece-content-aware-re-tokenization-for-efficient-image-recognition",
         
           title: "ImagePiece: Content-aware Re-tokenization for Efficient Image Recognition",
         
