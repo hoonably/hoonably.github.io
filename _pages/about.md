@@ -30,12 +30,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-👋 Hi, I’m an undergraduate student in Department of **Computer Science and Engineering (CSE)** at [UNIST](https://www.unist.ac.kr/).  
+👋 Hi, I’m an undergraduate student in the Department of **Computer Science and Engineering (CSE)** at [UNIST](https://www.unist.ac.kr/), currently serving as a research intern at the <a href="https://sites.google.com/view/uailab/home/">Ubiquitous AI Lab</a> under the supervision of Professor <a href="https://taesikgong.com/">Taesik Gong</a>.
 
-I'm interested in **On-device AI** because it has clear benefits for privacy and personalization. I'm particularly interested in solving problems related to running AI efficiently in limited hardware environments. 
+I am particularly interested in **On-device AI** due to its clear benefits for privacy and personalization. My research focus lies in solving the challenges of running AI efficiently in limited hardware environments (Hardware-constrained environments).
 
-Currently, I'm doing an undergraduate research internship at UNIST's <a href="https://sites.google.com/view/uailab/home/">Ubiquitous AI Lab</a> with professor <a href="https://taesikgong.com/">Taesik Gong</a>, learning a lot and also doing some personal research.
-
-I’m also a strong **ESTJ**, with each trait scoring well over 90%. I enjoy meeting new people, approach things in a highly practical and structured way, and try to maintain a positive mindset. Feel free to reach out; I’m easy to talk to.
+I’m also a strong **ESTJ**, with each trait scoring well over 90%. I enjoy meeting new people and maintaining a positive mindset. Feel free to reach out; I’m always open to a good conversation.
 
 <div>

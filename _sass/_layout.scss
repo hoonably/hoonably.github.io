@@ -56,8 +56,7 @@ body.sticky-bottom-footer {
 // 모바일 뷰에서 프로필 이미지 축소
 @media (max-width: 576px) {
   .profile img {
-    width: 50%; // 화면 폭 대비 비율
-    max-width: 200px; // 절대 크기 제한 (선택 사항)
+    width: 38%; // 화면 폭 대비 비율
     margin: 0 auto; // 가운데 정렬
     display: block;
   }

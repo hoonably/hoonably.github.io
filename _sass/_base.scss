@@ -227,7 +227,8 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    //! 데스크탑 뷰에서 about 페이지 Profile image 컨테이너 (=이미지 크기)
+    width: 23%;
 
     .address {
       p {
@@ -605,7 +606,7 @@ footer.sticky-bottom {
 
 h3 {
   .post-title {
-    font-size: 1.5rem;  //! post 제목 사이즈
+    font-size: 1.5rem; //! post 제목 사이즈
   }
 }
 
