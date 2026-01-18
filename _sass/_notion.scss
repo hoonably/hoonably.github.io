@@ -176,7 +176,13 @@ h4 {
 .callout {
     border-radius: 3px;
     padding: 1rem;
-    white-space: normal !important; // HTML 소스 줄바꿈이 빈 줄로 나오는 것 방지
+    border: 1px solid rgba(55, 53, 47, 0.09); // Notion-like border
+    white-space: normal !important; // Reset whitespace to avoid double spacing
+
+    // Force content lines (which are often display:contents divs) to valid blocks
+    >div>div {
+        display: block !important;
+    }
 
     // 콜아웃 내부 리스트 아이템 강제 여백 제거
     li {
@@ -329,19 +335,18 @@ li {
 // *** Notion 중첩 리스트 (circle) 스타일링 ***
 // li style="list-style-type:circle" 인 경우
 li[style*="circle"] {
-    margin-left: 2.5em !important; // 더 깊은 들여쓰기
     font-size: 0.9em; // 글자 크기 축소
     list-style-type: circle !important;
 }
 
 // *** details(토글)를 포함한 li의 점 제거 ***
 // HTML 구조상 <li><details>...</details></li> 로 나올 때 점이 거슬리는 문제 해결
-li:has(> details) {
-    list-style-type: none !important;
-    list-style: none !important;
-    margin-left: 0 !important; // 들여쓰기 초기화 (필요시 조정)
-    padding-left: 0 !important;
-}
+// li:has(> details) {
+//     list-style-type: none !important;
+//     list-style: none !important;
+//     margin-left: 0 !important; // 들여쓰기 초기화 (필요시 조정)
+//     padding-left: 0 !important;
+// }
 
 li>ol:first-child,
 li>ul:first-child {

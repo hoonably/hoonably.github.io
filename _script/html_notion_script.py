@@ -38,8 +38,8 @@ def merge_paragraphs_inside_callouts(html: str) -> str:
     )
 
     # <ul>과 </ul> 불릿 리스트 제거
-    html = re.sub(r'<ul[^>]*?>', '', html)
-    html = re.sub(r'</ul>', '', html)
+    # html = re.sub(r'<ul[^>]*?>', '', html)
+    # html = re.sub(r'</ul>', '', html)
 
     # <strong> 앞에 &nbsp; 삽입
     html = re.sub(r'<strong>', '&nbsp;<strong>', html)
