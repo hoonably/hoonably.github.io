@@ -481,12 +481,12 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/traveling-salesman/";
             },},{id: "teaching-lg-electronics-living-dx-course-ldc",
-          title: 'LG Electronics Living DX Course (LDC)',
+          title: 'LG Electronics - Living DX Course (LDC)',
           description: "Teaching Assistant for Theory Education",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/25-01-07-lg/";
             },},{id: "teaching-lg-electronics-living-dx-course-ldc",
-          title: 'LG Electronics Living DX Course (LDC)',
+          title: 'LG Electronics - Living DX Course (LDC)',
           description: "Teaching Assistant for Project-Based Learning (PBL)",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/25-02-28-lg-pbl/";
