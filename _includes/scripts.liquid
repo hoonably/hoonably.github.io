@@ -334,3 +334,38 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+<!-- GitHub Repository Card -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const repoCards = document.querySelectorAll('.repo-card-container');
+  repoCards.forEach(container => {
+    const repoPath = container.getAttribute('data-repo');
+    if (!repoPath) return;
+
+    fetch(`https://api.github.com/repos/${repoPath}`)
+      .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+      })
+      .then(data => {
+        container.querySelector('.repo-name').textContent = data.name;
+        container.querySelector('.repo-desc').textContent = data.description || "No description.";
+        container.querySelector('.repo-lang span').textContent = data.language || "N/A";
+        container.querySelector('.repo-stars span').textContent = data.stargazers_count;
+        
+        // 포크 수 추가
+        container.querySelector('.repo-forks span').textContent = data.forks_count;
+        
+        // 날짜 포맷팅 (예: 2026-02-01)
+        const updatedDate = new Date(data.updated_at).toLocaleDateString();
+        container.querySelector('.repo-updated span').textContent = updatedDate;
+      })
+      .catch(error => {
+        console.error('Error fetching repo data:', error);
+        container.querySelector('.repo-name').textContent = "Error loading repo";
+        container.querySelector('.repo-desc').textContent = "Could not fetch data from GitHub API.";
+      });
+  });
+});
+</script>

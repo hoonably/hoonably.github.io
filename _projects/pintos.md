@@ -17,10 +17,7 @@ toc:
   sidebar: false
 ---
 
-<a href="https://github.com/hoonably/pintos" rel="external nofollow noopener" target="_blank">
-  <img class="only-light" alt="hoonably/pintos" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=pintos&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-  <img class="only-dark" alt="hoonably/pintos" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=pintos&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-</a>
+{% include repository_card.liquid repo_name="hoonably/pintos" %}
 
 **🤝 Contributors** 
 - Jeonghoon Park · [@hoonably](https://github.com/hoonably)

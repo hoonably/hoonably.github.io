@@ -1,0 +1,44 @@
+{% comment %}
+사용법: 
+
+{% include publication_card.liquid 
+  title="Topic: Efficient AI Agent"
+  authors="**Jeonghoon Park**, Mingyu Kim, Hojun Lee, Taesik Gong"
+  venue="Under review at Top conf."
+  pdf=""
+  arxiv=""
+  code=""
+  award_text="Qualcomm Innovation Fellowship Winner" award_url="링크(옵션)"
+  page_url="하위페이지링크(옵션)"
+%}
+  
+{% endcomment %}
+
+<div class="pub-card-container {% if include.page_url %}has-hover-effect{% endif %}">
+  <div class="pub-card">
+    <div class="pub-header">
+      {% if include.page_url %}
+        <a href="{{ include.page_url }}" class="pub-title-link">
+          <span class="pub-title">"{{ include.title }}"</span>
+        </a>
+      {% else %}
+        <span class="pub-title">"{{ include.title }}"</span>
+      {% endif %}
+    </div>
+
+    <div class="pub-authors">{{ include.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+    <div class="pub-venue"><em>{{ include.venue }}</em></div>
+
+    <div class="pub-badges">
+      {% if include.pdf %}<a href="{{ include.pdf }}" target="_blank" class="pub-badge"><i class="fa-solid fa-file-pdf"></i> PDF</a>{% endif %}
+      {% if include.arxiv %}<a href="{{ include.arxiv }}" target="_blank" class="pub-badge"><i class="fa-solid fa-earth-americas"></i> Arxiv</a>{% endif %}
+      {% if include.code %}<a href="{{ include.code }}" target="_blank" class="pub-badge"><i class="fa-solid fa-code"></i> Code</a>{% endif %}
+      {% if include.award_text %}
+        {% if include.award_url %}<a href="{{ include.award_url }}" target="_blank" class="pub-badge award">
+        {% else %}<span class="pub-badge award">{% endif %}
+          <i class="fa-solid fa-award"></i> {{ include.award_text }}
+        {% if include.award_url %}</a>{% else %}</span>{% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>

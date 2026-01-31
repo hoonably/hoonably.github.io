@@ -16,21 +16,7 @@ toc:
   sidebar: false
 ---
 
-<a href="https://github.com/unist-uai/TinyLLM" rel="external nofollow noopener" target="_blank">
-  <img class="only-light" alt="unist-uai/TinyLLM" src="https://github-readme-stats.vercel.app/api/pin/?username=unist-uai&amp;repo=TinyLLM&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-  <img class="only-dark" alt="unist-uai/TinyLLM" src="https://github-readme-stats.vercel.app/api/pin/?username=unist-uai&amp;repo=TinyLLM&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-</a>
-
-<!-- ---
-
-<div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;">
-  <iframe 
-    src="https://drive.google.com/file/d/12tSDaqOQBxmZuvWdnXFyJrRk77va2EH5/preview"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-    frameborder="0"
-    allowfullscreen
-  ></iframe>
-</div> -->
+{% include repository_card.liquid repo_name="hoonably/TinyLLM" %}
 
 ---
 

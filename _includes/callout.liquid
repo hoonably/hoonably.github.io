@@ -1,0 +1,22 @@
+{% comment %}
+  사용법: 
+  1. 기본(테마 반응형): {% include callout.liquid content="내용" url="링크" %}
+  2. 배경색 지정: {% include callout.liquid content="내용" bg="#fcf8e3" %}
+  링크 미지정시 마우스 오버효과 없음
+{% endcomment %}
+
+<div class="custom-callout-container {% if include.url %}has-link{% endif %}" 
+     style="{% if include.bg %}--callout-bg: {{ include.bg }}; --callout-border: #f0ad4e;{% endif %}">
+  
+  {% if include.url %}
+    <a href="{{ include.url }}" target="_blank" class="callout-link">
+  {% endif %}
+
+  <div class="custom-callout">
+    {{ include.content | markdownify }}
+  </div>
+
+  {% if include.url %}
+    </a>
+  {% endif %}
+</div>

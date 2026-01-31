@@ -18,10 +18,7 @@ toc:
 ---
 
 
-<a href="https://github.com/hoonably/multi-agent-drone-exploration" rel="external nofollow noopener" target="_blank">
-  <img class="only-light" alt="hoonably/multi-agent-drone-exploration" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=multi-agent-drone-exploration&amp;theme=default&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-  <img class="only-dark" alt="hoonably/multi-agent-drone-exploration" src="https://github-readme-stats.vercel.app/api/pin/?username=hoonably&amp;repo=multi-agent-drone-exploration&amp;theme=dark&amp;locale=en&amp;show_owner=false&amp;description_lines_count=2">
-</a>
+{% include repository_card.liquid repo_name="hoonably/multi-agent-drone-exploration" %}
 
 <a href="https://hoonably.github.io/multi-agent-drone-exploration/Project1_Report.pdf"><img src="https://img.shields.io/static/v1?label=Project1&message=PDF&color=red"></a>
 <a href="https://hoonably.github.io/multi-agent-drone-exploration/Project2_Report.pdf"><img src="https://img.shields.io/static/v1?label=Project2&message=PDF&color=red"></a>

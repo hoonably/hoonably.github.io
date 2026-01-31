@@ -1,0 +1,21 @@
+{% comment %}
+  사용법: {% include repository_card.liquid repo_name="hoonably/PIGG" %}
+{% endcomment %}
+
+<div class="repo-card-container" data-repo="{{ include.repo_name }}">
+  <a href="https://github.com/{{ include.repo_name }}" target="_blank" class="repo-card-link">
+    <div class="repo-card">
+      <div class="repo-card-header">
+        <i class="fa-brands fa-github"></i>
+        <span class="repo-name">Loading...</span>
+      </div>
+      <p class="repo-desc">Fetching description...</p>
+      <div class="repo-card-footer">
+        <span class="repo-lang"><i class="fa-solid fa-code"></i> <span>--</span></span>
+        <span class="repo-stars"><i class="fa-solid fa-star"></i> <span>--</span></span>
+        <span class="repo-forks"><i class="fa-solid fa-code-branch"></i> <span>--</span></span>
+        <span class="repo-updated"><i class="fa-solid fa-clock"></i> <span>--</span></span>
+      </div>
+    </div>
+  </a>
+</div>
