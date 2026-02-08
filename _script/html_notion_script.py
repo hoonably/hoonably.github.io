@@ -85,7 +85,11 @@ def convert_prism_codeblocks_to_md(html_content: str) -> str:
         if 'prism' in src:
             tag.decompose()
 
-    # 1) <pre><code class="language-...">...</code></pre> → ```lang ... ```
+    # 코드블럭을 플레이스홀더로 저장
+    placeholders = {}
+    placeholder_counter = 0
+
+    # 1) <pre><code class="language-...">...</code></pre> → 플레이스홀더로 교체
     for pre in soup.find_all('pre'):
         code = pre.find('code')
         if not code:
@@ -100,11 +104,29 @@ def convert_prism_codeblocks_to_md(html_content: str) -> str:
         # 코드 텍스트 추출 (BS가 엔티티 디코드/개행 처리)
         code_text = code.get_text()
 
-        md_block = f"\n\n```{lang}\n{code_text}\n```\n"
-        pre.replace_with(NavigableString(md_block))
+        # HTML 엔티티 이스케이프 (코드 내용을 안전하게 표시)
+        import html
+        escaped_code = html.escape(code_text)
 
-    # soup 전체를 텍스트로(다른 HTML도 함께 마크다운으로 바꿔야 한다면 별도 파이프라인에서 처리)
-    return str(soup)
+        # HTML pre/code 태그로 생성 (Rouge 신택스 하이라이팅 지원)
+        html_block = f'\n\n<pre><code class="language-{lang}">{escaped_code}</code></pre>\n\n'
+        
+        # 플레이스홀더 생성 및 저장
+        placeholder = f"___CODEBLOCK_PLACEHOLDER_{placeholder_counter}___"
+        placeholders[placeholder] = html_block
+        placeholder_counter += 1
+        
+        # pre 태그를 플레이스홀더로 교체
+        pre.replace_with(NavigableString(placeholder))
+
+    # soup을 문자열로 변환
+    html_str = str(soup)
+    
+    # 플레이스홀더를 실제 마크다운 코드블럭으로 교체
+    for placeholder, md_block in placeholders.items():
+        html_str = html_str.replace(placeholder, md_block)
+    
+    return html_str
 
 # html 파일 내에 있는 src, href 속성의 경로를 변경하는 함수
 def rewrite_image_paths_soup(html: str, old_filename: str, new_filename: str) -> str:
@@ -127,6 +149,21 @@ def rewrite_image_paths_soup(html: str, old_filename: str, new_filename: str) ->
 
     return str(soup)
 
+    return str(soup)
+
+def fix_stray_list_items(html: str) -> str:
+    soup = BeautifulSoup(html, "html.parser")
+    # 부모가 ul, ol이 아닌 li 태그들을 모두 찾음
+    stray_lis = [li for li in soup.find_all('li') if li.parent.name not in ['ul', 'ol']]
+    
+    for li in stray_lis:
+        # 이미 처리된 li의 부모가 방금 만든 ul일 수 있으므로 다시 확인
+        if li.parent and li.parent.name not in ['ul', 'ol']:
+            new_ul = soup.new_tag('ul')
+            new_ul['class'] = 'toggle' # 들여쓰기 스타일 적용을 위해
+            li.wrap(new_ul)
+        
+    return str(soup)
 
 def convert_figure_images(html: str) -> str:
     soup = BeautifulSoup(html, "html.parser")
@@ -187,8 +224,11 @@ def write_markdown_file(filepath, html_content):
     html_content = html_content.replace("<details open=\"\">", "<details>")
     html_content = html_content.replace("<details open>", "<details>")
 
-    # <figure> 태그내 줄바꿈 중복 제거
-    html_content = merge_paragraphs_inside_callouts(html_content)
+    # figure 이미지 변환
+    html_content = convert_figure_images(html_content)
+
+    # ⭐️ 추가: 부모 없는 li 태그들 보정
+    html_content = fix_stray_list_items(html_content)
 
     # codeblock md로 변환
     html_content = convert_prism_codeblocks_to_md(html_content)

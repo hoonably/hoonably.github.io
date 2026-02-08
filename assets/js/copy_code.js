@@ -32,9 +32,41 @@ codeBlocks.forEach(function (codeBlock) {
         // get code from code block when line numbers are not displayed
         var code = codeBlock.querySelector("code").innerText.trim();
       }
-      window.navigator.clipboard.writeText(code);
-      copyButton.innerText = "Copied";
-      copyButton.innerHTML = '<i class="fa-solid fa-clipboard-check"></i>';
+
+      // Try modern clipboard API first, fallback to execCommand for non-secure contexts
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(function () {
+          copyButton.innerText = "Copied";
+          copyButton.innerHTML = '<i class="fa-solid fa-clipboard-check"></i>';
+        }).catch(function (err) {
+          console.error('Clipboard API failed:', err);
+          fallbackCopy(code);
+        });
+      } else {
+        fallbackCopy(code);
+      }
+
+      function fallbackCopy(text) {
+        var textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        textArea.style.top = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+          var successful = document.execCommand('copy');
+          if (successful) {
+            copyButton.innerText = "Copied";
+            copyButton.innerHTML = '<i class="fa-solid fa-clipboard-check"></i>';
+          }
+        } catch (err) {
+          console.error('Fallback copy failed:', err);
+        }
+        document.body.removeChild(textArea);
+      }
+
       var waitFor = 3000;
 
       setTimeout(function () {

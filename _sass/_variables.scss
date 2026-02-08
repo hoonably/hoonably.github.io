@@ -37,8 +37,8 @@ $black-color: #000000 !default;
 
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
-$code-bg-color-notion-light: rgba(135, 131, 120, 0.15) !default;  //! 노션 추가
-$code-bg-color-notion-dark: rgba(100, 97, 86, 0.15) !default;  //! 노션 추가
+$code-bg-color-notion-light: #f9f8f7 !default; //! 노션 추가
+$code-bg-color-notion-dark: rgba(100, 97, 86, 0.15) !default; //! 노션 추가
 
 // Font awesome location
 $fa-font-path: "../webfonts";

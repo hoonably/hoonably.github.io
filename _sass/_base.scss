@@ -907,27 +907,128 @@ figure.highlight {
   margin: 0 0 1rem;
 }
 
-pre {
-  color: var(--global-theme-color);
-  background-color: var(--global-code-bg-color);
-  border-radius: 6px;
-  // padding: 6px 12px;
-  padding: 24px 12px; //! 코드블럭 위아래 padding 넓게
+@mixin code-styles {
+  pre {
+    color: var(--global-theme-color);
+    background-color: var(--global-code-bg-color);
+    border-radius: 6px;
+    padding: 24px 12px; //! 코드블럭 위아래 padding 넓게
+    overflow-x: auto;
+    margin: 1em 0;
 
-  pre,
-  code {
-    background-color: transparent;
-    border-radius: 0;
-    margin-bottom: 0;
-    padding: 0;
+    pre,
+    code {
+      color: var(--global-theme-color);
+      background-color: transparent;
+      border-radius: 0;
+      margin-bottom: 0;
+      padding: 0;
+      font-size: 14px; //! layout: notion과 동일한 크기
+    }
+  }
+
+  // ✅ Prism.js Syntax Highlighting Overrides
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: var(--prism-comment) !important;
+  }
+
+  .token.punctuation {
+    color: var(--prism-punctuation) !important;
+    background: none !important;
+  }
+
+  .token.namespace {
+    opacity: 0.7;
+  }
+
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: var(--prism-tag) !important;
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: var(--prism-selector) !important;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    color: var(--prism-operator) !important;
+    background: none !important;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    color: var(--prism-keyword) !important;
+  }
+
+  .token.function,
+  .token.class-name {
+    color: var(--prism-function) !important;
+  }
+
+  .token.regex,
+  .token.important,
+  .token.variable {
+    color: var(--prism-regex) !important;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  // Prism.js pre/code reset for dark mode
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none !important;
+    color: var(--global-text-color) !important;
+  }
+
+  // Override Prism background specifically
+  pre[class*="language-"] {
+    background-color: var(--global-code-bg-color) !important;
+  }
+
+  // Ensure code inside pre has no background (it inherits from pre)
+  pre[class*="language-"] code[class*="language-"] {
+    background-color: transparent !important;
+  }
+
+  code:not(pre > code) {
+    color: var(--global-theme-color);
+    background-color: var(--global-code-bg-color) !important;
+    border-radius: 3px;
+    padding: 3px 3px;
   }
 }
 
-code {
-  color: var(--global-theme-color);
-  background-color: var(--global-code-bg-color);
-  border-radius: 3px;
-  padding: 3px 3px;
+#markdown-content {
+  @include code-styles;
 }
 
 // Transitioning Themes
