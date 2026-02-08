@@ -60,7 +60,7 @@ toc:
 
 ---
 
-##### <a href="files/2000-images/image26.webp">UDPC 2025 Senior Division</a>  
+##### <a href="https://github.com/user-attachments/assets/97edb7e4-69f2-4c7d-bcd8-40ac526ae9a1">UDPC 2025 Senior Division</a>  
 2025.03.29  
 11th  
 
