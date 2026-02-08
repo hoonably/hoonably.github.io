@@ -84,10 +84,7 @@ arr의 길이가 10만 이하인 테스트 케이스를 넣는다고 하자.
 
 ### 💡 Big-O 표기법에 따른 복잡도 그래프
 
-{% include figure.liquid loading="eager" path="https://i0.wp.com/hanamon.kr/wp-content/uploads/2021/07/Big-O-Complexity-Chart.png?resize=1080%2C723&ssl=1" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-
-
+{% include figure.liquid loading="eager" path="files/2000-images/image8.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 

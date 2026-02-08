@@ -186,7 +186,7 @@ public static void bubblesort(int[] arr) {
 
 ### 💡 코드 테스트 - 백준 2750번: 수 정렬하기
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/cdf42206-856a-4da0-af6e-cd916ec7aba2" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image1.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ```java
 import java.util.Scanner;
@@ -244,7 +244,7 @@ public class Main {
 
 [[알고리즘] 시간 복잡도 (Time Complexity)](/blog/time-complexity/)
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/76be57bb-c35a-4225-a1df-58db08724fd1" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image2.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 이미 정렬이 되어있는지에 상관 없이 무조건 for문을 2번 돌면서 비교를 하기 때문에
 

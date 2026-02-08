@@ -260,7 +260,7 @@ insert into k_user (
 
 이렇게 정상적으로 들어갔는지 확인할 수 있다. (옆에 user_update_dt도 있는데 너무 길어서 잘랐다.)
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/a724cc58-43bc-42da-8a2c-aa5135fc5cf6" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image9.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 #### ❗ user_cs (유저 신용점수) insert
 
@@ -290,7 +290,7 @@ insert into user_cs  (
 	(14,100,200);
 ```
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/eddc583f-b30b-4830-9ded-97d1d1fad6b7" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image10.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 #### ❗ k_bank (카카오뱅크 계좌) insert
 
@@ -332,8 +332,7 @@ insert into k_bank (
 	('3333-40-456-4565', 14, 0, 2000000, 10000000, 1230, 1, '0000', 0);
 ```
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/248d91fe-806d-488d-bc3b-81b01d4f7a9c" class="img-fluid rounded z-depth-1" zoomable=true %}
-
+{% include figure.liquid loading="eager" path="files/2000-images/image11.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -359,7 +358,7 @@ where
 	user_age < 20 or user_age >= 30;
 ```
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/4789b6c4-b0e9-4515-a682-040e6c76f977" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image12.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **김수린**씨와 김수용씨가 20대가 아닌것으로 파악되었다.
 
@@ -376,7 +375,7 @@ group by
 	user_gender;
 ```
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/56216fce-4eb6-4771-8c1f-666ce5edeee3" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image13.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **남자 8명**, **여자 5명**, **특수성별**(조XX씨) **1명**이 나왔다.
 
@@ -405,8 +404,7 @@ order by
 	ku.user_idx, kb.bank_money desc;
 ```
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/d3f7deca-d1fd-4bf2-9e65-66477cc8a6e1" class="img-fluid rounded z-depth-1" zoomable=true %}
-
+{% include figure.liquid loading="eager" path="files/2000-images/image14.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
@@ -428,7 +426,7 @@ order by
    select user_idx , user_real_name  from k_user ku where user_status =3;
    ```
 
-   {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/66e9226f-8fc2-46a6-8707-e02052a0fd6f" class="img-fluid rounded z-depth-1" zoomable=true %}
+   {% include figure.liquid loading="eager" path="files/2000-images/image15.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
  
 
@@ -437,8 +435,8 @@ order by
    ```sql
    update k_user set user_status = 1 where user_idx in (8, 11, 13, 14) and user_status =3;
    ```
-
-   {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/1995b482-e1ec-4d67-97bd-b1ef26c38944" class="img-fluid rounded z-depth-1" zoomable=true %}
+   
+   {% include figure.liquid loading="eager" path="files/2000-images/image16.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
    Updated Rows : 4 이므로 4개의 정보가 업데이트 된 것이다.
 
@@ -455,7 +453,7 @@ order by
    	user_idx in (8, 11, 13, 14);
    ```
 
-   {% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/65ce5fbd-d6c6-4d77-a09e-16e854291826" class="img-fluid rounded z-depth-1" zoomable=true %}
+   {% include figure.liquid loading="eager" path="files/2000-images/image17.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 

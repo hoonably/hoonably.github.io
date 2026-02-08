@@ -94,7 +94,7 @@ String str2 = sb2.toString();
 
 [백준 2751번 수 정렬하기 2](https://www.acmicpc.net/problem/2751){:target="_blank"}
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/12ad07e6-4b44-4b0b-b287-b6e19a8521a0" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image5.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ```java
 import java.io.BufferedReader;
@@ -133,7 +133,7 @@ public class Main {
 }
 ```
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/e8275870-0fc1-42ed-901b-bc6873ac72d8" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image6.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 - 아래 3개의 시간초과 모두  StringBuilder를 사용하지 않고 String을 사용해 더해서 생긴 결과다. 
 - 위에서 두번째 결과는 위 코드에서 BufferedReader를 쓰지 않고 Scanner을 썼던 결과다.
@@ -153,9 +153,9 @@ public class Main {
 
 ---
 
-### 💡 상세 속도 비교
+### 💡 상세 속도 비교i
 
-{% include figure.liquid loading="eager" path="https://github.com/hhhoon/hhhoon.github.io/assets/77783081/be1b9069-c651-4654-8c29-fd726b112ff5" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image7.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 출처 : javapapers.com
 

@@ -43,7 +43,7 @@ toc:
 
 ### 💡 네트워크 플로우 기본 문제
 
-{% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/197b77bc-b255-4694-a4de-37edb5d57fa3" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image20.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 ---

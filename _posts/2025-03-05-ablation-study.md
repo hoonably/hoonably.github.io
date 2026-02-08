@@ -45,7 +45,7 @@ toc:
 
 ### 💡 예제: SVDQuant 논문에서 Ablation Study
 
-{% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/f36e5dd1-951f-44e7-a2a0-37ab7ec0aa11" class="img-fluid rounded z-depth-1" zoomable=true %} 
+{% include figure.liquid loading="eager" path="files/2000-images/image28.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 SVDQuant 논문에서는 **Figure 10**에서 다양한 실험을 함:
 

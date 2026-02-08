@@ -27,7 +27,7 @@ toc:
 
 [내 Solved.ac](https://solved.ac/profile/hoonably)
 
-{% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/fdb7142a-d0d3-4a8d-87d6-b292a543039e" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image18.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 상위 100문제를 골드 없이 채우고 나니 마음이 편안해졌다...
 
@@ -37,7 +37,7 @@ toc:
 
 ### 💡 태그 분포
 
-{% include figure.liquid loading="eager" path="https://github.com/user-attachments/assets/7b390fbb-b569-466b-8b46-6055a92e4cc0" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="files/2000-images/image19.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 사실 다이아 티어를 가는 방법 중 가장 '빠른' 방법은 수학을 활용해서 **어려운 수학문제**를 푸는게 아닐까 한다.
 
@@ -121,7 +121,7 @@ toc:
 
 ---
 
-#### ❗❗ 절대로 코드를 그대로 붙여와서 제출하지 말자.
+#### ❗ 절대로 코드를 그대로 붙여와서 제출하지 말자.
 
 당연히 초보일 때는 복붙을 아예 하지 않는게 좋다.
 
@@ -141,7 +141,7 @@ toc:
 
 ---
 
-#### ❗❗ 주석을 많이 달자
+#### ❗ 주석을 많이 달자
 
 이건 뭐 모든 사람이 말할 것이다. 지금 알고리즘 대회 나가서 1분 1초가 중요한게 아니면, 주석을 계속 달자.
 
@@ -152,7 +152,7 @@ toc:
 
 ---
 
-#### ❗❗ 맞았다고 끝이 아니다.
+#### ❗ 맞았다고 끝이 아니다.
 
 내가 정말 추천하는 방법이다. 
 
