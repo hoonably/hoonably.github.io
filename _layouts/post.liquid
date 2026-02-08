@@ -93,11 +93,11 @@ layout: default
       {% include disqus.liquid %}
     {% endif %}
     
-    <br><br><br><br>
+    {% include post_navigation.liquid %}
+    
     {% if site.giscus and page.giscus_comments %}
       {% include giscus.liquid %}
     {% endif %}
-    <br><br><br><br>
 
   </div>
 </div>

@@ -1,0 +1,54 @@
+{% comment %}
+Post Navigation Component
+Shows previous and next post links based on date
+{% endcomment %}
+
+{% assign posts = site.posts | where_exp: "post", "post.url != page.url" | sort: "date" %}
+{% assign current_index = -1 %}
+
+{% comment %} Find the current post's index in the sorted posts {% endcomment %}
+{% for post in site.posts %}
+  {% if post.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index >= 0 %}
+  {% assign next_index = current_index | minus: 1 %}
+  {% assign prev_index = current_index | plus: 1 %}
+  
+  {% if next_index >= 0 %}
+    {% assign next_post = site.posts[next_index] %}
+  {% endif %}
+  
+  {% if prev_index < site.posts.size %}
+    {% assign prev_post = site.posts[prev_index] %}
+  {% endif %}
+{% endif %}
+
+<div class="post-navigation">
+  <div class="post-nav-item post-nav-prev">
+    {% if prev_post %}
+      <a href="{{ prev_post.url | relative_url }}">
+        <div class="nav-direction">← Older Post</div>
+        <div class="nav-title">{{ prev_post.title }}</div>
+        <div class="nav-date">{{ prev_post.date | date: '%Y-%m-%d' }}</div>
+      </a>
+    {% else %}
+      <div class="nav-placeholder"></div>
+    {% endif %}
+  </div>
+  
+  <div class="post-nav-item post-nav-next">
+    {% if next_post %}
+      <a href="{{ next_post.url | relative_url }}">
+        <div class="nav-direction">Newer Post →</div>
+        <div class="nav-title">{{ next_post.title }}</div>
+        <div class="nav-date">{{ next_post.date | date: '%Y-%m-%d' }}</div>
+      </a>
+    {% else %}
+      <div class="nav-placeholder"></div>
+    {% endif %}
+  </div>
+</div>

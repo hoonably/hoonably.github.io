@@ -92,12 +92,22 @@ layout: default
     {% if site.disqus_shortname and page.disqus_comments %}
       {% include disqus.liquid %}
     {% endif %}
-    
-    <br><br><br><br>
+
+    {% include post_navigation.liquid %}
+
     {% if site.giscus and page.giscus_comments %}
       {% include giscus.liquid %}
     {% endif %}
-    <br><br><br><br>
 
   </div>
 </div>
+
+{% comment %} Prism.js for syntax highlighting in Notion posts {% endcomment %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js" integrity="sha512-I1kcgJ2Ji4JBsHFYaDQdUOV6FEV6ITLJvP0CWVL7AV0+/1z5u+16yPERYMCXc0fhHTfBRy6OxrbbH0nOoLOHlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" integrity="sha512-BDWIUqr7AWu+rfKSeCZOq+MF+IfuMN9REQSrOYIZy76x88k/+zQ3R5T4/C/5B/kmDCUvIwI8cZZBIDEkgdpRWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js" integrity="sha512-9cC9aJaQw5YJTBnQEfSDPCcIshqjSV/sj1fZPCPD0hD3n1kpspLSN1l3H2d3Mm6bT5pLcNLcLQFwW9iVULxwug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js" integrity="sha512-+xmJiXam59Eg3KPk09rrKm8N6d5P62zEbbdSebmXpGDqaXKYZSQcYxcWKzqnpkr9UACww+8uOhFPyvZfiE2UQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js" integrity="sha512-k9sJvM5v5iPaG8+CIJpIbXQaOKxoV2Y+qf7K7L5V8ZqDxzIhhbhYFdcBe6mDpTRH3Eq0HMWfAY35LWiRPHxBWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js" integrity="sha512-qho6uzZ7juT9g8cN0ZPV//5d8TEkxD1tZzQ7gp/7/JmZV8KZH3kdEKdPzwuGN9TmwRlTk8G8vHuLpEV/3xBV4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
