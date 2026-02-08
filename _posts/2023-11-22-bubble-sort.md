@@ -18,7 +18,7 @@ toc:
 
 
 
-### 💡 버블정렬 함수
+### 버블정렬 함수
 
 먼저 알고리즘을 알고있지만 복붙이나 복습을 위해 찾아온 사람들을 위해 코드를 먼저 보여주겠다.
 
@@ -94,14 +94,14 @@ public static void bubblesort_ASC(int[] arr) {
 
 ---
 
-### 💡 버블정렬 (Bubble Sort) ?
+### 버블정렬 (Bubble Sort) ?
 
 버블 정렬은 원소를 정렬할 때 사용하며, 원소가 거품처럼 올라오는 것처럼 보여 버블 정렬이라는 이름이 붙여졌다.
 
 
 ---
 
-### 💡 알고리즘 이해
+### 알고리즘 이해
 
 가장 큰 수부터 차례대로 맨 뒤로 이동시켜 고정한다고 생각하면 쉽다.
 
@@ -133,7 +133,7 @@ public static void bubblesort_ASC(int[] arr) {
 
 ---
 
-### 💡 코드 이해
+### 코드 이해
 
 먼저, 배열의 두 원소를 바꾸는 함수부터 만들어보자.
 
@@ -184,7 +184,7 @@ public static void bubblesort(int[] arr) {
 
 ---
 
-### 💡 코드 테스트 - 백준 2750번: 수 정렬하기
+### 코드 테스트 - 백준 2750번: 수 정렬하기
 
 {% include figure.liquid loading="eager" path="files/2000-images/image1.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -238,7 +238,7 @@ public class Main {
 
 ---
 
-### 💡 시간복잡도
+### 시간복잡도
 
 시간 복잡도가 무엇인지 모른다면 이 글을 참고하자.
 
@@ -253,7 +253,7 @@ public class Main {
 
 ---
 
-### 💡 정리
+### 정리
 
 #### 장점
 
@@ -269,7 +269,7 @@ public class Main {
 
 ---
 
-### 💡 결론
+### 결론
 
 버블정렬 알고리즘은 처음 알고리즘을 공부하기엔 좋지만 너무 비효율적이기 때문에 쓸 일이 없다.
 

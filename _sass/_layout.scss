@@ -7,7 +7,7 @@ body {
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
-  //! ✅ 폰트 지정
+  //! 폰트 지정
   font-family: 'Pretendard', sans-serif;
   font-weight: 400;
   // font-family: "Merriweather Sans", "Noto Sans KR", sans-serif;
@@ -65,11 +65,13 @@ body.sticky-bottom-footer {
 /* Repository Card 스타일 */
 .repo-card-container {
   margin: 1rem 0;
+
   .repo-card-link {
     text-decoration: none !important;
+
     &:hover .repo-card {
       border-color: var(--global-theme-color);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -104,8 +106,10 @@ body.sticky-bottom-footer {
     font-size: 0.8rem;
     color: var(--global-text-color);
     opacity: 0.7;
-    
-    i { margin-right: 4px; }
+
+    i {
+      margin-right: 4px;
+    }
   }
 }
 
@@ -128,17 +132,21 @@ body.sticky-bottom-footer {
     font-size: 0.95rem;
     transition: all 0.2s ease-in-out;
 
-    p { margin-bottom: 0; }
+    p {
+      margin-bottom: 0;
+    }
   }
 
   &.has-link {
-    .callout-link { text-decoration: none !important; }
-    
+    .callout-link {
+      text-decoration: none !important;
+    }
+
     &:hover .custom-callout {
       border-color: #8e44ad; // 호버 시 보라색 테두리
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
       // 내부 텍스트나 링크 색상 강조 (선택 사항)
       color: var(--global-theme-color);
     }
@@ -148,7 +156,7 @@ body.sticky-bottom-footer {
 /* Publication Card 스타일 (콜아웃 형태) */
 .pub-card-container {
   margin-bottom: 2rem;
-  
+
   .pub-card {
     padding: 5px 0 5px 20px; // 위아래 패딩 줄이고 왼쪽 여백 확보
     border-left: 4px solid var(--global-divider-color); // 기본 왼쪽 강조선
@@ -172,6 +180,7 @@ body.sticky-bottom-footer {
 
     .pub-title-link {
       text-decoration: none !important;
+
       &:hover .pub-title {
         color: #8e44ad; // 제목 호버 시 보라색
       }
@@ -193,7 +202,7 @@ body.sticky-bottom-footer {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      
+
       .pub-badge {
         display: inline-flex;
         align-items: center;
@@ -205,8 +214,13 @@ body.sticky-bottom-footer {
         color: var(--global-text-color) !important;
         text-decoration: none !important;
 
-        i { margin-right: 5px; }
-        &:hover { background-color: var(--global-divider-color); }
+        i {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          background-color: var(--global-divider-color);
+        }
 
         &.award {
           background-color: #f1c40f;

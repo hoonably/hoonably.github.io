@@ -17,7 +17,7 @@ toc:
 ---
 
 
-### 💡 시간복잡도를 알아야하는 이유
+### 시간복잡도를 알아야하는 이유
 
 알고리즘 공부나 코딩테스트를 위해 백준 등과 같은 문제를 풀다보면 꼭 마주하는 것이 있다.
 
@@ -36,7 +36,7 @@ toc:
 
 ---
 
-### 💡 시간 복잡도(Time Complexity)
+### 시간 복잡도(Time Complexity)
 
 - Big-O(빅-오) ⇒ 최악의 경우 : 가장 오래 걸리는 시간
 - Big-Ω(빅-오메가) ⇒ 최선의 경우 : 최소한 걸리는 시간
@@ -47,7 +47,7 @@ toc:
 
 ---
 
-### 💡 이해를 위한 예시 - 버블정렬
+### 이해를 위한 예시 - 버블정렬
 
 ```python
 def bubbleSort(arr):
@@ -82,13 +82,13 @@ arr의 길이가 10만 이하인 테스트 케이스를 넣는다고 하자.
 
 ---
 
-### 💡 Big-O 표기법에 따른 복잡도 그래프
+### Big-O 표기법에 따른 복잡도 그래프
 
 {% include figure.liquid loading="eager" path="files/2000-images/image8.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
-### 💡 상수는 무시한다 !
+### 상수는 무시한다 !
 
 
 
@@ -138,7 +138,7 @@ for i in range(1, n+1):
 
 ---
 
-### 💡 O(1) - 상수 시간 (Constant time)
+### O(1) - 상수 시간 (Constant time)
 
 ```python
 n = int(input())
@@ -155,7 +155,7 @@ n에 값에 관계 없이 같은 시간이 나오기 때문에 상수 시간인 
 
 ---
 
-### 💡 O(logn) - 로그 시간 (Logarithmic time)
+### O(logn) - 로그 시간 (Logarithmic time)
 
 ```python
 def binary_search(target, data):
@@ -186,7 +186,7 @@ ex) 이진 탐색, 퀵 정렬, 병합 정렬, 힙 정렬
 
 ---
 
-### 💡 O(n) - 선형 시간 (Linear time)
+### O(n) - 선형 시간 (Linear time)
 
 ```python
 n = int(input())
@@ -210,7 +210,7 @@ ex) n에 대한 for문
 
 ---
 
-### 💡 O(n²) - 2차 시간 (Quadratic time)
+### O(n²) - 2차 시간 (Quadratic time)
 
 ```python
 n = int(input())
@@ -232,7 +232,7 @@ ex)  n에 대한 이중 for문, 삽입정렬, 버블정렬, 선택정렬 , 면�
 
 ---
 
-### 💡 O(nm) - 두가지 입력값인 경우
+### O(nm) - 두가지 입력값인 경우
 
 ```python
 n = int(input())
@@ -255,7 +255,7 @@ ex)  n과 m에 대한 이중 for문
 
 ---
 
-### 💡 O(2ⁿ) - 지수 시간 (Exponential time)
+### O(2ⁿ) - 지수 시간 (Exponential time)
 
 ```python
 def fibonacci(n):
@@ -275,7 +275,7 @@ ex) 피보나치 수열
 
 ---
 
-### 💡 시간 복잡도를 통한 대략적 계산 방법
+### 시간 복잡도를 통한 대략적 계산 방법
 
 일반적으로 연산을 1억번 하는데 1초정도 걸린다.
 
@@ -296,7 +296,7 @@ ex) 피보나치 수열
 
 ---
 
-### 💡 그 외의 Tip
+### 그 외의 Tip
 
 - **Python3**으로 시간초과가 났을 경우 **PyPy3**을 사용하면 통과할 수도 있다!
 

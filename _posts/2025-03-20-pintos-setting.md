@@ -229,7 +229,7 @@ CFGOPTS="--enable-cpu-level=6 --with-x --with-x11 --with-term --with-nogui --pre
 
 ```bash
 docker run --platform=linux/amd64 -it -p 80:80 \
-	-v /Users/hoon/github/os20201118_20201032/pintos:/root/pintos \
+	-v /Users/hoon/github/pintos/pintos:/root/pintos \
 	--name pintos pintos
 ```
 
@@ -296,7 +296,7 @@ pintos -q run alarm-multiple
 
 # github repo 생성
 
-[[https://github.com/hoonably/os20201118_20201032](https://github.com/hoonably/os20201118_20201032)](https://github.com/hoonably/os20201118_20201032)
+[https://github.com/hoonably/pintos](https://github.com/hoonably/pintos)
 
 # root/pintos/src 에서 시작하기
 
@@ -373,7 +373,7 @@ git push -u origin feat/alarm-clock
 
 - 왜 `feat/` 를 쓰는가?
     
-    ✅ 브랜치 이름 패턴
+    브랜치 이름 패턴
     
     | Prefix | 의미 | 예시 브랜치명 |
     | --- | --- | --- |
@@ -387,7 +387,7 @@ git push -u origin feat/alarm-clock
     
     ---
     
-    ✅ 왜 이렇게 쓰나?
+    왜 이렇게 쓰나?
     
     - 협업 중에 브랜치가 많아질 때 → **이름만 보고 용도 파악 가능**
     - GitHub Pull Request에서 **자동 정렬이나 필터도 편리함**
@@ -433,7 +433,7 @@ core.autocrlf=true
 
 Docker 우분투 컨테이너는 리눅스니까 CRLF 해석 못 함 → 에러 발생
 
-### 해결방법 ⭐️
+### 해결방법
 
 ```bash
 git config --global core.autocrlf  # 현재 설정 확인

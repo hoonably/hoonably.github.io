@@ -1,7 +1,7 @@
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
-<!-- ✅ 캐시 방지 메타 태그 -->
+<!-- 캐시 방지 메타 태그 -->
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -36,7 +36,7 @@
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
 >
 
-<!-- ✅ 라이트모드 코드 하이라이트 Code Syntax Highlighting -->
+<!-- 라이트모드 코드 하이라이트 Code Syntax Highlighting -->
 <!-- https://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html -->
 <link
   defer
@@ -73,11 +73,11 @@
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
 {% endif %}
 
-<!-- ✅ Pretendard 폰트 css 파일 받도록 -->
+<!-- Pretendard 폰트 css 파일 받도록 -->
 <link rel="stylesheet" href="{{ '/assets/css/pretendard-subset.css' | relative_url }}">
 
 
-<!-- ✅ Merriweather Sans + Noto Sans Korean 로드 -->
+<!-- Merriweather Sans + Noto Sans Korean 로드 -->
 {% comment %} <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"> {% endcomment %}
@@ -86,7 +86,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-<!-- ✅ 다크모드 코드 하이라이트 Dark Mode -->
+<!-- 다크모드 코드 하이라이트 Dark Mode -->
 <!-- https://stylishthemes.github.io/Syntax-Themes/pygments/?utm_source=chatgpt.com -->
 <!-- 위 링크에서 맘에드는거 가져오면 됨 -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>

@@ -29,7 +29,7 @@ toc:
 
 ---
 
-###  💡 Ablation Study의 목적
+###  Ablation Study의 목적
 
 1. 각 구성 요소의 중요도 평가
    - 모델에서 특정 요소(예: 특정 레이어, 손실 함수, 데이터 처리 기법 등)를 제거하거나 수정했을 때 성능이 얼마나 떨어지는지 본다.
@@ -43,17 +43,17 @@ toc:
 
 ---
 
-### 💡 예제: SVDQuant 논문에서 Ablation Study
+### 예제: SVDQuant 논문에서 Ablation Study
 
 {% include figure.liquid loading="eager" path="files/2000-images/image28.webp" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 SVDQuant 논문에서는 **Figure 10**에서 다양한 실험을 함:
 
-- **SVD만 적용** → 성능이 낮아짐 ❌
-- **기본적인 4-bit 양자화** → 품질이 많이 떨어짐 ❌
-- **Smoothed Quantization 추가** → 조금 나아지지만 여전히 부족함 ❌
-- **LoRC 방식 적용** → 효과가 적음 ❌
-- **SVDQuant 방식 적용** → 가장 좋은 결과 ✅
+- **SVD만 적용** → 성능이 낮아짐
+- **기본적인 4-bit 양자화** → 품질이 많이 떨어짐
+- **Smoothed Quantization 추가** → 조금 나아지지만 여전히 부족함
+- **LoRC 방식 적용** → 효과가 적음
+- **SVDQuant 방식 적용** → 가장 좋은 결과
 
 즉, **각 요소를 하나씩 제거하면서 실험**을 진행해서 "SVDQuant가 왜 효과적인가?"를 증명함.
 
@@ -61,7 +61,7 @@ SVDQuant 논문에서는 **Figure 10**에서 다양한 실험을 함:
 
 ---
 
-### 💡 쉽게 비유하면?
+### 쉽게 비유하면?
 
 Ablation Study는 마치 **요리에서 특정 재료를 빼보면서 맛이 어떻게 변하는지 실험하는 과정**과 비슷함
 
